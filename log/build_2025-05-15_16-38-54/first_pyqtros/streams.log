@@ -1,0 +1,22 @@
+[2.930s] Invoking command in '/home/jonatan/ros2_ws/src/first_pyqtros': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/jonatan/ros2_ws/build/first_pyqtros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jonatan/ros2_ws/install/first_pyqtros/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/first_pyqtros build --build-base /home/jonatan/ros2_ws/build/first_pyqtros/build install --record /home/jonatan/ros2_ws/build/first_pyqtros/install.log --single-version-externally-managed install_data
+[3.583s] running egg_info
+[3.635s] writing ../../build/first_pyqtros/first_pyqtros.egg-info/PKG-INFO
+[3.635s] writing dependency_links to ../../build/first_pyqtros/first_pyqtros.egg-info/dependency_links.txt
+[3.638s] writing entry points to ../../build/first_pyqtros/first_pyqtros.egg-info/entry_points.txt
+[3.638s] writing requirements to ../../build/first_pyqtros/first_pyqtros.egg-info/requires.txt
+[3.638s] writing top-level names to ../../build/first_pyqtros/first_pyqtros.egg-info/top_level.txt
+[3.742s] reading manifest file '../../build/first_pyqtros/first_pyqtros.egg-info/SOURCES.txt'
+[3.742s] adding license file 'LICENSE'
+[3.744s] writing manifest file '../../build/first_pyqtros/first_pyqtros.egg-info/SOURCES.txt'
+[3.744s] running build
+[3.744s] running build_py
+[3.745s] running install
+[3.760s] running install_lib
+[3.810s] running install_data
+[3.810s] running install_egg_info
+[3.868s] removing '/home/jonatan/ros2_ws/install/first_pyqtros/lib/python3.12/site-packages/first_pyqtros-0.0.0-py3.12.egg-info' (and everything under it)
+[3.873s] Copying ../../build/first_pyqtros/first_pyqtros.egg-info to /home/jonatan/ros2_ws/install/first_pyqtros/lib/python3.12/site-packages/first_pyqtros-0.0.0-py3.12.egg-info
+[3.876s] running install_scripts
+[4.231s] Installing show_gui script to /home/jonatan/ros2_ws/install/first_pyqtros/lib/first_pyqtros
+[4.232s] writing list of installed files to '/home/jonatan/ros2_ws/build/first_pyqtros/install.log'
+[4.289s] Invoked command in '/home/jonatan/ros2_ws/src/first_pyqtros' returned '0': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/jonatan/ros2_ws/build/first_pyqtros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jonatan/ros2_ws/install/first_pyqtros/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/first_pyqtros build --build-base /home/jonatan/ros2_ws/build/first_pyqtros/build install --record /home/jonatan/ros2_ws/build/first_pyqtros/install.log --single-version-externally-managed install_data

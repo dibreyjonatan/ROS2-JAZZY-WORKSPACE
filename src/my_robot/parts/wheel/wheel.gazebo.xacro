@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:macro name="wheel_plugin">
+    <gazebo>
+        <plugin filename="gz-sim-diff-drive-system" name="gz::sim::systems::DiffDrive">
+          
+          <!-- Joint names (must match SDF model) -->
+          <left_joint>drivewhl_l_joint</left_joint>
+          <right_joint>drivewhl_r_joint</right_joint>
+      
+          <!-- Wheel separation and diameter -->
+          <wheel_separation>0.52</wheel_separation>
+          <wheel_radius>0.14</wheel_radius> <!-- Half of 0.28 diameter -->
+      
+          <!-- Update rate (optional) -->
+          <update_rate>30</update_rate>
+      
+          <!-- Limits -->
+          <max_torque>20</max_torque>
+          <max_acceleration>1.0</max_acceleration>
+      
+          <!-- Command and odometry topics -->
+          <topic>cmd_vel</topic>
+          <odom_topic>odom</odom_topic>
+      
+          <!-- Frame names -->
+          <odom_frame>odom</odom_frame>
+          <base_frame>base_link</base_frame>
+      
+          <!-- Publish odometry -->
+          <publish_odom>true</publish_odom>
+          <publish_tf>true</publish_tf>
+      
+        </plugin>
+      </gazebo>
+      
+  </xacro:macro>
+</robot>

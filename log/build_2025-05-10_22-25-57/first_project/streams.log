@@ -1,0 +1,23 @@
+[1.796s] Invoking command in '/home/jonatan/ros2_ws/src/first_project': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/jonatan/ros2_ws/build/first_project/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jonatan/ros2_ws/install/first_project/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/first_project build --build-base /home/jonatan/ros2_ws/build/first_project/build install --record /home/jonatan/ros2_ws/build/first_project/install.log --single-version-externally-managed install_data
+[2.279s] running egg_info
+[2.313s] writing ../../build/first_project/first_project.egg-info/PKG-INFO
+[2.314s] writing dependency_links to ../../build/first_project/first_project.egg-info/dependency_links.txt
+[2.314s] writing entry points to ../../build/first_project/first_project.egg-info/entry_points.txt
+[2.314s] writing requirements to ../../build/first_project/first_project.egg-info/requires.txt
+[2.314s] writing top-level names to ../../build/first_project/first_project.egg-info/top_level.txt
+[2.390s] reading manifest file '../../build/first_project/first_project.egg-info/SOURCES.txt'
+[2.391s] adding license file 'LICENSE'
+[2.395s] writing manifest file '../../build/first_project/first_project.egg-info/SOURCES.txt'
+[2.395s] running build
+[2.395s] running build_py
+[2.395s] running install
+[2.406s] running install_lib
+[2.442s] running install_data
+[2.443s] running install_egg_info
+[2.483s] removing '/home/jonatan/ros2_ws/install/first_project/lib/python3.12/site-packages/first_project-0.0.0-py3.12.egg-info' (and everything under it)
+[2.484s] Copying ../../build/first_project/first_project.egg-info to /home/jonatan/ros2_ws/install/first_project/lib/python3.12/site-packages/first_project-0.0.0-py3.12.egg-info
+[2.485s] running install_scripts
+[2.727s] Installing reciever script to /home/jonatan/ros2_ws/install/first_project/lib/first_project
+[2.727s] Installing sender script to /home/jonatan/ros2_ws/install/first_project/lib/first_project
+[2.728s] writing list of installed files to '/home/jonatan/ros2_ws/build/first_project/install.log'
+[2.779s] Invoked command in '/home/jonatan/ros2_ws/src/first_project' returned '0': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/jonatan/ros2_ws/build/first_project/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jonatan/ros2_ws/install/first_project/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/first_project build --build-base /home/jonatan/ros2_ws/build/first_project/build install --record /home/jonatan/ros2_ws/build/first_project/install.log --single-version-externally-managed install_data

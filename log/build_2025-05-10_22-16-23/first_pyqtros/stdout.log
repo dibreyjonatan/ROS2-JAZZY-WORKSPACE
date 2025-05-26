@@ -1,0 +1,39 @@
+running egg_info
+creating ../../build/first_pyqtros/first_pyqtros.egg-info
+writing ../../build/first_pyqtros/first_pyqtros.egg-info/PKG-INFO
+writing dependency_links to ../../build/first_pyqtros/first_pyqtros.egg-info/dependency_links.txt
+writing entry points to ../../build/first_pyqtros/first_pyqtros.egg-info/entry_points.txt
+writing requirements to ../../build/first_pyqtros/first_pyqtros.egg-info/requires.txt
+writing top-level names to ../../build/first_pyqtros/first_pyqtros.egg-info/top_level.txt
+writing manifest file '../../build/first_pyqtros/first_pyqtros.egg-info/SOURCES.txt'
+reading manifest file '../../build/first_pyqtros/first_pyqtros.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/first_pyqtros/first_pyqtros.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/jonatan/ros2_ws/build/first_pyqtros/build
+creating /home/jonatan/ros2_ws/build/first_pyqtros/build/lib
+creating /home/jonatan/ros2_ws/build/first_pyqtros/build/lib/first_pyqtros
+copying first_pyqtros/main_code.py -> /home/jonatan/ros2_ws/build/first_pyqtros/build/lib/first_pyqtros
+copying first_pyqtros/utils.py -> /home/jonatan/ros2_ws/build/first_pyqtros/build/lib/first_pyqtros
+copying first_pyqtros/__init__.py -> /home/jonatan/ros2_ws/build/first_pyqtros/build/lib/first_pyqtros
+running install
+running install_lib
+creating /home/jonatan/ros2_ws/install/first_pyqtros/lib/python3.12/site-packages/first_pyqtros
+copying /home/jonatan/ros2_ws/build/first_pyqtros/build/lib/first_pyqtros/main_code.py -> /home/jonatan/ros2_ws/install/first_pyqtros/lib/python3.12/site-packages/first_pyqtros
+copying /home/jonatan/ros2_ws/build/first_pyqtros/build/lib/first_pyqtros/utils.py -> /home/jonatan/ros2_ws/install/first_pyqtros/lib/python3.12/site-packages/first_pyqtros
+copying /home/jonatan/ros2_ws/build/first_pyqtros/build/lib/first_pyqtros/__init__.py -> /home/jonatan/ros2_ws/install/first_pyqtros/lib/python3.12/site-packages/first_pyqtros
+byte-compiling /home/jonatan/ros2_ws/install/first_pyqtros/lib/python3.12/site-packages/first_pyqtros/main_code.py to main_code.cpython-312.pyc
+byte-compiling /home/jonatan/ros2_ws/install/first_pyqtros/lib/python3.12/site-packages/first_pyqtros/utils.py to utils.cpython-312.pyc
+byte-compiling /home/jonatan/ros2_ws/install/first_pyqtros/lib/python3.12/site-packages/first_pyqtros/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/jonatan/ros2_ws/install/first_pyqtros/share/ament_index
+creating /home/jonatan/ros2_ws/install/first_pyqtros/share/ament_index/resource_index
+creating /home/jonatan/ros2_ws/install/first_pyqtros/share/ament_index/resource_index/packages
+copying resource/first_pyqtros -> /home/jonatan/ros2_ws/install/first_pyqtros/share/ament_index/resource_index/packages
+copying package.xml -> /home/jonatan/ros2_ws/install/first_pyqtros/share/first_pyqtros
+running install_egg_info
+Copying ../../build/first_pyqtros/first_pyqtros.egg-info to /home/jonatan/ros2_ws/install/first_pyqtros/lib/python3.12/site-packages/first_pyqtros-0.0.0-py3.12.egg-info
+running install_scripts
+Installing show_gui script to /home/jonatan/ros2_ws/install/first_pyqtros/lib/first_pyqtros
+writing list of installed files to '/home/jonatan/ros2_ws/build/first_pyqtros/install.log'

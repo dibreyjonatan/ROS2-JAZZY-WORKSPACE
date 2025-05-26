@@ -1,0 +1,36 @@
+Start testing: May 18 22:21 +01
+----------------------------------------------------------
+1/1 Testing: laser_obstacle_test
+1/1 Test: laser_obstacle_test
+Command: "/usr/bin/python3" "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/laser_obstacle_test.xunit.xml" "--package-name" "articubot_one" "--output-file" "/home/jonatan/ros2_ws/build/articubot_one/ament_cmake_pytest/laser_obstacle_test.txt" "--command" "/usr/bin/python3" "-u" "-m" "pytest" "/home/jonatan/ros2_ws/src/articubot_one/test/pytest/test_laserObstacle.py" "-o" "cache_dir=/home/jonatan/ros2_ws/build/articubot_one/ament_cmake_pytest/laser_obstacle_test/.cache" "--junit-xml=/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/laser_obstacle_test.xunit.xml" "--junit-prefix=articubot_one"
+Directory: /home/jonatan/ros2_ws/build/articubot_one
+"laser_obstacle_test" start time: May 18 22:21 +01
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/home/jonatan/ros2_ws/build/articubot_one':
+ - /usr/bin/python3 -u -m pytest /home/jonatan/ros2_ws/src/articubot_one/test/pytest/test_laserObstacle.py -o cache_dir=/home/jonatan/ros2_ws/build/articubot_one/ament_cmake_pytest/laser_obstacle_test/.cache --junit-xml=/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/laser_obstacle_test.xunit.xml --junit-prefix=articubot_one
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+cachedir: /home/jonatan/ros2_ws/build/articubot_one/ament_cmake_pytest/laser_obstacle_test/.cache
+rootdir: /home/jonatan/ros2_ws/src/articubot_one
+plugins: launch-testing-3.4.4, ament-xmllint-0.17.2, ament-pep257-0.17.2, ament-copyright-0.17.2, ament-flake8-0.17.2, launch-testing-ros-0.26.7, ament-lint-0.17.2, cov-4.1.0, typeguard-4.1.5, colcon-core-0.19.0
+collected 3 items
+
+../../src/articubot_one/test/pytest/test_laserObstacle.py ...            [100%]
+
+- generated xml file: /home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/laser_obstacle_test.xunit.xml -
+============================== 3 passed in 7.42s ===============================
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/laser_obstacle_test.xunit.xml'
+<end of output>
+Test time =   8.05 sec
+----------------------------------------------------------
+Test Passed.
+"laser_obstacle_test" end time: May 18 22:21 +01
+"laser_obstacle_test" time elapsed: 00:00:08
+----------------------------------------------------------
+
+End testing: May 18 22:21 +01
+
+pytest =   8.05 sec*proc
+

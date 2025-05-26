@@ -1,0 +1,84 @@
+[0.030s] Invoking command in '/home/jonatan/ros2_ws/build/articubot_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/jonatan/ros2_ws/build/articubot_one -- -j4 -l4
+[0.240s] Built target ament_cmake_python_copy_articubot_one
+[1.204s] running egg_info
+[1.315s] writing articubot_one.egg-info/PKG-INFO
+[1.317s] writing dependency_links to articubot_one.egg-info/dependency_links.txt
+[1.319s] writing top-level names to articubot_one.egg-info/top_level.txt
+[1.631s] reading manifest file 'articubot_one.egg-info/SOURCES.txt'
+[1.631s] writing manifest file 'articubot_one.egg-info/SOURCES.txt'
+[1.772s] Built target ament_cmake_python_build_articubot_one_egg
+[1.813s] Invoked command in '/home/jonatan/ros2_ws/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/jonatan/ros2_ws/build/articubot_one -- -j4 -l4
+[1.847s] Invoking command in '/home/jonatan/ros2_ws/build/articubot_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/jonatan/ros2_ws/build/articubot_one
+[1.881s] -- Install configuration: ""
+[1.881s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/environment/pythonpath.sh
+[1.884s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/environment/pythonpath.dsv
+[1.885s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/lib/python3.12/site-packages/articubot_one-0.0.0-py3.12.egg-info
+[1.887s] -- Installing: /home/jonatan/ros2_ws/install/articubot_one/lib/python3.12/site-packages/articubot_one-0.0.0-py3.12.egg-info/top_level.txt
+[1.887s] -- Installing: /home/jonatan/ros2_ws/install/articubot_one/lib/python3.12/site-packages/articubot_one-0.0.0-py3.12.egg-info/dependency_links.txt
+[1.887s] -- Installing: /home/jonatan/ros2_ws/install/articubot_one/lib/python3.12/site-packages/articubot_one-0.0.0-py3.12.egg-info/PKG-INFO
+[1.888s] -- Installing: /home/jonatan/ros2_ws/install/articubot_one/lib/python3.12/site-packages/articubot_one-0.0.0-py3.12.egg-info/SOURCES.txt
+[1.889s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/lib/python3.12/site-packages/articubot_one
+[1.890s] -- Installing: /home/jonatan/ros2_ws/install/articubot_one/lib/python3.12/site-packages/articubot_one/obstacle_avoidance.py
+[1.891s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/lib/python3.12/site-packages/articubot_one/__init__.py
+[2.066s] Listing '/home/jonatan/ros2_ws/install/articubot_one/lib/python3.12/site-packages/articubot_one'...
+[2.066s] Compiling '/home/jonatan/ros2_ws/install/articubot_one/lib/python3.12/site-packages/articubot_one/obstacle_avoidance.py'...
+[2.089s] -- Installing: /home/jonatan/ros2_ws/install/articubot_one/lib/articubot_one/obstacle_avoidance.py
+[2.089s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/config
+[2.090s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/config/nav2_params.yaml
+[2.090s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/config/ball_tracker_params_robot.yaml
+[2.091s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/config/joystick.yaml
+[2.092s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/config/mapper_params_online_async.yaml
+[2.093s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/config/twist_mux.yaml
+[2.093s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/config/ball_tracker_params_sim.yaml
+[2.094s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/config/map.rviz
+[2.095s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/config/gz_bridge.yaml
+[2.096s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/config/view_bot.rviz
+[2.097s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/config/drive_bot.rviz
+[2.097s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/config/my_controllers.yaml
+[2.100s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/config/main.rviz
+[2.100s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/config/gaz_ros2_ctl_use_sim.yaml
+[2.100s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/config/empty.yaml
+[2.101s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/description
+[2.101s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/description/gazebo_control.xacro
+[2.101s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/description/lidar.xacro
+[2.101s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/description/inertial_macros.xacro
+[2.102s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/description/face.xacro
+[2.103s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/description/camera.xacro
+[2.103s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/description/depth_camera.xacro
+[2.103s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/description/robot_core.xacro
+[2.103s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/description/robot.urdf.xacro
+[2.104s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/description/ros2_control.xacro
+[2.104s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/launch
+[2.104s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/launch/joystick.launch.py
+[2.105s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/launch/online_async_launch.py
+[2.105s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/launch/ball_tracker.launch.py
+[2.106s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/launch/localization_launch.py
+[2.106s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/launch/rviz_gazebo.launch.py
+[2.106s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/launch/navigation_launch.py
+[2.107s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/launch/rsp.launch.py
+[2.109s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/launch/launch_robot.launch.py
+[2.110s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/launch/camera.launch.py
+[2.110s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/launch/rplidar.launch.py
+[2.110s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/launch/launch_sim.launch.py
+[2.110s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/worlds
+[2.111s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/worlds/obstacles.world
+[2.111s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/worlds/empty.world
+[2.111s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/articubot_one
+[2.111s] -- Installing: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/articubot_one/obstacle_avoidance.py
+[2.111s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/articubot_one/__init__.py
+[2.112s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/ament_index/resource_index/package_run_dependencies/articubot_one
+[2.112s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/ament_index/resource_index/parent_prefix_path/articubot_one
+[2.116s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/environment/ament_prefix_path.sh
+[2.116s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/environment/ament_prefix_path.dsv
+[2.117s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/environment/path.sh
+[2.118s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/environment/path.dsv
+[2.122s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/local_setup.bash
+[2.122s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/local_setup.sh
+[2.122s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/local_setup.zsh
+[2.123s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/local_setup.dsv
+[2.123s] -- Installing: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/package.dsv
+[2.123s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/ament_index/resource_index/packages/articubot_one
+[2.123s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig.cmake
+[2.123s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig-version.cmake
+[2.124s] -- Up-to-date: /home/jonatan/ros2_ws/install/articubot_one/share/articubot_one/package.xml
+[2.127s] Invoked command in '/home/jonatan/ros2_ws/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/jonatan/ros2_ws/build/articubot_one

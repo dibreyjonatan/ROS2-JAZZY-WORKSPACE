@@ -1,0 +1,5 @@
+[31mCMake Error at CMakeLists.txt:49 (ament_add_ros_test):
+  Unknown CMake command "ament_add_ros_test".
+
+[0m
+gmake: *** [Makefile:254: cmake_check_build_system] Error 1

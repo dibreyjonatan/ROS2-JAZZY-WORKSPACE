@@ -1,0 +1,44 @@
+[1.705s] Invoking command in '/home/jonatan/ros2_ws/src/first_project': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/jonatan/ros2_ws/build/first_project/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jonatan/ros2_ws/install/first_project/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/first_project build --build-base /home/jonatan/ros2_ws/build/first_project/build install --record /home/jonatan/ros2_ws/build/first_project/install.log --single-version-externally-managed install_data
+[2.114s] running egg_info
+[2.114s] creating ../../build/first_project/first_project.egg-info
+[2.153s] writing ../../build/first_project/first_project.egg-info/PKG-INFO
+[2.153s] writing dependency_links to ../../build/first_project/first_project.egg-info/dependency_links.txt
+[2.154s] writing entry points to ../../build/first_project/first_project.egg-info/entry_points.txt
+[2.154s] writing requirements to ../../build/first_project/first_project.egg-info/requires.txt
+[2.155s] writing top-level names to ../../build/first_project/first_project.egg-info/top_level.txt
+[2.155s] writing manifest file '../../build/first_project/first_project.egg-info/SOURCES.txt'
+[2.229s] reading manifest file '../../build/first_project/first_project.egg-info/SOURCES.txt'
+[2.231s] adding license file 'LICENSE'
+[2.231s] writing manifest file '../../build/first_project/first_project.egg-info/SOURCES.txt'
+[2.231s] running build
+[2.231s] running build_py
+[2.231s] creating /home/jonatan/ros2_ws/build/first_project/build
+[2.231s] creating /home/jonatan/ros2_ws/build/first_project/build/lib
+[2.232s] creating /home/jonatan/ros2_ws/build/first_project/build/lib/first_project
+[2.232s] copying first_project/subscriber_node.py -> /home/jonatan/ros2_ws/build/first_project/build/lib/first_project
+[2.237s] copying first_project/publish_node.py -> /home/jonatan/ros2_ws/build/first_project/build/lib/first_project
+[2.237s] copying first_project/__init__.py -> /home/jonatan/ros2_ws/build/first_project/build/lib/first_project
+[2.240s] running install
+[2.249s] running install_lib
+[2.285s] creating /home/jonatan/ros2_ws/install/first_project/lib/python3.12/site-packages/first_project
+[2.285s] copying /home/jonatan/ros2_ws/build/first_project/build/lib/first_project/subscriber_node.py -> /home/jonatan/ros2_ws/install/first_project/lib/python3.12/site-packages/first_project
+[2.286s] copying /home/jonatan/ros2_ws/build/first_project/build/lib/first_project/publish_node.py -> /home/jonatan/ros2_ws/install/first_project/lib/python3.12/site-packages/first_project
+[2.286s] copying /home/jonatan/ros2_ws/build/first_project/build/lib/first_project/__init__.py -> /home/jonatan/ros2_ws/install/first_project/lib/python3.12/site-packages/first_project
+[2.286s] byte-compiling /home/jonatan/ros2_ws/install/first_project/lib/python3.12/site-packages/first_project/subscriber_node.py to subscriber_node.cpython-312.pyc
+[2.287s] byte-compiling /home/jonatan/ros2_ws/install/first_project/lib/python3.12/site-packages/first_project/publish_node.py to publish_node.cpython-312.pyc
+[2.288s] byte-compiling /home/jonatan/ros2_ws/install/first_project/lib/python3.12/site-packages/first_project/__init__.py to __init__.cpython-312.pyc
+[2.288s] running install_data
+[2.288s] creating /home/jonatan/ros2_ws/install/first_project/share/ament_index
+[2.288s] creating /home/jonatan/ros2_ws/install/first_project/share/ament_index/resource_index
+[2.289s] creating /home/jonatan/ros2_ws/install/first_project/share/ament_index/resource_index/packages
+[2.289s] copying resource/first_project -> /home/jonatan/ros2_ws/install/first_project/share/ament_index/resource_index/packages
+[2.290s] copying package.xml -> /home/jonatan/ros2_ws/install/first_project/share/first_project
+[2.290s] creating /home/jonatan/ros2_ws/install/first_project/share/first_project/launch
+[2.290s] copying launch/my_launch.py -> /home/jonatan/ros2_ws/install/first_project/share/first_project/launch
+[2.294s] running install_egg_info
+[2.334s] Copying ../../build/first_project/first_project.egg-info to /home/jonatan/ros2_ws/install/first_project/lib/python3.12/site-packages/first_project-0.0.0-py3.12.egg-info
+[2.336s] running install_scripts
+[2.594s] Installing reciever script to /home/jonatan/ros2_ws/install/first_project/lib/first_project
+[2.594s] Installing sender script to /home/jonatan/ros2_ws/install/first_project/lib/first_project
+[2.595s] writing list of installed files to '/home/jonatan/ros2_ws/build/first_project/install.log'
+[2.650s] Invoked command in '/home/jonatan/ros2_ws/src/first_project' returned '0': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/jonatan/ros2_ws/build/first_project/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jonatan/ros2_ws/install/first_project/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/first_project build --build-base /home/jonatan/ros2_ws/build/first_project/build install --record /home/jonatan/ros2_ws/build/first_project/install.log --single-version-externally-managed install_data

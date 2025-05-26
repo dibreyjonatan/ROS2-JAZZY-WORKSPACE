@@ -1,0 +1,28 @@
+[0.011s] Invoking command in '/home/jonatan/ros2_ws/build/articubot_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake /home/jonatan/ros2_ws/src/articubot_one -DCMAKE_INSTALL_PREFIX=/home/jonatan/ros2_ws/install/articubot_one
+[0.024s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.232s] -- Found rclpy: 7.1.4 (/opt/ros/jazzy/share/rclpy/cmake)
+[0.233s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[0.260s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.270s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.281s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.296s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.383s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[0.412s] [31mCMake Error at CMakeLists.txt:29 (find_package):
+[0.412s]   By not providing "Findlaunch.cmake" in CMAKE_MODULE_PATH this project has
+[0.412s]   asked CMake to find a package configuration file provided by "launch", but
+[0.412s]   CMake did not find one.
+[0.412s] 
+[0.412s]   Could not find a package configuration file provided by "launch" with any
+[0.412s]   of the following names:
+[0.412s] 
+[0.413s]     launchConfig.cmake
+[0.413s]     launch-config.cmake
+[0.413s] 
+[0.413s]   Add the installation prefix of "launch" to CMAKE_PREFIX_PATH or set
+[0.413s]   "launch_DIR" to a directory containing one of the above files.  If "launch"
+[0.413s]   provides a separate development package or SDK, be sure it has been
+[0.413s]   installed.
+[0.413s] 
+[0.413s] [0m
+[0.413s] -- Configuring incomplete, errors occurred!
+[0.417s] Invoked command in '/home/jonatan/ros2_ws/build/articubot_one' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake /home/jonatan/ros2_ws/src/articubot_one -DCMAKE_INSTALL_PREFIX=/home/jonatan/ros2_ws/install/articubot_one

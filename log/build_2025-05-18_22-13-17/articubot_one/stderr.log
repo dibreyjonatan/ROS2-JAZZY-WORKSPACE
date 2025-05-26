@@ -1,0 +1,4 @@
+[31mCMake Error at CMakeLists.txt:49 (ament_add_ros_test):
+  Unknown CMake command "ament_add_ros_test".
+
+[0m

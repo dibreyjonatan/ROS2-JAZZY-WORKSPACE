@@ -1,0 +1,1622 @@
+[0.000000] (-) TimerEvent: {}
+[0.000399] (articubot_one) JobQueued: {'identifier': 'articubot_one', 'dependencies': OrderedDict({'articubot_one': '/home/jonatan/ros2_ws/install/articubot_one'})}
+[0.001170] (articubot_one) JobStarted: {'identifier': 'articubot_one'}
+[0.032393] (articubot_one) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process'], 'cwd': '/home/jonatan/ros2_ws/build/articubot_one', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'XDG_ACTIVATION_TOKEN': '2ddf9c17-5cf4-48ad-bc40-f39f8ecbfeb7', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jonatan', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'LESS': '-R', 'HOME': '/home/jonatan', 'OLDPWD': '/home/jonatan', 'DESKTOP_SESSION': 'ubuntu', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'ZSH': '/home/jonatan/.oh-my-zsh', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'less', 'PS1': '\\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$', 'MANAGERPID': '2008', 'P9K_TTY': 'old', 'SYSTEMD_EXEC_PID': '2272', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3097', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'jonatan', '_P9K_SSH_TTY': '/dev/pts/2', 'JOURNAL_STREAM': '9:19463', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'jonatan', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/HP-EliteBook-x360-1030-G2:@/tmp/.ICE-unix/2219,unix/HP-EliteBook-x360-1030-G2:/tmp/.ICE-unix/2219', 'INVOCATION_ID': '1d5efdbd10c34d46a8570a6c200c5332', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.DBMW62', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/jonatan/ros2_ws/install/articubot_one:/opt/ros/jazzy', 'SHELL': '/usr/bin/zsh', 'TERMINATOR_UUID': 'urn:uuid:0947d2af-0509-4362-9f98-b841aba16eb4', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'GJS_DEBUG_OUTPUT': 'stderr', 'P9K_SSH': '0', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/jonatan/ros2_ws/build/articubot_one', 'LC_ALL': 'en_US.UTF-8', '_P9K_TTY': '/dev/pts/2', 'XDG_DATA_DIRS': '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jonatan/ros2_ws/install/articubot_one/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/jonatan/ros2_ws/install/articubot_one:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}), 'shell': False}
+[0.045251] (articubot_one) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/jonatan/ros2_ws/build/articubot_one/CTestConfiguration.ini\n'}
+[0.045593] (articubot_one) StdoutLine: {'line': b'Parse Config file:/home/jonatan/ros2_ws/build/articubot_one/CTestConfiguration.ini\n'}
+[0.045887] (articubot_one) StdoutLine: {'line': b'   Site: HP-EliteBook-x360-1030-G2\n'}
+[0.046133] (articubot_one) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[0.046302] (articubot_one) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[0.046462] (articubot_one) StdoutLine: {'line': b'Create new tag: 20250518-1830 - Experimental\n'}
+[0.046623] (articubot_one) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/jonatan/ros2_ws/build/articubot_one/CTestConfiguration.ini\n'}
+[0.046784] (articubot_one) StdoutLine: {'line': b'Parse Config file:/home/jonatan/ros2_ws/build/articubot_one/CTestConfiguration.ini\n'}
+[0.047061] (articubot_one) StdoutLine: {'line': b'Test project /home/jonatan/ros2_ws/build/articubot_one\n'}
+[0.047313] (articubot_one) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[0.047498] (articubot_one) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[0.047675] (articubot_one) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[0.047849] (articubot_one) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[0.048116] (articubot_one) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[0.048262] (articubot_one) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[0.048405] (articubot_one) StdoutLine: {'line': b'test 1\n'}
+[0.048549] (articubot_one) StdoutLine: {'line': b'    Start 1: laser_obstacle_test\n'}
+[0.048690] (articubot_one) StdoutLine: {'line': b'\n'}
+[0.048832] (articubot_one) StdoutLine: {'line': b'1: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/laser_obstacle_test.xunit.xml" "--package-name" "articubot_one" "--output-file" "/home/jonatan/ros2_ws/build/articubot_one/ament_cmake_pytest/laser_obstacle_test.txt" "--command" "/usr/bin/python3" "-u" "-m" "pytest" "/home/jonatan/ros2_ws/src/articubot_one/test/pytest/test_laserObstacle.py" "-o" "cache_dir=/home/jonatan/ros2_ws/build/articubot_one/ament_cmake_pytest/laser_obstacle_test/.cache" "--junit-xml=/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/laser_obstacle_test.xunit.xml" "--junit-prefix=articubot_one"\n'}
+[0.049008] (articubot_one) StdoutLine: {'line': b'1: Working Directory: /home/jonatan/ros2_ws/build/articubot_one\n'}
+[0.049153] (articubot_one) StdoutLine: {'line': b'1: Test timeout computed to be: 60\n'}
+[0.100017] (-) TimerEvent: {}
+[0.127629] (articubot_one) StdoutLine: {'line': b"1: -- run_test.py: invoking following command in '/home/jonatan/ros2_ws/build/articubot_one':\n"}
+[0.127827] (articubot_one) StdoutLine: {'line': b'1:  - /usr/bin/python3 -u -m pytest /home/jonatan/ros2_ws/src/articubot_one/test/pytest/test_laserObstacle.py -o cache_dir=/home/jonatan/ros2_ws/build/articubot_one/ament_cmake_pytest/laser_obstacle_test/.cache --junit-xml=/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/laser_obstacle_test.xunit.xml --junit-prefix=articubot_one\n'}
+[0.200106] (-) TimerEvent: {}
+[0.300387] (-) TimerEvent: {}
+[0.400660] (-) TimerEvent: {}
+[0.500932] (-) TimerEvent: {}
+[0.576243] (articubot_one) StdoutLine: {'line': b'1: ============================= test session starts ==============================\n'}
+[0.576492] (articubot_one) StdoutLine: {'line': b'1: platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0\n'}
+[0.581706] (articubot_one) StdoutLine: {'line': b'1: cachedir: /home/jonatan/ros2_ws/build/articubot_one/ament_cmake_pytest/laser_obstacle_test/.cache\n'}
+[0.581993] (articubot_one) StdoutLine: {'line': b'1: rootdir: /home/jonatan/ros2_ws/src/articubot_one\n'}
+[0.582167] (articubot_one) StdoutLine: {'line': b'1: plugins: launch-testing-3.4.4, ament-xmllint-0.17.2, ament-pep257-0.17.2, ament-copyright-0.17.2, ament-flake8-0.17.2, launch-testing-ros-0.26.7, ament-lint-0.17.2, cov-4.1.0, typeguard-4.1.5, colcon-core-0.19.0\n'}
+[0.601030] (-) TimerEvent: {}
+[0.701327] (-) TimerEvent: {}
+[0.801616] (-) TimerEvent: {}
+[0.811119] (articubot_one) StdoutLine: {'line': b'1: collected 3 items\n'}
+[0.811777] (articubot_one) StdoutLine: {'line': b'1: \n'}
+[0.901739] (-) TimerEvent: {}
+[0.913528] (articubot_one) StdoutLine: {'line': b'1: ../../src/articubot_one/test/pytest/test_laserObstacle.py F.F            [100%]\n'}
+[0.913785] (articubot_one) StdoutLine: {'line': b'1: \n'}
+[0.913998] (articubot_one) StdoutLine: {'line': b'1: =================================== FAILURES ===================================\n'}
+[0.914395] (articubot_one) StdoutLine: {'line': b'1: ______________________________ test_node_creation ______________________________\n'}
+[0.914585] (articubot_one) StdoutLine: {'line': b'1: \n'}
+[0.915189] (articubot_one) StdoutLine: {'line': b'1:     def test_node_creation():\n'}
+[0.915360] (articubot_one) StdoutLine: {'line': b'1:         rclpy.init\n'}
+[0.915535] (articubot_one) StdoutLine: {'line': b'1:         try :\n'}
+[0.915688] (articubot_one) StdoutLine: {'line': b'1: >           node=Obstacle()\n'}
+[0.915837] (articubot_one) StdoutLine: {'line': b'1: \n'}
+[0.916469] (articubot_one) StdoutLine: {'line': b'1: ../../src/articubot_one/test/pytest/test_laserObstacle.py:13: \n'}
+[0.916644] (articubot_one) StdoutLine: {'line': b'1: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n'}
+[0.916871] (articubot_one) StdoutLine: {'line': b'1: ../../install/articubot_one/lib/python3.12/site-packages/articubot_one/obstacle_avoidance.py:15: in __init__\n'}
+[0.917062] (articubot_one) StdoutLine: {'line': b'1:     super().__init__("Laser_Obstacle_Avoidance")\n'}
+[0.917220] (articubot_one) StdoutLine: {'line': b'1: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n'}
+[0.917369] (articubot_one) StdoutLine: {'line': b'1: \n'}
+[0.917513] (articubot_one) StdoutLine: {'line': b'1: self = <articubot_one.obstacle_avoidance.Obstacle object at 0x7d5b9451b380>\n'}
+[0.917667] (articubot_one) StdoutLine: {'line': b"1: node_name = 'Laser_Obstacle_Avoidance'\n"}
+[0.917805] (articubot_one) StdoutLine: {'line': b'1: \n'}
+[0.917956] (articubot_one) StdoutLine: {'line': b'1:     def __init__(\n'}
+[0.918103] (articubot_one) StdoutLine: {'line': b'1:         self,\n'}
+[0.918244] (articubot_one) StdoutLine: {'line': b'1:         node_name: str,\n'}
+[0.918384] (articubot_one) StdoutLine: {'line': b'1:         *,\n'}
+[0.918524] (articubot_one) StdoutLine: {'line': b'1:         context: Optional[Context] = None,\n'}
+[0.918665] (articubot_one) StdoutLine: {'line': b'1:         cli_args: Optional[List[str]] = None,\n'}
+[0.918804] (articubot_one) StdoutLine: {'line': b'1:         namespace: Optional[str] = None,\n'}
+[0.918958] (articubot_one) StdoutLine: {'line': b'1:         use_global_arguments: bool = True,\n'}
+[0.919105] (articubot_one) StdoutLine: {'line': b'1:         enable_rosout: bool = True,\n'}
+[0.919229] (articubot_one) StdoutLine: {'line': b'1:         start_parameter_services: bool = True,\n'}
+[0.919362] (articubot_one) StdoutLine: {'line': b'1:         parameter_overrides: Optional[List[Parameter]] = None,\n'}
+[0.919497] (articubot_one) StdoutLine: {'line': b'1:         allow_undeclared_parameters: bool = False,\n'}
+[0.919632] (articubot_one) StdoutLine: {'line': b'1:         automatically_declare_parameters_from_overrides: bool = False,\n'}
+[0.919768] (articubot_one) StdoutLine: {'line': b'1:         enable_logger_service: bool = False\n'}
+[0.919912] (articubot_one) StdoutLine: {'line': b'1:     ) -> None:\n'}
+[0.920084] (articubot_one) StdoutLine: {'line': b'1:         """\n'}
+[0.920217] (articubot_one) StdoutLine: {'line': b'1:         Create a Node.\n'}
+[0.920353] (articubot_one) StdoutLine: {'line': b'1:     \n'}
+[0.920489] (articubot_one) StdoutLine: {'line': b'1:         :param node_name: A name to give to this node. Validated by :func:`validate_node_name`.\n'}
+[0.920626] (articubot_one) StdoutLine: {'line': b'1:         :param context: The context to be associated with, or ``None`` for the default global\n'}
+[0.920760] (articubot_one) StdoutLine: {'line': b'1:             context.\n'}
+[0.920905] (articubot_one) StdoutLine: {'line': b'1:         :param cli_args: A list of strings of command line args to be used only by this node.\n'}
+[0.921072] (articubot_one) StdoutLine: {'line': b'1:             These arguments are used to extract remappings used by the node and other ROS specific\n'}
+[0.921219] (articubot_one) StdoutLine: {'line': b'1:             settings, as well as user defined non-ROS arguments.\n'}
+[0.921362] (articubot_one) StdoutLine: {'line': b'1:         :param namespace: The namespace to which relative topic and service names will be prefixed.\n'}
+[0.921513] (articubot_one) StdoutLine: {'line': b'1:             Validated by :func:`validate_namespace`.\n'}
+[0.921672] (articubot_one) StdoutLine: {'line': b'1:         :param use_global_arguments: ``False`` if the node should ignore process-wide command line\n'}
+[0.921812] (articubot_one) StdoutLine: {'line': b'1:             args.\n'}
+[0.922005] (articubot_one) StdoutLine: {'line': b'1:         :param enable_rosout: ``False`` if the node should ignore rosout logging.\n'}
+[0.922145] (articubot_one) StdoutLine: {'line': b'1:         :param start_parameter_services: ``False`` if the node should not create parameter\n'}
+[0.922277] (articubot_one) StdoutLine: {'line': b'1:             services.\n'}
+[0.922414] (articubot_one) StdoutLine: {'line': b'1:         :param parameter_overrides: A list of overrides for initial values for parameters declared\n'}
+[0.922546] (articubot_one) StdoutLine: {'line': b'1:             on the node.\n'}
+[0.922678] (articubot_one) StdoutLine: {'line': b'1:         :param allow_undeclared_parameters: True if undeclared parameters are allowed.\n'}
+[0.922815] (articubot_one) StdoutLine: {'line': b'1:             This flag affects the behavior of parameter-related operations.\n'}
+[0.923017] (articubot_one) StdoutLine: {'line': b'1:         :param automatically_declare_parameters_from_overrides: If True, the "parameter overrides"\n'}
+[0.923175] (articubot_one) StdoutLine: {'line': b'1:             will be used to implicitly declare parameters on the node during creation.\n'}
+[0.923316] (articubot_one) StdoutLine: {'line': b'1:         :param enable_logger_service: ``True`` if ROS2 services are created to allow external nodes\n'}
+[0.923453] (articubot_one) StdoutLine: {'line': b'1:             to get and set logger levels of this node. Otherwise, logger levels are only managed\n'}
+[0.923587] (articubot_one) StdoutLine: {'line': b'1:             locally. That is, logger levels cannot be changed remotely.\n'}
+[0.923722] (articubot_one) StdoutLine: {'line': b'1:         """\n'}
+[0.923856] (articubot_one) StdoutLine: {'line': b'1:         self.__handle = None\n'}
+[0.924042] (articubot_one) StdoutLine: {'line': b'1:         self._context = get_default_context() if context is None else context\n'}
+[0.924176] (articubot_one) StdoutLine: {'line': b'1:         self._parameters: dict = {}\n'}
+[0.924309] (articubot_one) StdoutLine: {'line': b'1:         self._publishers: List[Publisher] = []\n'}
+[0.924443] (articubot_one) StdoutLine: {'line': b'1:         self._subscriptions: List[Subscription] = []\n'}
+[0.924578] (articubot_one) StdoutLine: {'line': b'1:         self._clients: List[Client] = []\n'}
+[0.924710] (articubot_one) StdoutLine: {'line': b'1:         self._services: List[Service] = []\n'}
+[0.924841] (articubot_one) StdoutLine: {'line': b'1:         self._timers: List[Timer] = []\n'}
+[0.925021] (articubot_one) StdoutLine: {'line': b'1:         self._guards: List[GuardCondition] = []\n'}
+[0.925162] (articubot_one) StdoutLine: {'line': b'1:         self.__waitables: List[Waitable] = []\n'}
+[0.925310] (articubot_one) StdoutLine: {'line': b'1:         self._default_callback_group = MutuallyExclusiveCallbackGroup()\n'}
+[0.925458] (articubot_one) StdoutLine: {'line': b'1:         self._pre_set_parameters_callbacks: List[Callable[[List[Parameter]], List[Parameter]]] = []\n'}
+[0.925592] (articubot_one) StdoutLine: {'line': b'1:         self._on_set_parameters_callbacks: \\\n'}
+[0.925723] (articubot_one) StdoutLine: {'line': b'1:             List[Callable[[List[Parameter]], SetParametersResult]] = []\n'}
+[0.925867] (articubot_one) StdoutLine: {'line': b'1:         self._post_set_parameters_callbacks: List[Callable[[List[Parameter]], None]] = []\n'}
+[0.926051] (articubot_one) StdoutLine: {'line': b'1:         self._rate_group = ReentrantCallbackGroup()\n'}
+[0.926192] (articubot_one) StdoutLine: {'line': b'1:         self._allow_undeclared_parameters = allow_undeclared_parameters\n'}
+[0.926329] (articubot_one) StdoutLine: {'line': b'1:         self._parameter_overrides = {}\n'}
+[0.926466] (articubot_one) StdoutLine: {'line': b'1:         self._descriptors = {}\n'}
+[0.926598] (articubot_one) StdoutLine: {'line': b'1:     \n'}
+[0.926742] (articubot_one) StdoutLine: {'line': b"1:         namespace = namespace or ''\n"}
+[0.926876] (articubot_one) StdoutLine: {'line': b'1:         if not self._context.ok():\n'}
+[0.927059] (articubot_one) StdoutLine: {'line': b"1: >           raise NotInitializedException('cannot create node')\n"}
+[0.927213] (articubot_one) StdoutLine: {'line': b'1: E           rclpy.exceptions.NotInitializedException: rclpy.init() has not been called. msg:cannot create node\n'}
+[0.927352] (articubot_one) StdoutLine: {'line': b'1: \n'}
+[0.927489] (articubot_one) StdoutLine: {'line': b'1: /opt/ros/jazzy/lib/python3.12/site-packages/rclpy/node.py:184: NotInitializedException\n'}
+[0.927627] (articubot_one) StdoutLine: {'line': b'1: ________________________________ test_obstacle _________________________________\n'}
+[0.927768] (articubot_one) StdoutLine: {'line': b'1: \n'}
+[0.927917] (articubot_one) StdoutLine: {'line': b'1:     def test_obstacle():\n'}
+[0.928071] (articubot_one) StdoutLine: {'line': b'1:         rclpy.init\n'}
+[0.928211] (articubot_one) StdoutLine: {'line': b'1:         try :\n'}
+[0.928352] (articubot_one) StdoutLine: {'line': b'1: >           node=Obstacle()\n'}
+[0.928493] (articubot_one) StdoutLine: {'line': b'1: \n'}
+[0.928635] (articubot_one) StdoutLine: {'line': b'1: ../../src/articubot_one/test/pytest/test_laserObstacle.py:33: \n'}
+[0.928777] (articubot_one) StdoutLine: {'line': b'1: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n'}
+[0.928934] (articubot_one) StdoutLine: {'line': b'1: ../../install/articubot_one/lib/python3.12/site-packages/articubot_one/obstacle_avoidance.py:15: in __init__\n'}
+[0.929085] (articubot_one) StdoutLine: {'line': b'1:     super().__init__("Laser_Obstacle_Avoidance")\n'}
+[0.929228] (articubot_one) StdoutLine: {'line': b'1: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n'}
+[0.929368] (articubot_one) StdoutLine: {'line': b'1: \n'}
+[0.929505] (articubot_one) StdoutLine: {'line': b'1: self = <articubot_one.obstacle_avoidance.Obstacle object at 0x7d5b9425ad80>\n'}
+[0.929642] (articubot_one) StdoutLine: {'line': b"1: node_name = 'Laser_Obstacle_Avoidance'\n"}
+[0.929779] (articubot_one) StdoutLine: {'line': b'1: \n'}
+[0.929925] (articubot_one) StdoutLine: {'line': b'1:     def __init__(\n'}
+[0.930075] (articubot_one) StdoutLine: {'line': b'1:         self,\n'}
+[0.930213] (articubot_one) StdoutLine: {'line': b'1:         node_name: str,\n'}
+[0.930355] (articubot_one) StdoutLine: {'line': b'1:         *,\n'}
+[0.930500] (articubot_one) StdoutLine: {'line': b'1:         context: Optional[Context] = None,\n'}
+[0.930662] (articubot_one) StdoutLine: {'line': b'1:         cli_args: Optional[List[str]] = None,\n'}
+[0.930806] (articubot_one) StdoutLine: {'line': b'1:         namespace: Optional[str] = None,\n'}
+[0.930969] (articubot_one) StdoutLine: {'line': b'1:         use_global_arguments: bool = True,\n'}
+[0.931117] (articubot_one) StdoutLine: {'line': b'1:         enable_rosout: bool = True,\n'}
+[0.931257] (articubot_one) StdoutLine: {'line': b'1:         start_parameter_services: bool = True,\n'}
+[0.931396] (articubot_one) StdoutLine: {'line': b'1:         parameter_overrides: Optional[List[Parameter]] = None,\n'}
+[0.931533] (articubot_one) StdoutLine: {'line': b'1:         allow_undeclared_parameters: bool = False,\n'}
+[0.931670] (articubot_one) StdoutLine: {'line': b'1:         automatically_declare_parameters_from_overrides: bool = False,\n'}
+[0.931805] (articubot_one) StdoutLine: {'line': b'1:         enable_logger_service: bool = False\n'}
+[0.931957] (articubot_one) StdoutLine: {'line': b'1:     ) -> None:\n'}
+[0.932105] (articubot_one) StdoutLine: {'line': b'1:         """\n'}
+[0.932244] (articubot_one) StdoutLine: {'line': b'1:         Create a Node.\n'}
+[0.932379] (articubot_one) StdoutLine: {'line': b'1:     \n'}
+[0.932515] (articubot_one) StdoutLine: {'line': b'1:         :param node_name: A name to give to this node. Validated by :func:`validate_node_name`.\n'}
+[0.932666] (articubot_one) StdoutLine: {'line': b'1:         :param context: The context to be associated with, or ``None`` for the default global\n'}
+[0.932809] (articubot_one) StdoutLine: {'line': b'1:             context.\n'}
+[0.932967] (articubot_one) StdoutLine: {'line': b'1:         :param cli_args: A list of strings of command line args to be used only by this node.\n'}
+[0.933112] (articubot_one) StdoutLine: {'line': b'1:             These arguments are used to extract remappings used by the node and other ROS specific\n'}
+[0.933252] (articubot_one) StdoutLine: {'line': b'1:             settings, as well as user defined non-ROS arguments.\n'}
+[0.933384] (articubot_one) StdoutLine: {'line': b'1:         :param namespace: The namespace to which relative topic and service names will be prefixed.\n'}
+[0.933514] (articubot_one) StdoutLine: {'line': b'1:             Validated by :func:`validate_namespace`.\n'}
+[0.933647] (articubot_one) StdoutLine: {'line': b'1:         :param use_global_arguments: ``False`` if the node should ignore process-wide command line\n'}
+[0.933786] (articubot_one) StdoutLine: {'line': b'1:             args.\n'}
+[0.933940] (articubot_one) StdoutLine: {'line': b'1:         :param enable_rosout: ``False`` if the node should ignore rosout logging.\n'}
+[0.934086] (articubot_one) StdoutLine: {'line': b'1:         :param start_parameter_services: ``False`` if the node should not create parameter\n'}
+[0.934226] (articubot_one) StdoutLine: {'line': b'1:             services.\n'}
+[0.934363] (articubot_one) StdoutLine: {'line': b'1:         :param parameter_overrides: A list of overrides for initial values for parameters declared\n'}
+[0.934504] (articubot_one) StdoutLine: {'line': b'1:             on the node.\n'}
+[0.934637] (articubot_one) StdoutLine: {'line': b'1:         :param allow_undeclared_parameters: True if undeclared parameters are allowed.\n'}
+[0.934773] (articubot_one) StdoutLine: {'line': b'1:             This flag affects the behavior of parameter-related operations.\n'}
+[0.934916] (articubot_one) StdoutLine: {'line': b'1:         :param automatically_declare_parameters_from_overrides: If True, the "parameter overrides"\n'}
+[0.935065] (articubot_one) StdoutLine: {'line': b'1:             will be used to implicitly declare parameters on the node during creation.\n'}
+[0.935203] (articubot_one) StdoutLine: {'line': b'1:         :param enable_logger_service: ``True`` if ROS2 services are created to allow external nodes\n'}
+[0.935350] (articubot_one) StdoutLine: {'line': b'1:             to get and set logger levels of this node. Otherwise, logger levels are only managed\n'}
+[0.935483] (articubot_one) StdoutLine: {'line': b'1:             locally. That is, logger levels cannot be changed remotely.\n'}
+[0.935617] (articubot_one) StdoutLine: {'line': b'1:         """\n'}
+[0.935749] (articubot_one) StdoutLine: {'line': b'1:         self.__handle = None\n'}
+[0.935883] (articubot_one) StdoutLine: {'line': b'1:         self._context = get_default_context() if context is None else context\n'}
+[0.936036] (articubot_one) StdoutLine: {'line': b'1:         self._parameters: dict = {}\n'}
+[0.936169] (articubot_one) StdoutLine: {'line': b'1:         self._publishers: List[Publisher] = []\n'}
+[0.936302] (articubot_one) StdoutLine: {'line': b'1:         self._subscriptions: List[Subscription] = []\n'}
+[0.936434] (articubot_one) StdoutLine: {'line': b'1:         self._clients: List[Client] = []\n'}
+[0.936567] (articubot_one) StdoutLine: {'line': b'1:         self._services: List[Service] = []\n'}
+[0.936699] (articubot_one) StdoutLine: {'line': b'1:         self._timers: List[Timer] = []\n'}
+[0.936829] (articubot_one) StdoutLine: {'line': b'1:         self._guards: List[GuardCondition] = []\n'}
+[0.936973] (articubot_one) StdoutLine: {'line': b'1:         self.__waitables: List[Waitable] = []\n'}
+[0.937110] (articubot_one) StdoutLine: {'line': b'1:         self._default_callback_group = MutuallyExclusiveCallbackGroup()\n'}
+[0.937240] (articubot_one) StdoutLine: {'line': b'1:         self._pre_set_parameters_callbacks: List[Callable[[List[Parameter]], List[Parameter]]] = []\n'}
+[0.937381] (articubot_one) StdoutLine: {'line': b'1:         self._on_set_parameters_callbacks: \\\n'}
+[0.937510] (articubot_one) StdoutLine: {'line': b'1:             List[Callable[[List[Parameter]], SetParametersResult]] = []\n'}
+[0.937640] (articubot_one) StdoutLine: {'line': b'1:         self._post_set_parameters_callbacks: List[Callable[[List[Parameter]], None]] = []\n'}
+[0.937769] (articubot_one) StdoutLine: {'line': b'1:         self._rate_group = ReentrantCallbackGroup()\n'}
+[0.937905] (articubot_one) StdoutLine: {'line': b'1:         self._allow_undeclared_parameters = allow_undeclared_parameters\n'}
+[0.938047] (articubot_one) StdoutLine: {'line': b'1:         self._parameter_overrides = {}\n'}
+[0.938177] (articubot_one) StdoutLine: {'line': b'1:         self._descriptors = {}\n'}
+[0.938306] (articubot_one) StdoutLine: {'line': b'1:     \n'}
+[0.938434] (articubot_one) StdoutLine: {'line': b"1:         namespace = namespace or ''\n"}
+[0.938561] (articubot_one) StdoutLine: {'line': b'1:         if not self._context.ok():\n'}
+[0.938689] (articubot_one) StdoutLine: {'line': b"1: >           raise NotInitializedException('cannot create node')\n"}
+[0.938816] (articubot_one) StdoutLine: {'line': b'1: E           rclpy.exceptions.NotInitializedException: rclpy.init() has not been called. msg:cannot create node\n'}
+[0.938961] (articubot_one) StdoutLine: {'line': b'1: \n'}
+[0.939107] (articubot_one) StdoutLine: {'line': b'1: /opt/ros/jazzy/lib/python3.12/site-packages/rclpy/node.py:184: NotInitializedException\n'}
+[0.939252] (articubot_one) StdoutLine: {'line': b'1: - generated xml file: /home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/laser_obstacle_test.xunit.xml -\n'}
+[0.939396] (articubot_one) StdoutLine: {'line': b'1: =========================== short test summary info ============================\n'}
+[0.939539] (articubot_one) StdoutLine: {'line': b'1: FAILED ../../src/articubot_one/test/pytest/test_laserObstacle.py::test_node_creation\n'}
+[0.939684] (articubot_one) StdoutLine: {'line': b'1: FAILED ../../src/articubot_one/test/pytest/test_laserObstacle.py::test_obstacle\n'}
+[0.939840] (articubot_one) StdoutLine: {'line': b'1: ========================= 2 failed, 1 passed in 0.34s ==========================\n'}
+[1.001913] (-) TimerEvent: {}
+[1.027351] (articubot_one) StdoutLine: {'line': b'1: -- run_test.py: return code 1\n'}
+[1.027615] (articubot_one) StdoutLine: {'line': b"1: -- run_test.py: verify result file '/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/laser_obstacle_test.xunit.xml'\n"}
+[1.041932] (articubot_one) StdoutLine: {'line': b'1/6 Test #1: laser_obstacle_test ..............***Failed    0.99 sec\n'}
+[1.042368] (articubot_one) StdoutLine: {'line': b'test 2\n'}
+[1.042655] (articubot_one) StdoutLine: {'line': b'    Start 2: copyright\n'}
+[1.043002] (articubot_one) StdoutLine: {'line': b'\n'}
+[1.043151] (articubot_one) StdoutLine: {'line': b'2: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/copyright.xunit.xml" "--package-name" "articubot_one" "--output-file" "/home/jonatan/ros2_ws/build/articubot_one/ament_copyright/copyright.txt" "--command" "/opt/ros/jazzy/bin/ament_copyright" "--xunit-file" "/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/copyright.xunit.xml"\n'}
+[1.043279] (articubot_one) StdoutLine: {'line': b'2: Working Directory: /home/jonatan/ros2_ws/src/articubot_one\n'}
+[1.043389] (articubot_one) StdoutLine: {'line': b'2: Test timeout computed to be: 200\n'}
+[1.102032] (-) TimerEvent: {}
+[1.140908] (articubot_one) StdoutLine: {'line': b"2: -- run_test.py: invoking following command in '/home/jonatan/ros2_ws/src/articubot_one':\n"}
+[1.141210] (articubot_one) StdoutLine: {'line': b'2:  - /opt/ros/jazzy/bin/ament_copyright --xunit-file /home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/copyright.xunit.xml\n'}
+[1.202121] (-) TimerEvent: {}
+[1.302464] (-) TimerEvent: {}
+[1.402740] (-) TimerEvent: {}
+[1.434611] (articubot_one) StdoutLine: {'line': b'2: CONTRIBUTING.md: file not found\n'}
+[1.434953] (articubot_one) StdoutLine: {'line': b'2: LICENSE: file not found\n'}
+[1.435209] (articubot_one) StdoutLine: {'line': b'2: articubot_one/obstacle_avoidance.py: could not find copyright notice\n'}
+[1.435305] (articubot_one) StdoutLine: {'line': b'2: launch/ball_tracker.launch.py: could not find copyright notice\n'}
+[1.435403] (articubot_one) StdoutLine: {'line': b'2: launch/camera.launch.py: could not find copyright notice\n'}
+[1.435498] (articubot_one) StdoutLine: {'line': b'2: launch/joystick.launch.py: could not find copyright notice\n'}
+[1.435610] (articubot_one) StdoutLine: {'line': b'2: launch/launch_robot.launch.py: could not find copyright notice\n'}
+[1.435702] (articubot_one) StdoutLine: {'line': b'2: launch/launch_sim.launch.py: could not find copyright notice\n'}
+[1.435796] (articubot_one) StdoutLine: {'line': b'2: launch/online_async_launch.py: could not find copyright notice\n'}
+[1.435873] (articubot_one) StdoutLine: {'line': b'2: launch/rplidar.launch.py: could not find copyright notice\n'}
+[1.435970] (articubot_one) StdoutLine: {'line': b'2: launch/rsp.launch.py: could not find copyright notice\n'}
+[1.436050] (articubot_one) StdoutLine: {'line': b'2: launch/rviz_gazebo.launch.py: could not find copyright notice\n'}
+[1.436129] (articubot_one) StdoutLine: {'line': b'2: test/pytest/test_laserObstacle.py: could not find copyright notice\n'}
+[1.436207] (articubot_one) StdoutLine: {'line': b'2: 13 errors, checked 16 files\n'}
+[1.451583] (articubot_one) StdoutLine: {'line': b'2: -- run_test.py: return code 1\n'}
+[1.451901] (articubot_one) StdoutLine: {'line': b"2: -- run_test.py: verify result file '/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/copyright.xunit.xml'\n"}
+[1.463019] (articubot_one) StdoutLine: {'line': b'2/6 Test #2: copyright ........................***Failed    0.42 sec\n'}
+[1.463304] (articubot_one) StdoutLine: {'line': b'test 3\n'}
+[1.463398] (articubot_one) StdoutLine: {'line': b'    Start 3: flake8\n'}
+[1.463484] (articubot_one) StdoutLine: {'line': b'\n'}
+[1.463570] (articubot_one) StdoutLine: {'line': b'3: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/flake8.xunit.xml" "--package-name" "articubot_one" "--output-file" "/home/jonatan/ros2_ws/build/articubot_one/ament_flake8/flake8.txt" "--command" "/opt/ros/jazzy/bin/ament_flake8" "--xunit-file" "/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/flake8.xunit.xml"\n'}
+[1.463658] (articubot_one) StdoutLine: {'line': b'3: Working Directory: /home/jonatan/ros2_ws/src/articubot_one\n'}
+[1.463740] (articubot_one) StdoutLine: {'line': b'3: Test timeout computed to be: 60\n'}
+[1.502867] (-) TimerEvent: {}
+[1.542473] (articubot_one) StdoutLine: {'line': b"3: -- run_test.py: invoking following command in '/home/jonatan/ros2_ws/src/articubot_one':\n"}
+[1.542643] (articubot_one) StdoutLine: {'line': b'3:  - /opt/ros/jazzy/bin/ament_flake8 --xunit-file /home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/flake8.xunit.xml\n'}
+[1.602993] (-) TimerEvent: {}
+[1.703266] (-) TimerEvent: {}
+[1.803537] (-) TimerEvent: {}
+[1.905940] (-) TimerEvent: {}
+[1.956231] (articubot_one) StdoutLine: {'line': b'3: from geometry_msgs.msg import Twist\n'}
+[1.957163] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[1.957413] (articubot_one) StdoutLine: {'line': b'3: import math\n'}
+[1.958240] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[1.958471] (articubot_one) StdoutLine: {'line': b'3: import math\n'}
+[1.958676] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[1.958875] (articubot_one) StdoutLine: {'line': b'3: # i am writing down this piece of code with paramters \n'}
+[1.959093] (articubot_one) StdoutLine: {'line': b'3:                                                      ^\n'}
+[1.959290] (articubot_one) StdoutLine: {'line': b'3: # Paramters are for the node , it enables modularity and you can modify the parameters when executing the node \n'}
+[1.960105] (articubot_one) StdoutLine: {'line': b'3:                                                                                                    ^\n'}
+[1.960276] (articubot_one) StdoutLine: {'line': b'3: # Paramters are for the node , it enables modularity and you can modify the parameters when executing the node \n'}
+[1.960464] (articubot_one) StdoutLine: {'line': b'3:                                                                                                               ^\n'}
+[1.960655] (articubot_one) StdoutLine: {'line': b'3:     def __init__(self) :\n'}
+[1.960831] (articubot_one) StdoutLine: {'line': b'3:                       ^\n'}
+[1.961035] (articubot_one) StdoutLine: {'line': b'3:         super().__init__("Laser_Obstacle_Avoidance")\n'}
+[1.961237] (articubot_one) StdoutLine: {'line': b'3:                          ^\n'}
+[1.961407] (articubot_one) StdoutLine: {'line': b'3:         \n'}
+[1.961591] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[1.961779] (articubot_one) StdoutLine: {'line': b'3:         self.declare_parameter("threshold_distance",0.5)  # i can use 0.5m or 1m as threshold distance\n'}
+[1.962407] (articubot_one) StdoutLine: {'line': b'3:                                ^\n'}
+[1.962581] (articubot_one) StdoutLine: {'line': b'3:         self.declare_parameter("threshold_distance",0.5)  # i can use 0.5m or 1m as threshold distance\n'}
+[1.962745] (articubot_one) StdoutLine: {'line': b'3:                                                    ^\n'}
+[1.962933] (articubot_one) StdoutLine: {'line': b'3:         self.declare_parameter("threshold_distance",0.5)  # i can use 0.5m or 1m as threshold distance\n'}
+[1.963544] (articubot_one) StdoutLine: {'line': b'3:                                                                                                    ^\n'}
+[1.963705] (articubot_one) StdoutLine: {'line': b'3:         self.threshold=self.get_parameter("threshold_distance").value\n'}
+[1.963861] (articubot_one) StdoutLine: {'line': b'3:                       ^\n'}
+[1.964051] (articubot_one) StdoutLine: {'line': b'3:         self.threshold=self.get_parameter("threshold_distance").value\n'}
+[1.964253] (articubot_one) StdoutLine: {'line': b'3:                                           ^\n'}
+[1.964436] (articubot_one) StdoutLine: {'line': b'3:         \n'}
+[1.964611] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[1.964785] (articubot_one) StdoutLine: {'line': b'3:         self.declare_parameter("laser_scan_topic","/scan")\n'}
+[1.964974] (articubot_one) StdoutLine: {'line': b'3:                                ^\n'}
+[1.965151] (articubot_one) StdoutLine: {'line': b'3:         self.declare_parameter("laser_scan_topic","/scan")\n'}
+[1.965365] (articubot_one) StdoutLine: {'line': b'3:                                                  ^\n'}
+[1.965517] (articubot_one) StdoutLine: {'line': b'3:         self.declare_parameter("laser_scan_topic","/scan")\n'}
+[1.965656] (articubot_one) StdoutLine: {'line': b'3:                                                   ^\n'}
+[1.965803] (articubot_one) StdoutLine: {'line': b'3:         self.laser_topic=self.get_parameter("laser_scan_topic").value\n'}
+[1.965958] (articubot_one) StdoutLine: {'line': b'3:                         ^\n'}
+[1.966122] (articubot_one) StdoutLine: {'line': b'3:         self.laser_topic=self.get_parameter("laser_scan_topic").value\n'}
+[1.966285] (articubot_one) StdoutLine: {'line': b'3:                                             ^\n'}
+[1.966797] (articubot_one) StdoutLine: {'line': b'3:         \n'}
+[1.967454] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[1.967613] (articubot_one) StdoutLine: {'line': b'3:         self.declare_parameter("cmd_vel_topic","/cmd_vel")\n'}
+[1.967760] (articubot_one) StdoutLine: {'line': b'3:                                ^\n'}
+[1.968392] (articubot_one) StdoutLine: {'line': b'3:         self.declare_parameter("cmd_vel_topic","/cmd_vel")\n'}
+[1.968588] (articubot_one) StdoutLine: {'line': b'3:                                               ^\n'}
+[1.988435] (articubot_one) StdoutLine: {'line': b'3:         self.declare_parameter("cmd_vel_topic","/cmd_vel")\n'}
+[1.988711] (articubot_one) StdoutLine: {'line': b'3:                                                ^\n'}
+[1.988917] (articubot_one) StdoutLine: {'line': b'3:         self.cmd_topic=self.get_parameter("cmd_vel_topic").value\n'}
+[1.989244] (articubot_one) StdoutLine: {'line': b'3:                       ^\n'}
+[1.989418] (articubot_one) StdoutLine: {'line': b'3:         self.cmd_topic=self.get_parameter("cmd_vel_topic").value\n'}
+[1.989587] (articubot_one) StdoutLine: {'line': b'3:                                           ^\n'}
+[1.989756] (articubot_one) StdoutLine: {'line': b"3:         self.frontal_detection_angle_rad = math.radians(self.get_parameter('frontal_detection_angle_deg').value)\n"}
+[1.989948] (articubot_one) StdoutLine: {'line': b'3:                                                                                                    ^\n'}
+[1.990138] (articubot_one) StdoutLine: {'line': b'3:         #create a publisher to the /cmd_vel\n'}
+[1.990331] (articubot_one) StdoutLine: {'line': b'3:         ^\n'}
+[1.990500] (articubot_one) StdoutLine: {'line': b'3:         self.cmd_vel_pub = self.create_publisher(Twist,self.cmd_topic, 10)\n'}
+[1.990662] (articubot_one) StdoutLine: {'line': b'3:                                                       ^\n'}
+[1.990826] (articubot_one) StdoutLine: {'line': b'3:     def laser_callback(self,msg):\n'}
+[1.991006] (articubot_one) StdoutLine: {'line': b'3:     ^\n'}
+[1.991174] (articubot_one) StdoutLine: {'line': b'3:     def laser_callback(self,msg):\n'}
+[1.991337] (articubot_one) StdoutLine: {'line': b'3:                            ^\n'}
+[1.991502] (articubot_one) StdoutLine: {'line': b'3:   \n'}
+[1.991667] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[1.991827] (articubot_one) StdoutLine: {'line': b'3:         if not(scan_size) :\n'}
+[1.992023] (articubot_one) StdoutLine: {'line': b'3:               ^\n'}
+[1.992193] (articubot_one) StdoutLine: {'line': b'3:         if not(scan_size) :\n'}
+[1.992369] (articubot_one) StdoutLine: {'line': b'3:                          ^\n'}
+[1.992548] (articubot_one) StdoutLine: {'line': b'3:             #no laser data \n'}
+[1.992724] (articubot_one) StdoutLine: {'line': b'3:             ^\n'}
+[1.992904] (articubot_one) StdoutLine: {'line': b'3:             #no laser data \n'}
+[1.993095] (articubot_one) StdoutLine: {'line': b'3:                           ^\n'}
+[1.993272] (articubot_one) StdoutLine: {'line': b'3:             return \n'}
+[1.993444] (articubot_one) StdoutLine: {'line': b'3:                   ^\n'}
+[1.993612] (articubot_one) StdoutLine: {'line': b'3:         # the lidar provides angles,angle step (common difference of the angle sequence), distances in meter\n'}
+[1.993775] (articubot_one) StdoutLine: {'line': b'3:                                                                                                    ^\n'}
+[1.993958] (articubot_one) StdoutLine: {'line': b'3:         \n'}
+[1.994143] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[1.994325] (articubot_one) StdoutLine: {'line': b'3:         #for every angle in this sector, we get a valid distance and compare it with the angle_(i+1) in the sector so as to get the minimum distance\n'}
+[1.994531] (articubot_one) StdoutLine: {'line': b'3:         ^\n'}
+[1.994735] (articubot_one) StdoutLine: {'line': b'3:         #for every angle in this sector, we get a valid distance and compare it with the angle_(i+1) in the sector so as to get the minimum distance\n'}
+[1.994954] (articubot_one) StdoutLine: {'line': b'3:                                                                                                    ^\n'}
+[1.995179] (articubot_one) StdoutLine: {'line': b"3:         #we get an angle, we get it's corresponding distance and compare it's distance with a min distance\n"}
+[1.995382] (articubot_one) StdoutLine: {'line': b'3:         ^\n'}
+[1.995588] (articubot_one) StdoutLine: {'line': b"3:         #we get an angle, we get it's corresponding distance and compare it's distance with a min distance\n"}
+[1.995803] (articubot_one) StdoutLine: {'line': b'3:                                                                                                    ^\n'}
+[1.996020] (articubot_one) StdoutLine: {'line': b'3:         # At each round, we get the minimum distance since our objectif is to get the closest distance to an obstacle \n'}
+[1.996225] (articubot_one) StdoutLine: {'line': b'3:                                                                                                    ^\n'}
+[1.996426] (articubot_one) StdoutLine: {'line': b'3:         # At each round, we get the minimum distance since our objectif is to get the closest distance to an obstacle \n'}
+[1.996640] (articubot_one) StdoutLine: {'line': b'3:                                                                                                                      ^\n'}
+[1.996842] (articubot_one) StdoutLine: {'line': b'3:         # we are sweeping across all the angles with the increment \n'}
+[1.997067] (articubot_one) StdoutLine: {'line': b'3:                                                                   ^\n'}
+[1.997257] (articubot_one) StdoutLine: {'line': b'3:         # while sweeping we compare  only the ranges with the ones in the defined angle \n'}
+[1.997460] (articubot_one) StdoutLine: {'line': b'3:                                                                                        ^\n'}
+[1.997648] (articubot_one) StdoutLine: {'line': b'3:                  # If the range reading is valid (not inf or nan)\n'}
+[1.997831] (articubot_one) StdoutLine: {'line': b'3:                  ^\n'}
+[1.998035] (articubot_one) StdoutLine: {'line': b'3:                  # If the range reading is valid (not inf or nan)\n'}
+[1.998224] (articubot_one) StdoutLine: {'line': b'3:                  ^\n'}
+[1.998407] (articubot_one) StdoutLine: {'line': b'3:                  if not math.isinf(msg.ranges[i]) and not math.isnan(msg.ranges[i]):\n'}
+[1.998576] (articubot_one) StdoutLine: {'line': b'3:                  ^\n'}
+[1.998755] (articubot_one) StdoutLine: {'line': b'3:                  if not math.isinf(msg.ranges[i]) and not math.isnan(msg.ranges[i]):\n'}
+[1.998964] (articubot_one) StdoutLine: {'line': b'3:                  ^\n'}
+[1.999161] (articubot_one) StdoutLine: {'line': b'3:             \n'}
+[1.999365] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[1.999562] (articubot_one) StdoutLine: {'line': b'3:                      min_distance_in_frontal_sector = min(min_distance_in_frontal_sector, msg.ranges[i])\n'}
+[1.999770] (articubot_one) StdoutLine: {'line': b'3:                      ^\n'}
+[1.999999] (articubot_one) StdoutLine: {'line': b'3:                      min_distance_in_frontal_sector = min(min_distance_in_frontal_sector, msg.ranges[i])\n'}
+[2.000207] (articubot_one) StdoutLine: {'line': b'3:                                                                                                    ^\n'}
+[2.000400] (articubot_one) StdoutLine: {'line': b'3:         #  To stop the robot from moving ahead when ever it meets an obstacle, it will just go back \n'}
+[2.000588] (articubot_one) StdoutLine: {'line': b'3:                                                                                                    ^\n'}
+[2.000769] (articubot_one) StdoutLine: {'line': b'3:         if obstacle_detected :\n'}
+[2.000944] (articubot_one) StdoutLine: {'line': b'3:                             ^\n'}
+[2.001111] (articubot_one) StdoutLine: {'line': b"3:            self.get_logger().info(f'Obstacle detected at {min_distance_in_frontal_sector:.2f}m. Deciding to stop.')\n"}
+[2.001294] (articubot_one) StdoutLine: {'line': b'3:            ^\n'}
+[2.001485] (articubot_one) StdoutLine: {'line': b"3:            self.get_logger().info(f'Obstacle detected at {min_distance_in_frontal_sector:.2f}m. Deciding to stop.')\n"}
+[2.001682] (articubot_one) StdoutLine: {'line': b'3:                                                                                                    ^\n'}
+[2.001900] (articubot_one) StdoutLine: {'line': b'3:            twist.linear.x = 0.0\n'}
+[2.002132] (articubot_one) StdoutLine: {'line': b'3:            ^\n'}
+[2.002327] (articubot_one) StdoutLine: {'line': b'3:            twist.angular.z =0.0\n'}
+[2.002531] (articubot_one) StdoutLine: {'line': b'3:            ^\n'}
+[2.002727] (articubot_one) StdoutLine: {'line': b'3:            twist.angular.z =0.0\n'}
+[2.002928] (articubot_one) StdoutLine: {'line': b'3:                             ^\n'}
+[2.003149] (articubot_one) StdoutLine: {'line': b'3:            self.cmd_vel_pub.publish(twist)\n'}
+[2.003339] (articubot_one) StdoutLine: {'line': b'3:            ^\n'}
+[2.003531] (articubot_one) StdoutLine: {'line': b"3:            self.get_logger().info(f'No obstacle detected') \n"}
+[2.003720] (articubot_one) StdoutLine: {'line': b'3:            ^\n'}
+[2.003914] (articubot_one) StdoutLine: {'line': b"3:            self.get_logger().info(f'No obstacle detected') \n"}
+[2.004114] (articubot_one) StdoutLine: {'line': b'3:                                   ^\n'}
+[2.004301] (articubot_one) StdoutLine: {'line': b"3:            self.get_logger().info(f'No obstacle detected') \n"}
+[2.004487] (articubot_one) StdoutLine: {'line': b'3:                                                           ^\n'}
+[2.004669] (articubot_one) StdoutLine: {'line': b'3: def main(args=None):\n'}
+[2.004840] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.005036] (articubot_one) StdoutLine: {'line': b'3:         rclpy.spin(node) # Keep the node running and process callbacks\n'}
+[2.005218] (articubot_one) StdoutLine: {'line': b'3:                         ^\n'}
+[2.005397] (articubot_one) StdoutLine: {'line': b"3:         node.get_logger().info('Smart Obstacle Avoider Node stopped cleanly via KeyboardInterrupt.')\n"}
+[2.005579] (articubot_one) StdoutLine: {'line': b'3:                                                                                                    ^\n'}
+[2.005758] (articubot_one) StdoutLine: {'line': b"3: if __name__ == '__main__':\n"}
+[2.005947] (-) TimerEvent: {}
+[2.006104] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.006303] (articubot_one) StdoutLine: {'line': b'3:     main()    \n'}
+[2.006478] (articubot_one) StdoutLine: {'line': b'3:           ^\n'}
+[2.006651] (articubot_one) StdoutLine: {'line': b'3: from ament_index_python.packages import get_package_share_directory\n'}
+[2.006828] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.007038] (articubot_one) StdoutLine: {'line': b'3: from launch.actions import DeclareLaunchArgument\n'}
+[2.007223] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.007398] (articubot_one) StdoutLine: {'line': b"3:     my_package_name='articubot_one'\n"}
+[2.007565] (articubot_one) StdoutLine: {'line': b'3:                    ^\n'}
+[2.007721] (articubot_one) StdoutLine: {'line': b"3:     tracker_params_sim = os.path.join(get_package_share_directory(my_package_name),'config','ball_tracker_params_sim.yaml')\n"}
+[2.007878] (articubot_one) StdoutLine: {'line': b'3:                                                                                   ^\n'}
+[2.008087] (articubot_one) StdoutLine: {'line': b"3:     tracker_params_sim = os.path.join(get_package_share_directory(my_package_name),'config','ball_tracker_params_sim.yaml')\n"}
+[2.008261] (articubot_one) StdoutLine: {'line': b'3:                                                                                            ^\n'}
+[2.008441] (articubot_one) StdoutLine: {'line': b"3:     tracker_params_sim = os.path.join(get_package_share_directory(my_package_name),'config','ball_tracker_params_sim.yaml')\n"}
+[2.008610] (articubot_one) StdoutLine: {'line': b'3:                                                                                                    ^\n'}
+[2.008777] (articubot_one) StdoutLine: {'line': b"3:     tracker_params_robot = os.path.join(get_package_share_directory(my_package_name),'config','ball_tracker_params_robot.yaml')\n"}
+[2.008961] (articubot_one) StdoutLine: {'line': b'3:                                                                                     ^\n'}
+[2.009133] (articubot_one) StdoutLine: {'line': b"3:     tracker_params_robot = os.path.join(get_package_share_directory(my_package_name),'config','ball_tracker_params_robot.yaml')\n"}
+[2.009310] (articubot_one) StdoutLine: {'line': b'3:                                                                                              ^\n'}
+[2.009473] (articubot_one) StdoutLine: {'line': b"3:     tracker_params_robot = os.path.join(get_package_share_directory(my_package_name),'config','ball_tracker_params_robot.yaml')\n"}
+[2.009638] (articubot_one) StdoutLine: {'line': b'3:                                                                                                    ^\n'}
+[2.009808] (articubot_one) StdoutLine: {'line': b'3:     params_path = PythonExpression([\'"\',tracker_params_sim, \'" if "true" == "\', sim_mode, \'" else "\', tracker_params_robot, \'"\'])\n'}
+[2.010407] (articubot_one) StdoutLine: {'line': b'3:                                        ^\n'}
+[2.010624] (articubot_one) StdoutLine: {'line': b'3:     params_path = PythonExpression([\'"\',tracker_params_sim, \'" if "true" == "\', sim_mode, \'" else "\', tracker_params_robot, \'"\'])\n'}
+[2.010796] (articubot_one) StdoutLine: {'line': b'3:                                                                                                    ^\n'}
+[2.011003] (articubot_one) StdoutLine: {'line': b"3:                     get_package_share_directory('ball_tracker'), 'launch', 'ball_tracker.launch.py')]),\n"}
+[2.011271] (articubot_one) StdoutLine: {'line': b'3:                                                                                                    ^\n'}
+[2.011457] (articubot_one) StdoutLine: {'line': b"3:                     launch_arguments={'params_file': params_path,\n"}
+[2.011640] (articubot_one) StdoutLine: {'line': b'3:                     ^\n'}
+[2.011819] (articubot_one) StdoutLine: {'line': b"3:                                     'image_topic': '/camera/image_raw',\n"}
+[2.012013] (articubot_one) StdoutLine: {'line': b'3:                                     ^\n'}
+[2.012187] (articubot_one) StdoutLine: {'line': b"3:                                     'cmd_vel_topic': '/cmd_vel_tracker',\n"}
+[2.012344] (articubot_one) StdoutLine: {'line': b'3:                                     ^\n'}
+[2.012515] (articubot_one) StdoutLine: {'line': b"3:                                     'enable_3d_tracker': 'true'}.items())\n"}
+[2.012691] (articubot_one) StdoutLine: {'line': b'3:                                     ^\n'}
+[2.012872] (articubot_one) StdoutLine: {'line': b'3: import os\n'}
+[2.013079] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.013271] (articubot_one) StdoutLine: {'line': b'3: def generate_launch_description():\n'}
+[2.013465] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.013654] (articubot_one) StdoutLine: {'line': b'3:     return LaunchDescription([\n'}
+[2.013850] (articubot_one) StdoutLine: {'line': b'3:     ^\n'}
+[2.014066] (articubot_one) StdoutLine: {'line': b"3:                 'image_size': [640,480],\n"}
+[2.014263] (articubot_one) StdoutLine: {'line': b'3:                                   ^\n'}
+[2.014453] (articubot_one) StdoutLine: {'line': b'3:     )\n'}
+[2.014641] (articubot_one) StdoutLine: {'line': b'3:     ^\n'}
+[2.014829] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.015047] (articubot_one) StdoutLine: {'line': b"3: ./articubot_one/obstacle_avoidance.py:5:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Twist' should be before 'from sensor_msgs.msg import LaserScan'\n"}
+[2.015246] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.015435] (articubot_one) StdoutLine: {'line': b"3: ./articubot_one/obstacle_avoidance.py:6:1: I100 Import statements are in the wrong order. 'import math' should be before 'from geometry_msgs.msg import Twist' and in a different group.\n"}
+[2.015628] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.015815] (articubot_one) StdoutLine: {'line': b"3: ./articubot_one/obstacle_avoidance.py:6:1: I201 Missing newline between import groups. 'import math' is identified as Stdlib and 'from geometry_msgs.msg import Twist' is identified as Third Party.\n"}
+[2.016048] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.016244] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:9:54: W291 trailing whitespace\n'}
+[2.016435] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.016612] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:10:100: E501 line too long (110 > 99 characters)\n'}
+[2.016793] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.017007] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:10:111: W291 trailing whitespace\n'}
+[2.017229] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.017420] (articubot_one) StdoutLine: {'line': b"3: ./articubot_one/obstacle_avoidance.py:14:23: E203 whitespace before ':'\n"}
+[2.017608] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.017780] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:15:26: Q000 Double quotes found but single quotes preferred\n'}
+[2.017956] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.018120] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:16:1: W293 blank line contains whitespace\n'}
+[2.018292] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.018463] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:17:32: Q000 Double quotes found but single quotes preferred\n'}
+[2.018639] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.018820] (articubot_one) StdoutLine: {'line': b"3: ./articubot_one/obstacle_avoidance.py:17:52: E231 missing whitespace after ','\n"}
+[2.019026] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.019205] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:17:100: E501 line too long (102 > 99 characters)\n'}
+[2.019379] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.019537] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:18:23: E225 missing whitespace around operator\n'}
+[2.019699] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.019856] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:18:43: Q000 Double quotes found but single quotes preferred\n'}
+[2.020039] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.020204] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:19:1: W293 blank line contains whitespace\n'}
+[2.020367] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.020535] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:20:32: Q000 Double quotes found but single quotes preferred\n'}
+[2.020703] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.020868] (articubot_one) StdoutLine: {'line': b"3: ./articubot_one/obstacle_avoidance.py:20:50: E231 missing whitespace after ','\n"}
+[2.021048] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.021212] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:20:51: Q000 Double quotes found but single quotes preferred\n'}
+[2.021376] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.021533] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:21:25: E225 missing whitespace around operator\n'}
+[2.021680] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.021848] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:21:45: Q000 Double quotes found but single quotes preferred\n'}
+[2.022020] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.022178] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:22:1: W293 blank line contains whitespace\n'}
+[2.022324] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.022474] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:23:32: Q000 Double quotes found but single quotes preferred\n'}
+[2.022683] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.022877] (articubot_one) StdoutLine: {'line': b"3: ./articubot_one/obstacle_avoidance.py:23:47: E231 missing whitespace after ','\n"}
+[2.023065] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.023221] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:23:48: Q000 Double quotes found but single quotes preferred\n'}
+[2.023368] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.023514] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:24:23: E225 missing whitespace around operator\n'}
+[2.023661] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.023807] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:24:43: Q000 Double quotes found but single quotes preferred\n'}
+[2.023971] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.024122] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:29:100: E501 line too long (112 > 99 characters)\n'}
+[2.024270] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.024415] (articubot_one) StdoutLine: {'line': b"3: ./articubot_one/obstacle_avoidance.py:38:9: E265 block comment should start with '# '\n"}
+[2.024572] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.024717] (articubot_one) StdoutLine: {'line': b"3: ./articubot_one/obstacle_avoidance.py:39:55: E231 missing whitespace after ','\n"}
+[2.024873] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.025044] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:43:5: E303 too many blank lines (2)\n'}
+[2.025198] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.025358] (articubot_one) StdoutLine: {'line': b"3: ./articubot_one/obstacle_avoidance.py:43:28: E231 missing whitespace after ','\n"}
+[2.025535] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.025710] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:47:1: W293 blank line contains whitespace\n'}
+[2.025886] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.026083] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:48:15: E275 missing whitespace after keyword\n'}
+[2.026259] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.026434] (articubot_one) StdoutLine: {'line': b"3: ./articubot_one/obstacle_avoidance.py:48:26: E203 whitespace before ':'\n"}
+[2.026610] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.026786] (articubot_one) StdoutLine: {'line': b"3: ./articubot_one/obstacle_avoidance.py:49:13: E265 block comment should start with '# '\n"}
+[2.027031] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.027184] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:49:27: W291 trailing whitespace\n'}
+[2.027330] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.027476] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:50:19: W291 trailing whitespace\n'}
+[2.027621] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.027767] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:51:100: E501 line too long (108 > 99 characters)\n'}
+[2.027927] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.028084] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:56:1: W293 blank line contains whitespace\n'}
+[2.028244] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.028384] (articubot_one) StdoutLine: {'line': b"3: ./articubot_one/obstacle_avoidance.py:60:9: E265 block comment should start with '# '\n"}
+[2.028526] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.028666] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:60:100: E501 line too long (148 > 99 characters)\n'}
+[2.028807] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.028968] (articubot_one) StdoutLine: {'line': b"3: ./articubot_one/obstacle_avoidance.py:61:9: E265 block comment should start with '# '\n"}
+[2.029115] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.029255] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:61:100: E501 line too long (106 > 99 characters)\n'}
+[2.029397] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.029537] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:62:100: E501 line too long (117 > 99 characters)\n'}
+[2.029685] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.029826] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:62:118: W291 trailing whitespace\n'}
+[2.029958] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.030048] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:64:67: W291 trailing whitespace\n'}
+[2.030132] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.030213] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:65:88: W291 trailing whitespace\n'}
+[2.030295] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.030377] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:75:18: E114 indentation is not a multiple of 4 (comment)\n'}
+[2.030460] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.030541] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:75:18: E117 over-indented (comment)\n'}
+[2.030623] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.030704] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:76:18: E111 indentation is not a multiple of 4\n'}
+[2.030786] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.030866] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:76:18: E117 over-indented\n'}
+[2.030976] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.031060] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:77:1: W293 blank line contains whitespace\n'}
+[2.031142] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.031223] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:78:22: E111 indentation is not a multiple of 4\n'}
+[2.031304] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.031384] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:78:100: E501 line too long (104 > 99 characters)\n'}
+[2.031464] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.031578] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:86:100: W291 trailing whitespace\n'}
+[2.031663] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.031745] (articubot_one) StdoutLine: {'line': b"3: ./articubot_one/obstacle_avoidance.py:87:29: E203 whitespace before ':'\n"}
+[2.031826] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.031924] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:88:12: E111 indentation is not a multiple of 4\n'}
+[2.032017] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.032100] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:88:100: E501 line too long (115 > 99 characters)\n'}
+[2.032183] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.032264] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:89:12: E111 indentation is not a multiple of 4\n'}
+[2.032346] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.032427] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:90:12: E111 indentation is not a multiple of 4\n'}
+[2.032519] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.032602] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:90:29: E225 missing whitespace around operator\n'}
+[2.032684] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.032765] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:91:12: E111 indentation is not a multiple of 4\n'}
+[2.032845] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.032939] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:93:12: E111 indentation is not a multiple of 4\n'}
+[2.033025] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.033106] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:93:35: F541 f-string is missing placeholders\n'}
+[2.033188] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.033310] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:93:59: W291 trailing whitespace\n'}
+[2.033406] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.033489] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:95:1: E302 expected 2 blank lines, found 1\n'}
+[2.033571] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.033651] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:99:25: E261 at least two spaces before inline comment\n'}
+[2.033733] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.033813] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:101:100: E501 line too long (100 > 99 characters)\n'}
+[2.033903] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.033994] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:116:1: E305 expected 2 blank lines after class or function definition, found 1\n'}
+[2.034077] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.034158] (articubot_one) StdoutLine: {'line': b'3: ./articubot_one/obstacle_avoidance.py:117:11: W291 trailing whitespace\n'}
+[2.034238] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.034319] (articubot_one) StdoutLine: {'line': b"3: ./launch/ball_tracker.launch.py:2:1: I201 Missing newline between import groups. 'from ament_index_python.packages import get_package_share_directory' is identified as Third Party and 'import os' is identified as Stdlib.\n"}
+[2.034402] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.034483] (articubot_one) StdoutLine: {'line': b"3: ./launch/ball_tracker.launch.py:8:1: I100 Import statements are in the wrong order. 'from launch.actions import DeclareLaunchArgument' should be before 'from launch.substitutions import PythonExpression'\n"}
+[2.034580] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.034660] (articubot_one) StdoutLine: {'line': b'3: ./launch/ball_tracker.launch.py:13:20: E225 missing whitespace around operator\n'}
+[2.034741] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.034821] (articubot_one) StdoutLine: {'line': b"3: ./launch/ball_tracker.launch.py:17:83: E231 missing whitespace after ','\n"}
+[2.034912] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.035003] (articubot_one) StdoutLine: {'line': b"3: ./launch/ball_tracker.launch.py:17:92: E231 missing whitespace after ','\n"}
+[2.035085] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.035164] (articubot_one) StdoutLine: {'line': b'3: ./launch/ball_tracker.launch.py:17:100: E501 line too long (123 > 99 characters)\n'}
+[2.035246] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.035325] (articubot_one) StdoutLine: {'line': b"3: ./launch/ball_tracker.launch.py:18:85: E231 missing whitespace after ','\n"}
+[2.035405] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.035484] (articubot_one) StdoutLine: {'line': b"3: ./launch/ball_tracker.launch.py:18:94: E231 missing whitespace after ','\n"}
+[2.035565] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.035645] (articubot_one) StdoutLine: {'line': b'3: ./launch/ball_tracker.launch.py:18:100: E501 line too long (127 > 99 characters)\n'}
+[2.035725] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.035805] (articubot_one) StdoutLine: {'line': b"3: ./launch/ball_tracker.launch.py:20:40: E231 missing whitespace after ','\n"}
+[2.035887] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.035983] (articubot_one) StdoutLine: {'line': b'3: ./launch/ball_tracker.launch.py:20:100: E501 line too long (129 > 99 characters)\n'}
+[2.036064] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.036143] (articubot_one) StdoutLine: {'line': b'3: ./launch/ball_tracker.launch.py:24:100: E501 line too long (103 > 99 characters)\n'}
+[2.036223] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.036303] (articubot_one) StdoutLine: {'line': b'3: ./launch/ball_tracker.launch.py:25:21: E131 continuation line unaligned for hanging indent\n'}
+[2.036385] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.036465] (articubot_one) StdoutLine: {'line': b'3: ./launch/ball_tracker.launch.py:26:37: E128 continuation line under-indented for visual indent\n'}
+[2.036546] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.036640] (articubot_one) StdoutLine: {'line': b'3: ./launch/ball_tracker.launch.py:27:37: E128 continuation line under-indented for visual indent\n'}
+[2.036722] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.036802] (articubot_one) StdoutLine: {'line': b'3: ./launch/ball_tracker.launch.py:28:37: E128 continuation line under-indented for visual indent\n'}
+[2.036882] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.036976] (articubot_one) StdoutLine: {'line': b"3: ./launch/camera.launch.py:1:1: F401 'os' imported but unused\n"}
+[2.037061] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.037142] (articubot_one) StdoutLine: {'line': b'3: ./launch/camera.launch.py:6:1: E302 expected 2 blank lines, found 1\n'}
+[2.037223] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.037303] (articubot_one) StdoutLine: {'line': b'3: ./launch/camera.launch.py:10:5: E303 too many blank lines (3)\n'}
+[2.037383] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.037463] (articubot_one) StdoutLine: {'line': b"3: ./launch/camera.launch.py:18:35: E231 missing whitespace after ','\n"}
+[2.037543] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.037622] (articubot_one) StdoutLine: {'line': b'3: ./launch/camera.launch.py:22:5: E122 continuation line missing indentation or outdented\n'}
+[2.037704] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.037787] (articubot_one) StdoutLine: {'line': b'3: from launch.substitutions import LaunchConfiguration\n'}
+[2.037869] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.037967] (articubot_one) StdoutLine: {'line': b'3: from launch.actions import DeclareLaunchArgument\n'}
+[2.038053] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.038133] (articubot_one) StdoutLine: {'line': b'3: import os\n'}
+[2.038212] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.038293] (articubot_one) StdoutLine: {'line': b'3: from ament_index_python.packages import get_package_share_directory\n'}
+[2.038375] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.038458] (articubot_one) StdoutLine: {'line': b'3: def generate_launch_description():\n'}
+[2.038540] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.038621] (articubot_one) StdoutLine: {'line': b"3:     joy_params = os.path.join(get_package_share_directory('articubot_one'),'config','joystick.yaml')\n"}
+[2.038702] (articubot_one) StdoutLine: {'line': b'3:                                                                           ^\n'}
+[2.038794] (articubot_one) StdoutLine: {'line': b"3:     joy_params = os.path.join(get_package_share_directory('articubot_one'),'config','joystick.yaml')\n"}
+[2.038876] (articubot_one) StdoutLine: {'line': b'3:                                                                                    ^\n'}
+[2.038974] (articubot_one) StdoutLine: {'line': b"3:     joy_params = os.path.join(get_package_share_directory('articubot_one'),'config','joystick.yaml')\n"}
+[2.039058] (articubot_one) StdoutLine: {'line': b'3:                                                                                                    ^\n'}
+[2.039141] (articubot_one) StdoutLine: {'line': b"3:             remappings=[('/cmd_vel','/cmd_vel_joy')]\n"}
+[2.039223] (articubot_one) StdoutLine: {'line': b'3:                                    ^\n'}
+[2.039304] (articubot_one) StdoutLine: {'line': b"3:             remappings=[('/cmd_vel_in','/diff_cont/cmd_vel_unstamped'),\n"}
+[2.039386] (articubot_one) StdoutLine: {'line': b'3:                                       ^\n'}
+[2.039467] (articubot_one) StdoutLine: {'line': b"3:                         ('/cmd_vel_out','/diff_cont/cmd_vel')]\n"}
+[2.039547] (articubot_one) StdoutLine: {'line': b'3:                                        ^\n'}
+[2.039626] (articubot_one) StdoutLine: {'line': b'3:     return LaunchDescription([\n'}
+[2.039706] (articubot_one) StdoutLine: {'line': b'3:     ^\n'}
+[2.039784] (articubot_one) StdoutLine: {'line': b'3:         twist_stamper       \n'}
+[2.039865] (articubot_one) StdoutLine: {'line': b'3:                      ^\n'}
+[2.039961] (articubot_one) StdoutLine: {'line': b'3:     ])      ^\n'}
+[2.040045] (articubot_one) StdoutLine: {'line': b'3: from launch.actions import RegisterEventHandler\n'}
+[2.040135] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.040216] (articubot_one) StdoutLine: {'line': b'3: def generate_launch_description():\n'}
+[2.040296] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.040376] (articubot_one) StdoutLine: {'line': b'3:     # Include the robot_state_publisher launch file, provided by our own package. Force sim time to be enabled\n'}
+[2.040456] (articubot_one) StdoutLine: {'line': b'3:     ^\n'}
+[2.040536] (articubot_one) StdoutLine: {'line': b'3:     # Include the robot_state_publisher launch file, provided by our own package. Force sim time to be enabled\n'}
+[2.040620] (articubot_one) StdoutLine: {'line': b'3:                                                                                                    ^\n'}
+[2.040704] (articubot_one) StdoutLine: {'line': b"3:     package_name='articubot_one' #<--- CHANGE ME\n"}
+[2.040787] (articubot_one) StdoutLine: {'line': b'3:                 ^\n'}
+[2.040868] (articubot_one) StdoutLine: {'line': b"3:     package_name='articubot_one' #<--- CHANGE ME\n"}
+[2.040965] (articubot_one) StdoutLine: {'line': b'3:                                 ^\n'}
+[2.041048] (articubot_one) StdoutLine: {'line': b"3:     package_name='articubot_one' #<--- CHANGE ME\n"}
+[2.041127] (articubot_one) StdoutLine: {'line': b'3:                                  ^\n'}
+[2.041206] (articubot_one) StdoutLine: {'line': b"3:                     get_package_share_directory(package_name),'launch','rsp.launch.py'\n"}
+[2.041288] (articubot_one) StdoutLine: {'line': b'3:                                                              ^\n'}
+[2.041368] (articubot_one) StdoutLine: {'line': b"3:                     get_package_share_directory(package_name),'launch','rsp.launch.py'\n"}
+[2.041449] (articubot_one) StdoutLine: {'line': b'3:                                                                       ^\n'}
+[2.041528] (articubot_one) StdoutLine: {'line': b"3:     twist_mux_params = os.path.join(get_package_share_directory(package_name),'config','twist_mux.yaml')\n"}
+[2.041626] (articubot_one) StdoutLine: {'line': b'3:     ^\n'}
+[2.041706] (articubot_one) StdoutLine: {'line': b"3:     twist_mux_params = os.path.join(get_package_share_directory(package_name),'config','twist_mux.yaml')\n"}
+[2.041785] (articubot_one) StdoutLine: {'line': b'3:                                                                              ^\n'}
+[2.041864] (articubot_one) StdoutLine: {'line': b"3:     twist_mux_params = os.path.join(get_package_share_directory(package_name),'config','twist_mux.yaml')\n"}
+[2.041974] (articubot_one) StdoutLine: {'line': b'3:                                                                                       ^\n'}
+[2.042090] (articubot_one) StdoutLine: {'line': b"3:     twist_mux_params = os.path.join(get_package_share_directory(package_name),'config','twist_mux.yaml')\n"}
+[2.042183] (articubot_one) StdoutLine: {'line': b'3:                                                                                                    ^\n'}
+[2.042293] (articubot_one) StdoutLine: {'line': b'3:             package="twist_mux",\n'}
+[2.042386] (articubot_one) StdoutLine: {'line': b'3:                     ^\n'}
+[2.042474] (articubot_one) StdoutLine: {'line': b'3:             executable="twist_mux",\n'}
+[2.042561] (articubot_one) StdoutLine: {'line': b'3:                        ^\n'}
+[2.042648] (articubot_one) StdoutLine: {'line': b"3:             remappings=[('/cmd_vel_out','/diff_cont/cmd_vel_unstamped')]\n"}
+[2.042736] (articubot_one) StdoutLine: {'line': b'3:                                        ^\n'}
+[2.042821] (articubot_one) StdoutLine: {'line': b'3:     \n'}
+[2.042982] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.043076] (articubot_one) StdoutLine: {'line': b"3:     robot_description = Command(['ros2 param get --hide-type /robot_state_publisher robot_description'])\n"}
+[2.043164] (articubot_one) StdoutLine: {'line': b'3:     ^\n'}
+[2.043251] (articubot_one) StdoutLine: {'line': b"3:     robot_description = Command(['ros2 param get --hide-type /robot_state_publisher robot_description'])\n"}
+[2.043500] (articubot_one) StdoutLine: {'line': b'3:                                                                                                    ^\n'}
+[2.043595] (articubot_one) StdoutLine: {'line': b"3:     controller_params_file = os.path.join(get_package_share_directory(package_name),'config','my_controllers.yaml')\n"}
+[2.043682] (articubot_one) StdoutLine: {'line': b'3:                                                                                    ^\n'}
+[2.043766] (articubot_one) StdoutLine: {'line': b"3:     controller_params_file = os.path.join(get_package_share_directory(package_name),'config','my_controllers.yaml')\n"}
+[2.043848] (articubot_one) StdoutLine: {'line': b'3:                                                                                             ^\n'}
+[2.043966] (articubot_one) StdoutLine: {'line': b"3:     controller_params_file = os.path.join(get_package_share_directory(package_name),'config','my_controllers.yaml')\n"}
+[2.044056] (articubot_one) StdoutLine: {'line': b'3:                                                                                                    ^\n'}
+[2.044137] (articubot_one) StdoutLine: {'line': b'3:         package="controller_manager",\n'}
+[2.044217] (articubot_one) StdoutLine: {'line': b'3:                 ^\n'}
+[2.044298] (articubot_one) StdoutLine: {'line': b'3:         executable="ros2_control_node",\n'}
+[2.044380] (articubot_one) StdoutLine: {'line': b'3:                    ^\n'}
+[2.044461] (articubot_one) StdoutLine: {'line': b'3:         package="controller_manager",\n'}
+[2.044543] (articubot_one) StdoutLine: {'line': b'3:                 ^\n'}
+[2.044623] (articubot_one) StdoutLine: {'line': b'3:         executable="spawner",\n'}
+[2.044703] (articubot_one) StdoutLine: {'line': b'3:                    ^\n'}
+[2.044782] (articubot_one) StdoutLine: {'line': b'3:         arguments=["diff_cont"],\n'}
+[2.044861] (articubot_one) StdoutLine: {'line': b'3:                    ^\n'}
+[2.044956] (articubot_one) StdoutLine: {'line': b'3:         package="controller_manager",\n'}
+[2.045038] (articubot_one) StdoutLine: {'line': b'3:                 ^\n'}
+[2.045118] (articubot_one) StdoutLine: {'line': b'3:         executable="spawner",\n'}
+[2.045198] (articubot_one) StdoutLine: {'line': b'3:                    ^\n'}
+[2.045277] (articubot_one) StdoutLine: {'line': b'3:         arguments=["joint_broad"],\n'}
+[2.045356] (articubot_one) StdoutLine: {'line': b'3:                    ^\n'}
+[2.045436] (articubot_one) StdoutLine: {'line': b"3:     # Code for delaying a node (I haven't tested how effective it is)\n"}
+[2.045516] (articubot_one) StdoutLine: {'line': b'3:     ^\n'}
+[2.045594] (articubot_one) StdoutLine: {'line': b'3:     # \n'}
+[2.045673] (articubot_one) StdoutLine: {'line': b'3:      ^\n'}
+[2.045753] (articubot_one) StdoutLine: {'line': b'3:     # Launch them all!\n'}
+[2.045833] (articubot_one) StdoutLine: {'line': b'3:     ^\n'}
+[2.045923] (articubot_one) StdoutLine: {'line': b'3: from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument\n'}
+[2.046010] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.046091] (articubot_one) StdoutLine: {'line': b'3: def generate_launch_description():\n'}
+[2.046169] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.046248] (articubot_one) StdoutLine: {'line': b'3:     # Include the robot_state_publisher launch file, provided by our own package. Force sim time to be enabled\n'}
+[2.046328] (articubot_one) StdoutLine: {'line': b'3:     ^\n'}
+[2.046407] (articubot_one) StdoutLine: {'line': b'3:     # Include the robot_state_publisher launch file, provided by our own package. Force sim time to be enabled\n'}
+[2.046487] (articubot_one) StdoutLine: {'line': b'3:                                                                                                    ^\n'}
+[2.046568] (articubot_one) StdoutLine: {'line': b"3:     package_name='articubot_one' #<--- CHANGE ME\n"}
+[2.046648] (articubot_one) StdoutLine: {'line': b'3:                 ^\n'}
+[2.046736] (articubot_one) StdoutLine: {'line': b"3:     package_name='articubot_one' #<--- CHANGE ME\n"}
+[2.046817] (articubot_one) StdoutLine: {'line': b'3:                                 ^\n'}
+[2.046903] (articubot_one) StdoutLine: {'line': b"3:     package_name='articubot_one' #<--- CHANGE ME\n"}
+[2.046992] (articubot_one) StdoutLine: {'line': b'3:                                  ^\n'}
+[2.047071] (articubot_one) StdoutLine: {'line': b"3:                     get_package_share_directory(package_name),'launch','rsp.launch.py'\n"}
+[2.047152] (articubot_one) StdoutLine: {'line': b'3:                                                              ^\n'}
+[2.047232] (articubot_one) StdoutLine: {'line': b"3:                     get_package_share_directory(package_name),'launch','rsp.launch.py'\n"}
+[2.047314] (articubot_one) StdoutLine: {'line': b'3:                                                                       ^\n'}
+[2.047395] (articubot_one) StdoutLine: {'line': b"3:                     get_package_share_directory(package_name),'launch','joystick.launch.py'\n"}
+[2.047475] (articubot_one) StdoutLine: {'line': b'3:                                                              ^\n'}
+[2.047554] (articubot_one) StdoutLine: {'line': b"3:                     get_package_share_directory(package_name),'launch','joystick.launch.py'\n"}
+[2.047634] (articubot_one) StdoutLine: {'line': b'3:                                                                       ^\n'}
+[2.047713] (articubot_one) StdoutLine: {'line': b"3:     twist_mux_params = os.path.join(get_package_share_directory(package_name),'config','twist_mux.yaml')\n"}
+[2.047792] (articubot_one) StdoutLine: {'line': b'3:                                                                              ^\n'}
+[2.047872] (articubot_one) StdoutLine: {'line': b"3:     twist_mux_params = os.path.join(get_package_share_directory(package_name),'config','twist_mux.yaml')\n"}
+[2.047993] (articubot_one) StdoutLine: {'line': b'3:                                                                                       ^\n'}
+[2.048078] (articubot_one) StdoutLine: {'line': b"3:     twist_mux_params = os.path.join(get_package_share_directory(package_name),'config','twist_mux.yaml')\n"}
+[2.048160] (articubot_one) StdoutLine: {'line': b'3:                                                                                                    ^\n'}
+[2.048241] (articubot_one) StdoutLine: {'line': b'3:             package="twist_mux",\n'}
+[2.048321] (articubot_one) StdoutLine: {'line': b'3:                     ^\n'}
+[2.048401] (articubot_one) StdoutLine: {'line': b'3:             executable="twist_mux",\n'}
+[2.048480] (articubot_one) StdoutLine: {'line': b'3:                        ^\n'}
+[2.048559] (articubot_one) StdoutLine: {'line': b"3:             remappings=[('/cmd_vel_out','/diff_cont/cmd_vel_unstamped')]\n"}
+[2.048640] (articubot_one) StdoutLine: {'line': b'3:                                        ^\n'}
+[2.048720] (articubot_one) StdoutLine: {'line': b'3:     default_world = os.path.join(\n'}
+[2.048800] (articubot_one) StdoutLine: {'line': b'3:     ^\n'}
+[2.048880] (articubot_one) StdoutLine: {'line': b'3:         )    \n'}
+[2.048975] (articubot_one) StdoutLine: {'line': b'3:          ^\n'}
+[2.049058] (articubot_one) StdoutLine: {'line': b'3:     \n'}
+[2.049137] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.049216] (articubot_one) StdoutLine: {'line': b"3:                     launch_arguments={'gz_args': ['-r -v4 ', world], 'on_exit_shutdown': 'true'}.items()\n"}
+[2.049296] (articubot_one) StdoutLine: {'line': b'3:                     ^\n'}
+[2.049375] (articubot_one) StdoutLine: {'line': b"3:                     launch_arguments={'gz_args': ['-r -v4 ', world], 'on_exit_shutdown': 'true'}.items()\n"}
+[2.049455] (articubot_one) StdoutLine: {'line': b'3:                                                                                                    ^\n'}
+[2.049540] (articubot_one) StdoutLine: {'line': b"3:     # Run the spawner node from the ros_gz_sim package. The entity name doesn't really matter if you only have a single robot.\n"}
+[2.049627] (articubot_one) StdoutLine: {'line': b'3:                                                                                                    ^\n'}
+[2.049708] (articubot_one) StdoutLine: {'line': b'3:     diff_drive_spawner = Node(\n'}
+[2.049787] (articubot_one) StdoutLine: {'line': b'3:     ^\n'}
+[2.049866] (articubot_one) StdoutLine: {'line': b'3:         package="controller_manager",\n'}
+[2.049961] (articubot_one) StdoutLine: {'line': b'3:                 ^\n'}
+[2.050044] (articubot_one) StdoutLine: {'line': b'3:         executable="spawner",\n'}
+[2.050124] (articubot_one) StdoutLine: {'line': b'3:                    ^\n'}
+[2.050204] (articubot_one) StdoutLine: {'line': b'3:         arguments=["diff_cont"],\n'}
+[2.050283] (articubot_one) StdoutLine: {'line': b'3:                    ^\n'}
+[2.050362] (articubot_one) StdoutLine: {'line': b'3:         package="controller_manager",\n'}
+[2.050442] (articubot_one) StdoutLine: {'line': b'3:                 ^\n'}
+[2.050521] (articubot_one) StdoutLine: {'line': b'3:         executable="spawner",\n'}
+[2.050599] (articubot_one) StdoutLine: {'line': b'3:                    ^\n'}
+[2.050678] (articubot_one) StdoutLine: {'line': b'3:         arguments=["joint_broad"],\n'}
+[2.050757] (articubot_one) StdoutLine: {'line': b'3:                    ^\n'}
+[2.050838] (articubot_one) StdoutLine: {'line': b"3:     bridge_params = os.path.join(get_package_share_directory(package_name),'config','gz_bridge.yaml')\n"}
+[2.050928] (articubot_one) StdoutLine: {'line': b'3:     ^\n'}
+[2.051014] (articubot_one) StdoutLine: {'line': b"3:     bridge_params = os.path.join(get_package_share_directory(package_name),'config','gz_bridge.yaml')\n"}
+[2.051096] (articubot_one) StdoutLine: {'line': b'3:                                                                           ^\n'}
+[2.051177] (articubot_one) StdoutLine: {'line': b"3:     bridge_params = os.path.join(get_package_share_directory(package_name),'config','gz_bridge.yaml')\n"}
+[2.051256] (articubot_one) StdoutLine: {'line': b'3:                                                                                    ^\n'}
+[2.051336] (articubot_one) StdoutLine: {'line': b"3:     bridge_params = os.path.join(get_package_share_directory(package_name),'config','gz_bridge.yaml')\n"}
+[2.051415] (articubot_one) StdoutLine: {'line': b'3:                                                                                                    ^\n'}
+[2.051494] (articubot_one) StdoutLine: {'line': b'3:         package="ros_gz_bridge",\n'}
+[2.051574] (articubot_one) StdoutLine: {'line': b'3:                 ^\n'}
+[2.051654] (articubot_one) StdoutLine: {'line': b'3:         executable="parameter_bridge",\n'}
+[2.051733] (articubot_one) StdoutLine: {'line': b'3:                    ^\n'}
+[2.051813] (articubot_one) StdoutLine: {'line': b'3:         package="ros_gz_image",\n'}
+[2.051898] (articubot_one) StdoutLine: {'line': b'3:                 ^\n'}
+[2.051996] (articubot_one) StdoutLine: {'line': b'3:         executable="image_bridge",\n'}
+[2.052076] (articubot_one) StdoutLine: {'line': b'3:                    ^\n'}
+[2.052156] (articubot_one) StdoutLine: {'line': b'3:         arguments=["/camera/image_raw"]\n'}
+[2.052235] (articubot_one) StdoutLine: {'line': b'3:                    ^\n'}
+[2.052315] (articubot_one) StdoutLine: {'line': b"3:     # Code for delaying a node (I haven't tested how effective it is)\n"}
+[2.052396] (articubot_one) StdoutLine: {'line': b'3:     ^\n'}
+[2.052475] (articubot_one) StdoutLine: {'line': b'3:     # \n'}
+[2.052555] (articubot_one) StdoutLine: {'line': b'3:      ^\n'}
+[2.052635] (articubot_one) StdoutLine: {'line': b'3:     # Launch them all!\n'}
+[2.052714] (articubot_one) StdoutLine: {'line': b'3:     ^\n'}
+[2.052793] (articubot_one) StdoutLine: {'line': b'3: from ament_index_python.packages import get_package_share_directory\n'}
+[2.052872] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.052972] (articubot_one) StdoutLine: {'line': b'3:     default_params_file = os.path.join(get_package_share_directory("articubot_one"),\n'}
+[2.053065] (articubot_one) StdoutLine: {'line': b'3:                                                                    ^\n'}
+[2.053145] (articubot_one) StdoutLine: {'line': b'3: import os\n'}
+[2.053257] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.053337] (articubot_one) StdoutLine: {'line': b"3: ./launch/joystick.launch.py:3:1: I100 Import statements are in the wrong order. 'from launch.substitutions import LaunchConfiguration' should be before 'from launch_ros.actions import Node'\n"}
+[2.053419] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.053498] (articubot_one) StdoutLine: {'line': b"3: ./launch/joystick.launch.py:4:1: I100 Import statements are in the wrong order. 'from launch.actions import DeclareLaunchArgument' should be before 'from launch.substitutions import LaunchConfiguration'\n"}
+[2.053580] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.053659] (articubot_one) StdoutLine: {'line': b"3: ./launch/joystick.launch.py:6:1: I100 Import statements are in the wrong order. 'import os' should be before 'from launch.actions import DeclareLaunchArgument' and in a different group.\n"}
+[2.053741] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.053820] (articubot_one) StdoutLine: {'line': b"3: ./launch/joystick.launch.py:7:1: I201 Missing newline between import groups. 'from ament_index_python.packages import get_package_share_directory' is identified as Third Party and 'import os' is identified as Stdlib.\n"}
+[2.053910] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.054000] (articubot_one) StdoutLine: {'line': b'3: ./launch/joystick.launch.py:9:1: E302 expected 2 blank lines, found 1\n'}
+[2.054080] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.054158] (articubot_one) StdoutLine: {'line': b"3: ./launch/joystick.launch.py:12:75: E231 missing whitespace after ','\n"}
+[2.054237] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.054314] (articubot_one) StdoutLine: {'line': b"3: ./launch/joystick.launch.py:12:84: E231 missing whitespace after ','\n"}
+[2.054403] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.054484] (articubot_one) StdoutLine: {'line': b'3: ./launch/joystick.launch.py:12:100: E501 line too long (100 > 99 characters)\n'}
+[2.054564] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.054643] (articubot_one) StdoutLine: {'line': b"3: ./launch/joystick.launch.py:25:36: E231 missing whitespace after ','\n"}
+[2.054723] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.054802] (articubot_one) StdoutLine: {'line': b"3: ./launch/joystick.launch.py:32:39: E231 missing whitespace after ','\n"}
+[2.054881] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.054973] (articubot_one) StdoutLine: {'line': b"3: ./launch/joystick.launch.py:33:40: E231 missing whitespace after ','\n"}
+[2.055054] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.055134] (articubot_one) StdoutLine: {'line': b'3: ./launch/joystick.launch.py:37:5: E303 too many blank lines (2)\n'}
+[2.055219] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.055299] (articubot_one) StdoutLine: {'line': b'3: ./launch/joystick.launch.py:44:22: W291 trailing whitespace\n'}
+[2.055379] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.055458] (articubot_one) StdoutLine: {'line': b'3: ./launch/joystick.launch.py:45:7: W292 no newline at end of file\n'}
+[2.055537] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.055616] (articubot_one) StdoutLine: {'line': b"3: ./launch/launch_robot.launch.py:10:1: I100 Import statements are in the wrong order. 'from launch.actions import RegisterEventHandler' should be before 'from launch.substitutions import Command'\n"}
+[2.055696] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.055774] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_robot.launch.py:17:1: E303 too many blank lines (3)\n'}
+[2.055854] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.055960] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_robot.launch.py:20:5: E303 too many blank lines (2)\n'}
+[2.056047] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.056127] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_robot.launch.py:20:100: E501 line too long (110 > 99 characters)\n'}
+[2.056213] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.056292] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_robot.launch.py:23:17: E225 missing whitespace around operator\n'}
+[2.056372] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.056449] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_robot.launch.py:23:33: E261 at least two spaces before inline comment\n'}
+[2.056530] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.056610] (articubot_one) StdoutLine: {'line': b"3: ./launch/launch_robot.launch.py:23:34: E262 inline comment should start with '# '\n"}
+[2.056690] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.056769] (articubot_one) StdoutLine: {'line': b"3: ./launch/launch_robot.launch.py:27:62: E231 missing whitespace after ','\n"}
+[2.056849] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.056943] (articubot_one) StdoutLine: {'line': b"3: ./launch/launch_robot.launch.py:27:71: E231 missing whitespace after ','\n"}
+[2.057027] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.057107] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_robot.launch.py:38:5: E303 too many blank lines (2)\n'}
+[2.057185] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.057264] (articubot_one) StdoutLine: {'line': b"3: ./launch/launch_robot.launch.py:38:78: E231 missing whitespace after ','\n"}
+[2.057343] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.057422] (articubot_one) StdoutLine: {'line': b"3: ./launch/launch_robot.launch.py:38:87: E231 missing whitespace after ','\n"}
+[2.057501] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.057581] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_robot.launch.py:38:100: E501 line too long (104 > 99 characters)\n'}
+[2.057661] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.057739] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_robot.launch.py:40:21: Q000 Double quotes found but single quotes preferred\n'}
+[2.057817] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.057902] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_robot.launch.py:41:24: Q000 Double quotes found but single quotes preferred\n'}
+[2.057992] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.058072] (articubot_one) StdoutLine: {'line': b"3: ./launch/launch_robot.launch.py:43:40: E231 missing whitespace after ','\n"}
+[2.058153] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.058232] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_robot.launch.py:46:1: W293 blank line contains whitespace\n'}
+[2.058312] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.058391] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_robot.launch.py:49:5: E303 too many blank lines (4)\n'}
+[2.058470] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.058548] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_robot.launch.py:49:100: E501 line too long (104 > 99 characters)\n'}
+[2.058626] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.058704] (articubot_one) StdoutLine: {'line': b"3: ./launch/launch_robot.launch.py:51:84: E231 missing whitespace after ','\n"}
+[2.058784] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.058864] (articubot_one) StdoutLine: {'line': b"3: ./launch/launch_robot.launch.py:51:93: E231 missing whitespace after ','\n"}
+[2.058958] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.059040] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_robot.launch.py:51:100: E501 line too long (115 > 99 characters)\n'}
+[2.059120] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.059197] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_robot.launch.py:54:17: Q000 Double quotes found but single quotes preferred\n'}
+[2.059276] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.059353] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_robot.launch.py:55:20: Q000 Double quotes found but single quotes preferred\n'}
+[2.059433] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.059512] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_robot.launch.py:63:17: Q000 Double quotes found but single quotes preferred\n'}
+[2.059600] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.059678] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_robot.launch.py:64:20: Q000 Double quotes found but single quotes preferred\n'}
+[2.059757] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.059836] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_robot.launch.py:65:20: Q000 Double quotes found but single quotes preferred\n'}
+[2.059935] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.060023] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_robot.launch.py:76:17: Q000 Double quotes found but single quotes preferred\n'}
+[2.060104] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.060183] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_robot.launch.py:77:20: Q000 Double quotes found but single quotes preferred\n'}
+[2.060263] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.060342] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_robot.launch.py:78:20: Q000 Double quotes found but single quotes preferred\n'}
+[2.060423] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.060503] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_robot.launch.py:89:5: E303 too many blank lines (2)\n'}
+[2.060582] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.060660] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_robot.launch.py:90:6: W291 trailing whitespace\n'}
+[2.060738] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.060816] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_robot.launch.py:107:5: E303 too many blank lines (3)\n'}
+[2.060906] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.060999] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_sim.launch.py:7:1: I101 Imported names are in the wrong order. Should be DeclareLaunchArgument, IncludeLaunchDescription\n'}
+[2.061082] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.061162] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_sim.launch.py:15:1: E303 too many blank lines (3)\n'}
+[2.061242] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.061322] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_sim.launch.py:18:5: E303 too many blank lines (2)\n'}
+[2.061407] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.061486] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_sim.launch.py:18:100: E501 line too long (110 > 99 characters)\n'}
+[2.061566] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.061646] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_sim.launch.py:21:17: E225 missing whitespace around operator\n'}
+[2.061726] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.061806] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_sim.launch.py:21:33: E261 at least two spaces before inline comment\n'}
+[2.061886] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.061980] (articubot_one) StdoutLine: {'line': b"3: ./launch/launch_sim.launch.py:21:34: E262 inline comment should start with '# '\n"}
+[2.062071] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.062151] (articubot_one) StdoutLine: {'line': b"3: ./launch/launch_sim.launch.py:25:62: E231 missing whitespace after ','\n"}
+[2.062230] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.062308] (articubot_one) StdoutLine: {'line': b"3: ./launch/launch_sim.launch.py:25:71: E231 missing whitespace after ','\n"}
+[2.062388] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.062468] (articubot_one) StdoutLine: {'line': b"3: ./launch/launch_sim.launch.py:31:62: E231 missing whitespace after ','\n"}
+[2.062547] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.062626] (articubot_one) StdoutLine: {'line': b"3: ./launch/launch_sim.launch.py:31:71: E231 missing whitespace after ','\n"}
+[2.062705] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.062784] (articubot_one) StdoutLine: {'line': b"3: ./launch/launch_sim.launch.py:35:78: E231 missing whitespace after ','\n"}
+[2.062862] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.062954] (articubot_one) StdoutLine: {'line': b"3: ./launch/launch_sim.launch.py:35:87: E231 missing whitespace after ','\n"}
+[2.063042] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.063123] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_sim.launch.py:35:100: E501 line too long (104 > 99 characters)\n'}
+[2.063204] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.063283] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_sim.launch.py:37:21: Q000 Double quotes found but single quotes preferred\n'}
+[2.063364] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.063443] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_sim.launch.py:38:24: Q000 Double quotes found but single quotes preferred\n'}
+[2.063522] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.063601] (articubot_one) StdoutLine: {'line': b"3: ./launch/launch_sim.launch.py:40:40: E231 missing whitespace after ','\n"}
+[2.063680] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.063759] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_sim.launch.py:44:5: E303 too many blank lines (2)\n'}
+[2.063839] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.063940] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_sim.launch.py:48:10: W291 trailing whitespace\n'}
+[2.064030] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.064111] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_sim.launch.py:49:1: W293 blank line contains whitespace\n'}
+[2.064191] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.064269] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_sim.launch.py:62:21: E131 continuation line unaligned for hanging indent\n'}
+[2.064349] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.064427] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_sim.launch.py:62:100: E501 line too long (104 > 99 characters)\n'}
+[2.064506] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.064586] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_sim.launch.py:65:100: E501 line too long (126 > 99 characters)\n'}
+[2.064666] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.064745] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_sim.launch.py:73:5: E303 too many blank lines (2)\n'}
+[2.064826] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.064914] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_sim.launch.py:74:17: Q000 Double quotes found but single quotes preferred\n'}
+[2.065004] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.065084] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_sim.launch.py:75:20: Q000 Double quotes found but single quotes preferred\n'}
+[2.065163] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.065244] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_sim.launch.py:76:20: Q000 Double quotes found but single quotes preferred\n'}
+[2.065324] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.065403] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_sim.launch.py:80:17: Q000 Double quotes found but single quotes preferred\n'}
+[2.065483] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.065562] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_sim.launch.py:81:20: Q000 Double quotes found but single quotes preferred\n'}
+[2.065641] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.065719] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_sim.launch.py:82:20: Q000 Double quotes found but single quotes preferred\n'}
+[2.065799] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.065877] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_sim.launch.py:86:5: E303 too many blank lines (2)\n'}
+[2.065978] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.066062] (articubot_one) StdoutLine: {'line': b"3: ./launch/launch_sim.launch.py:86:75: E231 missing whitespace after ','\n"}
+[2.066142] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.066222] (articubot_one) StdoutLine: {'line': b"3: ./launch/launch_sim.launch.py:86:84: E231 missing whitespace after ','\n"}
+[2.066302] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.066380] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_sim.launch.py:86:100: E501 line too long (101 > 99 characters)\n'}
+[2.066467] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.066545] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_sim.launch.py:88:17: Q000 Double quotes found but single quotes preferred\n'}
+[2.066625] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.066704] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_sim.launch.py:89:20: Q000 Double quotes found but single quotes preferred\n'}
+[2.066785] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.066865] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_sim.launch.py:98:17: Q000 Double quotes found but single quotes preferred\n'}
+[2.066959] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.067041] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_sim.launch.py:99:20: Q000 Double quotes found but single quotes preferred\n'}
+[2.067121] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.067201] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_sim.launch.py:100:20: Q000 Double quotes found but single quotes preferred\n'}
+[2.067280] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.067358] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_sim.launch.py:105:5: E303 too many blank lines (3)\n'}
+[2.067439] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.067518] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_sim.launch.py:106:6: W291 trailing whitespace\n'}
+[2.067597] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.067676] (articubot_one) StdoutLine: {'line': b'3: ./launch/launch_sim.launch.py:123:5: E303 too many blank lines (3)\n'}
+[2.067761] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.067841] (articubot_one) StdoutLine: {'line': b"3: ./launch/online_async_launch.py:8:1: I100 Import statements are in the wrong order. 'from ament_index_python.packages import get_package_share_directory' should be before 'from launch_ros.actions import Node'\n"}
+[2.067935] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.068018] (articubot_one) StdoutLine: {'line': b'3: ./launch/online_async_launch.py:15:68: Q000 Double quotes found but single quotes preferred\n'}
+[2.068098] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.068178] (articubot_one) StdoutLine: {'line': b"3: ./launch/rplidar.launch.py:1:1: F401 'os' imported but unused\n"}
+[2.068258] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.068337] (articubot_one) StdoutLine: {'line': b"3: ./launch/rplidar.launch.py:2:1: I201 Missing newline between import groups. 'from launch import LaunchDescription' is identified as Third Party and 'import os' is identified as Stdlib.\n"}
+[2.068419] (articubot_one) StdoutLine: {'line': b'3: from launch import LaunchDescription\n'}
+[2.068499] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.068577] (articubot_one) StdoutLine: {'line': b'3: def generate_launch_description():\n'}
+[2.068656] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.068736] (articubot_one) StdoutLine: {'line': b"3:                 'serial_port': '/dev/serial/by-path/platform-fd500000.pcie-pci-0000:01:00.0-usb-0:1.3:1.0-port0',\n"}
+[2.068817] (articubot_one) StdoutLine: {'line': b'3:                                                                                                    ^\n'}
+[2.068905] (articubot_one) StdoutLine: {'line': b'3: from launch.substitutions import LaunchConfiguration, Command\n'}
+[2.068995] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.069075] (articubot_one) StdoutLine: {'line': b'3: from launch.actions import DeclareLaunchArgument\n'}
+[2.069154] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.069234] (articubot_one) StdoutLine: {'line': b'3: import xacro\n'}
+[2.069313] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.069394] (articubot_one) StdoutLine: {'line': b"3:     xacro_file = os.path.join(pkg_path,'description','robot.urdf.xacro')\n"}
+[2.069484] (articubot_one) StdoutLine: {'line': b'3:                                       ^\n'}
+[2.069566] (articubot_one) StdoutLine: {'line': b"3:     xacro_file = os.path.join(pkg_path,'description','robot.urdf.xacro')\n"}
+[2.069651] (articubot_one) StdoutLine: {'line': b'3:                                                     ^\n'}
+[2.069733] (articubot_one) StdoutLine: {'line': b"3:     robot_description_config = Command(['xacro ', xacro_file, ' use_ros2_control:=', use_ros2_control, ' sim_mode:=', use_sim_time])\n"}
+[2.069815] (articubot_one) StdoutLine: {'line': b'3:                                                                                                    ^\n'}
+[2.069902] (articubot_one) StdoutLine: {'line': b'3:     \n'}
+[2.069992] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.070071] (articubot_one) StdoutLine: {'line': b'3:     # Launch!\n'}
+[2.070151] (articubot_one) StdoutLine: {'line': b'3:     ^\n'}
+[2.070232] (articubot_one) StdoutLine: {'line': b'3: import xacro\n'}
+[2.070313] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.070394] (articubot_one) StdoutLine: {'line': b'3: from ament_index_python.packages import get_package_share_directory\n'}
+[2.070474] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.070553] (articubot_one) StdoutLine: {'line': b'3: from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument\n'}
+[2.070633] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.070711] (articubot_one) StdoutLine: {'line': b'3: from launch.conditions import IfCondition, UnlessCondition\n'}
+[2.070790] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.070869] (articubot_one) StdoutLine: {'line': b'3:     # Include the robot_state_publisher launch file, provided by our own package. Force sim time to be enabled\n'}
+[2.070964] (articubot_one) StdoutLine: {'line': b'3:     ^\n'}
+[2.071048] (articubot_one) StdoutLine: {'line': b'3:     # Include the robot_state_publisher launch file, provided by our own package. Force sim time to be enabled\n'}
+[2.071130] (articubot_one) StdoutLine: {'line': b'3:                                                                                                    ^\n'}
+[2.071210] (articubot_one) StdoutLine: {'line': b"3:     package_name='articubot_one' #<--- CHANGE ME\n"}
+[2.071291] (articubot_one) StdoutLine: {'line': b'3:                 ^\n'}
+[2.071370] (articubot_one) StdoutLine: {'line': b"3:     package_name='articubot_one' #<--- CHANGE ME\n"}
+[2.071450] (articubot_one) StdoutLine: {'line': b'3:                                 ^\n'}
+[2.071529] (articubot_one) StdoutLine: {'line': b"3:     package_name='articubot_one' #<--- CHANGE ME\n"}
+[2.071609] (articubot_one) StdoutLine: {'line': b'3:                                  ^\n'}
+[2.071689] (articubot_one) StdoutLine: {'line': b"3:                     get_package_share_directory(package_name),'launch','rsp.launch.py'\n"}
+[2.071770] (articubot_one) StdoutLine: {'line': b'3:                                                              ^\n'}
+[2.071850] (articubot_one) StdoutLine: {'line': b"3:                     get_package_share_directory(package_name),'launch','rsp.launch.py'\n"}
+[2.071941] (articubot_one) StdoutLine: {'line': b'3:                                                                       ^\n'}
+[2.072026] (articubot_one) StdoutLine: {'line': b'3:         )    \n'}
+[2.072105] (articubot_one) StdoutLine: {'line': b'3:          ^\n'}
+[2.072184] (articubot_one) StdoutLine: {'line': b'3:     \n'}
+[2.072263] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.072342] (articubot_one) StdoutLine: {'line': b"3:                     launch_arguments={'gz_args': ['-r -v4 ', world], 'on_exit_shutdown': 'true'}.items()\n"}
+[2.072422] (articubot_one) StdoutLine: {'line': b'3:                     ^\n'}
+[2.072503] (articubot_one) StdoutLine: {'line': b"3:                     launch_arguments={'gz_args': ['-r -v4 ', world], 'on_exit_shutdown': 'true'}.items()\n"}
+[2.072583] (articubot_one) StdoutLine: {'line': b'3:                                                                                                    ^\n'}
+[2.072663] (articubot_one) StdoutLine: {'line': b"3:     # Run the spawner node from the ros_gz_sim package. The entity name doesn't really matter if you only have a single robot.\n"}
+[2.072751] (articubot_one) StdoutLine: {'line': b'3:                                                                                                    ^\n'}
+[2.072832] (articubot_one) StdoutLine: {'line': b"3:     '''\n"}
+[2.072920] (articubot_one) StdoutLine: {'line': b"3:     bridge_params = os.path.join(get_package_share_directory(package_name),'config','gz_bridge.yaml')\n"}
+[2.073006] (articubot_one) StdoutLine: {'line': b'3:     ros_gz_bridge = Node(\n'}
+[2.073086] (articubot_one) StdoutLine: {'line': b'3:         package="ros_gz_bridge",\n'}
+[2.073170] (articubot_one) StdoutLine: {'line': b'3:         executable="parameter_bridge",\n'}
+[2.073250] (articubot_one) StdoutLine: {'line': b'3:         arguments=[\n'}
+[2.073330] (articubot_one) StdoutLine: {'line': b"3:             '--ros-args',\n"}
+[2.073411] (articubot_one) StdoutLine: {'line': b"3:             '-p',\n"}
+[2.073491] (articubot_one) StdoutLine: {'line': b"3:             f'config_file:={bridge_params}',\n"}
+[2.073572] (articubot_one) StdoutLine: {'line': b'3:         ]\n'}
+[2.073650] (articubot_one) StdoutLine: {'line': b'3:     )\n'}
+[2.073729] (articubot_one) StdoutLine: {'line': b"3:     '''\n"}
+[2.073807] (articubot_one) StdoutLine: {'line': b'3:     ^\n'}
+[2.073888] (articubot_one) StdoutLine: {'line': b"3:     '''\n"}
+[2.073982] (articubot_one) StdoutLine: {'line': b"3:     bridge_params = os.path.join(get_package_share_directory(package_name),'config','gz_bridge.yaml')\n"}
+[2.074064] (articubot_one) StdoutLine: {'line': b'3:     ros_gz_bridge = Node(\n'}
+[2.074144] (articubot_one) StdoutLine: {'line': b'3:         package="ros_gz_bridge",\n'}
+[2.074223] (articubot_one) StdoutLine: {'line': b'3:         executable="parameter_bridge",\n'}
+[2.074302] (articubot_one) StdoutLine: {'line': b'3:         arguments=[\n'}
+[2.074380] (articubot_one) StdoutLine: {'line': b"3:             '--ros-args',\n"}
+[2.074459] (articubot_one) StdoutLine: {'line': b"3:             '-p',\n"}
+[2.074538] (articubot_one) StdoutLine: {'line': b"3:             f'config_file:={bridge_params}',\n"}
+[2.074619] (articubot_one) StdoutLine: {'line': b'3:         ]\n'}
+[2.074699] (articubot_one) StdoutLine: {'line': b'3:     )\n'}
+[2.074778] (articubot_one) StdoutLine: {'line': b"3:     '''\n"}
+[2.074858] (articubot_one) StdoutLine: {'line': b'3:     ^\n'}
+[2.074948] (articubot_one) StdoutLine: {'line': b"3:     '''\n"}
+[2.075030] (articubot_one) StdoutLine: {'line': b"3:     bridge_params = os.path.join(get_package_share_directory(package_name),'config','gz_bridge.yaml')\n"}
+[2.075110] (articubot_one) StdoutLine: {'line': b'3:     ros_gz_bridge = Node(\n'}
+[2.075190] (articubot_one) StdoutLine: {'line': b'3:         package="ros_gz_bridge",\n'}
+[2.075270] (articubot_one) StdoutLine: {'line': b'3:         executable="parameter_bridge",\n'}
+[2.075351] (articubot_one) StdoutLine: {'line': b'3:         arguments=[\n'}
+[2.075431] (articubot_one) StdoutLine: {'line': b"3:             '--ros-args',\n"}
+[2.075512] (articubot_one) StdoutLine: {'line': b"3:             '-p',\n"}
+[2.075593] (articubot_one) StdoutLine: {'line': b"3:             f'config_file:={bridge_params}',\n"}
+[2.075674] (articubot_one) StdoutLine: {'line': b'3:         ]\n'}
+[2.075753] (articubot_one) StdoutLine: {'line': b'3:     )\n'}
+[2.075834] (articubot_one) StdoutLine: {'line': b"3:     '''\n"}
+[2.075929] (articubot_one) StdoutLine: {'line': b'3:        \n'}
+[2.076017] (articubot_one) StdoutLine: {'line': b'3:                                                                                            ^\n'}
+[2.076099] (articubot_one) StdoutLine: {'line': b"3:     package='ros_gz_bridge',\n"}
+[2.076180] (articubot_one) StdoutLine: {'line': b'3:     ^\n'}
+[2.076260] (articubot_one) StdoutLine: {'line': b"3:     executable='parameter_bridge',\n"}
+[2.076341] (articubot_one) StdoutLine: {'line': b'3:     ^\n'}
+[2.076421] (articubot_one) StdoutLine: {'line': b'3:     arguments=[\n'}
+[2.076531] (articubot_one) StdoutLine: {'line': b'3:     ^\n'}
+[2.076612] (articubot_one) StdoutLine: {'line': b"3:           '/odom@nav_msgs/msg/Odometry@gz.msgs.Odometry',\n"}
+[2.076704] (articubot_one) StdoutLine: {'line': b'3:           ^\n'}
+[2.076785] (articubot_one) StdoutLine: {'line': b"3:          '/scan@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan',\n"}
+[2.076865] (articubot_one) StdoutLine: {'line': b'3:          ^\n'}
+[2.076959] (articubot_one) StdoutLine: {'line': b"3:     output='screen'\n"}
+[2.077042] (articubot_one) StdoutLine: {'line': b'3:     ^\n'}
+[2.077123] (articubot_one) StdoutLine: {'line': b'3: )\n'}
+[2.077203] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.077283] (articubot_one) StdoutLine: {'line': b'3:         package="ros_gz_image",\n'}
+[2.077363] (articubot_one) StdoutLine: {'line': b'3:                 ^\n'}
+[2.077443] (articubot_one) StdoutLine: {'line': b'3:         executable="image_bridge",\n'}
+[2.077524] (articubot_one) StdoutLine: {'line': b'3:                    ^\n'}
+[2.077631] (articubot_one) StdoutLine: {'line': b'3:         arguments=["/camera/image_raw"]\n'}
+[2.077721] (articubot_one) StdoutLine: {'line': b'3:                    ^\n'}
+[2.077803] (articubot_one) StdoutLine: {'line': b'3:     #Adding rviz plugin\n'}
+[2.077884] (articubot_one) StdoutLine: {'line': b'3:     ^\n'}
+[2.077979] (articubot_one) StdoutLine: {'line': b"3:     share_dir=get_package_share_directory('articubot_one')\n"}
+[2.078072] (articubot_one) StdoutLine: {'line': b'3:              ^\n'}
+[2.078153] (articubot_one) StdoutLine: {'line': b'3:     \n'}
+[2.078234] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.078314] (articubot_one) StdoutLine: {'line': b'3:         \n'}
+[2.078393] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.078472] (articubot_one) StdoutLine: {'line': b'3:         \n'}
+[2.078552] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.078630] (articubot_one) StdoutLine: {'line': b'3:         \n'}
+[2.078709] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.078788] (articubot_one) StdoutLine: {'line': b'3: from sensor_msgs.msg import LaserScan\n'}
+[2.078870] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.078964] (articubot_one) StdoutLine: {'line': b'3: from geometry_msgs.msg import Twist \n'}
+[2.079049] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.079129] (articubot_one) StdoutLine: {'line': b'3: from geometry_msgs.msg import Twist \n'}
+[2.079209] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.079290] (articubot_one) StdoutLine: {'line': b'3: from geometry_msgs.msg import Twist \n'}
+[2.079370] (articubot_one) StdoutLine: {'line': b'3:                                    ^\n'}
+[2.079451] (articubot_one) StdoutLine: {'line': b'3: from articubot_one.obstacle_avoidance import Obstacle \n'}
+[2.079531] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.079611] (articubot_one) StdoutLine: {'line': b'3: from articubot_one.obstacle_avoidance import Obstacle \n'}
+[2.079691] (articubot_one) StdoutLine: {'line': b'3:                                                      ^\n'}
+[2.079772] (articubot_one) StdoutLine: {'line': b'3: def test_node_creation():\n'}
+[2.079853] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.079948] (articubot_one) StdoutLine: {'line': b'3:     try :\n'}
+[2.080035] (articubot_one) StdoutLine: {'line': b'3:        ^\n'}
+[2.080116] (articubot_one) StdoutLine: {'line': b'3:         node=Obstacle()\n'}
+[2.080197] (articubot_one) StdoutLine: {'line': b'3:             ^\n'}
+[2.080280] (articubot_one) StdoutLine: {'line': b'3:         assert node.get_name()=="Laser_Obstacle_Avoidance"\n'}
+[2.080362] (articubot_one) StdoutLine: {'line': b'3:                               ^\n'}
+[2.080443] (articubot_one) StdoutLine: {'line': b'3:         assert node.get_name()=="Laser_Obstacle_Avoidance"\n'}
+[2.080524] (articubot_one) StdoutLine: {'line': b'3:                                 ^\n'}
+[2.080604] (articubot_one) StdoutLine: {'line': b"3:         assert hasattr(node,'laser_sub')\n"}
+[2.080685] (articubot_one) StdoutLine: {'line': b'3:                            ^\n'}
+[2.080764] (articubot_one) StdoutLine: {'line': b'3:         # verify that the node is publishing to the correct topic by name \n'}
+[2.080844] (articubot_one) StdoutLine: {'line': b'3:                                                                          ^\n'}
+[2.080943] (articubot_one) StdoutLine: {'line': b"3:         assert hasattr(node,'cmd_vel_pub')\n"}
+[2.081029] (articubot_one) StdoutLine: {'line': b'3:                            ^\n'}
+[2.081111] (articubot_one) StdoutLine: {'line': b'3:     finally :\n'}
+[2.081191] (articubot_one) StdoutLine: {'line': b'3:            ^\n'}
+[2.081272] (articubot_one) StdoutLine: {'line': b'3: def test_parameter_node():\n'}
+[2.081353] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.081432] (articubot_one) StdoutLine: {'line': b'3:     try :\n'}
+[2.081511] (articubot_one) StdoutLine: {'line': b'3:        ^\n'}
+[2.081590] (articubot_one) StdoutLine: {'line': b'3:     finally :\n'}
+[2.081671] (articubot_one) StdoutLine: {'line': b'3:            ^\n'}
+[2.081751] (articubot_one) StdoutLine: {'line': b'3: def test_obstacle():\n'}
+[2.081831] (articubot_one) StdoutLine: {'line': b'3: ^\n'}
+[2.081919] (articubot_one) StdoutLine: {'line': b'3:     try :\n'}
+[2.082008] (articubot_one) StdoutLine: {'line': b'3:        ^\n'}
+[2.082089] (articubot_one) StdoutLine: {'line': b'3:         node=Obstacle()\n'}
+[2.082169] (articubot_one) StdoutLine: {'line': b'3:             ^\n'}
+[2.082248] (articubot_one) StdoutLine: {'line': b'3:         #get values of parameters\n'}
+[2.082327] (articubot_one) StdoutLine: {'line': b'3:         ^\n'}
+[2.082408] (articubot_one) StdoutLine: {'line': b"3:         threshold=node.get_parameter('threshold_distance').value\n"}
+[2.082494] (articubot_one) StdoutLine: {'line': b'3:                  ^\n'}
+[2.082577] (articubot_one) StdoutLine: {'line': b'3:         scan_topic=node.get_parameter("laser_scan_topic").value\n'}
+[2.082658] (articubot_one) StdoutLine: {'line': b'3:                   ^\n'}
+[2.082739] (articubot_one) StdoutLine: {'line': b'3:         scan_topic=node.get_parameter("laser_scan_topic").value\n'}
+[2.082819] (articubot_one) StdoutLine: {'line': b'3:                                       ^\n'}
+[2.082906] (articubot_one) StdoutLine: {'line': b'3:         cmd_topic=node.get_parameter("cmd_vel_topic").value\n'}
+[2.082996] (articubot_one) StdoutLine: {'line': b'3:                  ^\n'}
+[2.083077] (articubot_one) StdoutLine: {'line': b'3:         cmd_topic=node.get_parameter("cmd_vel_topic").value\n'}
+[2.083158] (articubot_one) StdoutLine: {'line': b'3:                                      ^\n'}
+[2.083239] (articubot_one) StdoutLine: {'line': b'3:         front_sector_angle=node.get_parameter("frontal_detection_angle_deg").value\n'}
+[2.083320] (articubot_one) StdoutLine: {'line': b'3:                           ^\n'}
+[2.083402] (articubot_one) StdoutLine: {'line': b'3:         front_sector_angle=node.get_parameter("frontal_detection_angle_deg").value\n'}
+[2.083484] (articubot_one) StdoutLine: {'line': b'3:                                               ^\n'}
+[2.083564] (articubot_one) StdoutLine: {'line': b'3:         # assert the values are correct as expected \n'}
+[2.083644] (articubot_one) StdoutLine: {'line': b'3:                                                    ^\n'}
+[2.083725] (articubot_one) StdoutLine: {'line': b'3:         # 1- check if the parameters are of expected classes \n'}
+[2.083806] (articubot_one) StdoutLine: {'line': b'3:                                                             ^\n'}
+[2.083887] (articubot_one) StdoutLine: {'line': b'3:         assert isinstance(threshold,float) ,f"expect the threshold to be a float"\n'}
+[2.083986] (articubot_one) StdoutLine: {'line': b'3:                                    ^\n'}
+[2.084069] (articubot_one) StdoutLine: {'line': b'3:         assert isinstance(threshold,float) ,f"expect the threshold to be a float"\n'}
+[2.084150] (articubot_one) StdoutLine: {'line': b'3:                                           ^\n'}
+[2.084231] (articubot_one) StdoutLine: {'line': b'3:         assert isinstance(threshold,float) ,f"expect the threshold to be a float"\n'}
+[2.084311] (articubot_one) StdoutLine: {'line': b'3:                                            ^\n'}
+[2.084402] (articubot_one) StdoutLine: {'line': b'3:         assert isinstance(threshold,float) ,f"expect the threshold to be a float"\n'}
+[2.084483] (articubot_one) StdoutLine: {'line': b'3:                                             ^\n'}
+[2.084562] (articubot_one) StdoutLine: {'line': b'3:         assert isinstance(threshold,float) ,f"expect the threshold to be a float"\n'}
+[2.084643] (articubot_one) StdoutLine: {'line': b'3:                                             ^\n'}
+[2.084724] (articubot_one) StdoutLine: {'line': b'3:         assert isinstance(scan_topic,str), f"expect the scan topic to be a string"\n'}
+[2.084804] (articubot_one) StdoutLine: {'line': b'3:                                     ^\n'}
+[2.084885] (articubot_one) StdoutLine: {'line': b'3:         assert isinstance(scan_topic,str), f"expect the scan topic to be a string"\n'}
+[2.084979] (articubot_one) StdoutLine: {'line': b'3:                                            ^\n'}
+[2.085063] (articubot_one) StdoutLine: {'line': b'3:         assert isinstance(scan_topic,str), f"expect the scan topic to be a string"\n'}
+[2.085143] (articubot_one) StdoutLine: {'line': b'3:                                            ^\n'}
+[2.085223] (articubot_one) StdoutLine: {'line': b'3:         assert isinstance(cmd_topic,str), f"expect the cmd velocity command to be a string"\n'}
+[2.085304] (articubot_one) StdoutLine: {'line': b'3:                                    ^\n'}
+[2.085385] (articubot_one) StdoutLine: {'line': b'3:         assert isinstance(cmd_topic,str), f"expect the cmd velocity command to be a string"\n'}
+[2.085465] (articubot_one) StdoutLine: {'line': b'3:                                           ^\n'}
+[2.085546] (articubot_one) StdoutLine: {'line': b'3:         assert isinstance(cmd_topic,str), f"expect the cmd velocity command to be a string"\n'}
+[2.085627] (articubot_one) StdoutLine: {'line': b'3:                                           ^\n'}
+[2.085707] (articubot_one) StdoutLine: {'line': b"3:         assert isinstance(front_sector_angle,float),f'expect the angle of sector to be a float'\n"}
+[2.085787] (articubot_one) StdoutLine: {'line': b'3:                                             ^\n'}
+[2.085866] (articubot_one) StdoutLine: {'line': b"3:         assert isinstance(front_sector_angle,float),f'expect the angle of sector to be a float'\n"}
+[2.085969] (articubot_one) StdoutLine: {'line': b'3:                                                    ^\n'}
+[2.086053] (articubot_one) StdoutLine: {'line': b"3:         assert isinstance(front_sector_angle,float),f'expect the angle of sector to be a float'\n"}
+[2.086135] (articubot_one) StdoutLine: {'line': b'3:                                                     ^\n'}
+[2.086216] (articubot_one) StdoutLine: {'line': b'3:         # 2- check if the values of the parameters are correct \n'}
+[2.086328] (articubot_one) StdoutLine: {'line': b'3:                                                               ^\n'}
+[2.086409] (articubot_one) StdoutLine: {'line': b'3:         assert scan_topic== "scan"\n'}
+[2.086489] (articubot_one) StdoutLine: {'line': b'3:                          ^\n'}
+[2.086569] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.086648] (articubot_one) StdoutLine: {'line': b'3: ./launch/rplidar.launch.py:5:1: E302 expected 2 blank lines, found 1\n'}
+[2.086730] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.086812] (articubot_one) StdoutLine: {'line': b'3: ./launch/rplidar.launch.py:14:100: E501 line too long (113 > 99 characters)\n'}
+[2.086903] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.086993] (articubot_one) StdoutLine: {'line': b'3: ./launch/rsp.launch.py:6:1: I101 Imported names are in the wrong order. Should be Command, LaunchConfiguration\n'}
+[2.087076] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.087155] (articubot_one) StdoutLine: {'line': b"3: ./launch/rsp.launch.py:7:1: I100 Import statements are in the wrong order. 'from launch.actions import DeclareLaunchArgument' should be before 'from launch.substitutions import LaunchConfiguration, Command'\n"}
+[2.087242] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.087326] (articubot_one) StdoutLine: {'line': b"3: ./launch/rsp.launch.py:10:1: F401 'xacro' imported but unused\n"}
+[2.087405] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.087483] (articubot_one) StdoutLine: {'line': b"3: ./launch/rsp.launch.py:21:39: E231 missing whitespace after ','\n"}
+[2.087564] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.087644] (articubot_one) StdoutLine: {'line': b"3: ./launch/rsp.launch.py:21:53: E231 missing whitespace after ','\n"}
+[2.087724] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.087805] (articubot_one) StdoutLine: {'line': b'3: ./launch/rsp.launch.py:23:100: E501 line too long (132 > 99 characters)\n'}
+[2.087886] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.087979] (articubot_one) StdoutLine: {'line': b'3: ./launch/rsp.launch.py:24:1: W293 blank line contains whitespace\n'}
+[2.088061] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.088140] (articubot_one) StdoutLine: {'line': b'3: ./launch/rsp.launch.py:35:5: E303 too many blank lines (2)\n'}
+[2.088220] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.088302] (articubot_one) StdoutLine: {'line': b"3: ./launch/rviz_gazebo.launch.py:2:1: I201 Missing newline between import groups. 'import xacro' is identified as Third Party and 'import os' is identified as Stdlib.\n"}
+[2.088385] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.088465] (articubot_one) StdoutLine: {'line': b"3: ./launch/rviz_gazebo.launch.py:3:1: I100 Import statements are in the wrong order. 'from ament_index_python.packages import get_package_share_directory' should be before 'import xacro'\n"}
+[2.088546] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.088625] (articubot_one) StdoutLine: {'line': b'3: ./launch/rviz_gazebo.launch.py:7:1: I101 Imported names are in the wrong order. Should be DeclareLaunchArgument, IncludeLaunchDescription\n'}
+[2.088705] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.088783] (articubot_one) StdoutLine: {'line': b"3: ./launch/rviz_gazebo.launch.py:12:1: I100 Import statements are in the wrong order. 'from launch.conditions import IfCondition, UnlessCondition' should be before 'from launch_ros.actions import Node'\n"}
+[2.088864] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.088956] (articubot_one) StdoutLine: {'line': b'3: ./launch/rviz_gazebo.launch.py:18:5: E303 too many blank lines (2)\n'}
+[2.089039] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.089118] (articubot_one) StdoutLine: {'line': b'3: ./launch/rviz_gazebo.launch.py:18:100: E501 line too long (110 > 99 characters)\n'}
+[2.089199] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.089280] (articubot_one) StdoutLine: {'line': b'3: ./launch/rviz_gazebo.launch.py:21:17: E225 missing whitespace around operator\n'}
+[2.089360] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.089439] (articubot_one) StdoutLine: {'line': b'3: ./launch/rviz_gazebo.launch.py:21:33: E261 at least two spaces before inline comment\n'}
+[2.089519] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.089597] (articubot_one) StdoutLine: {'line': b"3: ./launch/rviz_gazebo.launch.py:21:34: E262 inline comment should start with '# '\n"}
+[2.089677] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.089756] (articubot_one) StdoutLine: {'line': b"3: ./launch/rviz_gazebo.launch.py:25:62: E231 missing whitespace after ','\n"}
+[2.089836] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.089924] (articubot_one) StdoutLine: {'line': b"3: ./launch/rviz_gazebo.launch.py:25:71: E231 missing whitespace after ','\n"}
+[2.090011] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.090090] (articubot_one) StdoutLine: {'line': b'3: ./launch/rviz_gazebo.launch.py:33:10: W291 trailing whitespace\n'}
+[2.090169] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.090248] (articubot_one) StdoutLine: {'line': b'3: ./launch/rviz_gazebo.launch.py:34:1: W293 blank line contains whitespace\n'}
+[2.090327] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.090405] (articubot_one) StdoutLine: {'line': b'3: ./launch/rviz_gazebo.launch.py:47:21: E131 continuation line unaligned for hanging indent\n'}
+[2.090496] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.090575] (articubot_one) StdoutLine: {'line': b'3: ./launch/rviz_gazebo.launch.py:47:100: E501 line too long (104 > 99 characters)\n'}
+[2.090655] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.090734] (articubot_one) StdoutLine: {'line': b'3: ./launch/rviz_gazebo.launch.py:50:100: E501 line too long (126 > 99 characters)\n'}
+[2.090813] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.090899] (articubot_one) StdoutLine: {'line': b'3: ./launch/rviz_gazebo.launch.py:58:5: Q001 Single quote multiline found but double quotes preferred\n'}
+[2.090990] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.091070] (articubot_one) StdoutLine: {'line': b'3: ./launch/rviz_gazebo.launch.py:58:5: E303 too many blank lines (2)\n'}
+[2.091150] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.091230] (articubot_one) StdoutLine: {'line': b'3: ./launch/rviz_gazebo.launch.py:59:100: E501 line too long (101 > 99 characters)\n'}
+[2.091310] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.091390] (articubot_one) StdoutLine: {'line': b'3: ./launch/rviz_gazebo.launch.py:72:5: E122 continuation line missing indentation or outdented\n'}
+[2.091471] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.091553] (articubot_one) StdoutLine: {'line': b'3: ./launch/rviz_gazebo.launch.py:73:5: E122 continuation line missing indentation or outdented\n'}
+[2.091634] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.091715] (articubot_one) StdoutLine: {'line': b'3: ./launch/rviz_gazebo.launch.py:74:5: E122 continuation line missing indentation or outdented\n'}
+[2.091796] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.091875] (articubot_one) StdoutLine: {'line': b'3: ./launch/rviz_gazebo.launch.py:77:11: E131 continuation line unaligned for hanging indent\n'}
+[2.091972] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.092055] (articubot_one) StdoutLine: {'line': b'3: ./launch/rviz_gazebo.launch.py:78:10: E131 continuation line unaligned for hanging indent\n'}
+[2.092137] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.092216] (articubot_one) StdoutLine: {'line': b'3: ./launch/rviz_gazebo.launch.py:81:5: E122 continuation line missing indentation or outdented\n'}
+[2.092296] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.092376] (articubot_one) StdoutLine: {'line': b'3: ./launch/rviz_gazebo.launch.py:82:1: E122 continuation line missing indentation or outdented\n'}
+[2.092485] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.092563] (articubot_one) StdoutLine: {'line': b'3: ./launch/rviz_gazebo.launch.py:85:17: Q000 Double quotes found but single quotes preferred\n'}
+[2.092652] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.092731] (articubot_one) StdoutLine: {'line': b'3: ./launch/rviz_gazebo.launch.py:86:20: Q000 Double quotes found but single quotes preferred\n'}
+[2.092812] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.092898] (articubot_one) StdoutLine: {'line': b'3: ./launch/rviz_gazebo.launch.py:87:20: Q000 Double quotes found but single quotes preferred\n'}
+[2.092988] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.093069] (articubot_one) StdoutLine: {'line': b"3: ./launch/rviz_gazebo.launch.py:89:5: E265 block comment should start with '# '\n"}
+[2.093153] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.093232] (articubot_one) StdoutLine: {'line': b'3: ./launch/rviz_gazebo.launch.py:90:14: E225 missing whitespace around operator\n'}
+[2.093312] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.093391] (articubot_one) StdoutLine: {'line': b'3: ./launch/rviz_gazebo.launch.py:96:1: W293 blank line contains whitespace\n'}
+[2.093472] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.093552] (articubot_one) StdoutLine: {'line': b'3: ./launch/rviz_gazebo.launch.py:136:1: W293 blank line contains whitespace\n'}
+[2.093632] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.093714] (articubot_one) StdoutLine: {'line': b'3: ./launch/rviz_gazebo.launch.py:140:1: W293 blank line contains whitespace\n'}
+[2.093795] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.093874] (articubot_one) StdoutLine: {'line': b'3: ./launch/rviz_gazebo.launch.py:144:1: W293 blank line contains whitespace\n'}
+[2.093972] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.094054] (articubot_one) StdoutLine: {'line': b"3: ./test/pytest/test_laserObstacle.py:5:1: F401 'sensor_msgs.msg.LaserScan' imported but unused\n"}
+[2.094135] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.094216] (articubot_one) StdoutLine: {'line': b"3: ./test/pytest/test_laserObstacle.py:6:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Twist' should be before 'from sensor_msgs.msg import LaserScan'\n"}
+[2.094298] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.094378] (articubot_one) StdoutLine: {'line': b"3: ./test/pytest/test_laserObstacle.py:6:1: F401 'geometry_msgs.msg.Twist' imported but unused\n"}
+[2.094459] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.094538] (articubot_one) StdoutLine: {'line': b'3: ./test/pytest/test_laserObstacle.py:6:36: W291 trailing whitespace\n'}
+[2.094618] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.094697] (articubot_one) StdoutLine: {'line': b"3: ./test/pytest/test_laserObstacle.py:8:1: I100 Import statements are in the wrong order. 'from articubot_one.obstacle_avoidance import Obstacle' should be before 'from geometry_msgs.msg import Twist'\n"}
+[2.094779] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.094859] (articubot_one) StdoutLine: {'line': b'3: ./test/pytest/test_laserObstacle.py:8:54: W291 trailing whitespace\n'}
+[2.094970] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.095062] (articubot_one) StdoutLine: {'line': b'3: ./test/pytest/test_laserObstacle.py:10:1: E302 expected 2 blank lines, found 1\n'}
+[2.095144] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.095224] (articubot_one) StdoutLine: {'line': b"3: ./test/pytest/test_laserObstacle.py:12:8: E203 whitespace before ':'\n"}
+[2.095305] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.095385] (articubot_one) StdoutLine: {'line': b'3: ./test/pytest/test_laserObstacle.py:13:13: E225 missing whitespace around operator\n'}
+[2.095466] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.095546] (articubot_one) StdoutLine: {'line': b'3: ./test/pytest/test_laserObstacle.py:15:31: E225 missing whitespace around operator\n'}
+[2.095626] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.095705] (articubot_one) StdoutLine: {'line': b'3: ./test/pytest/test_laserObstacle.py:15:33: Q000 Double quotes found but single quotes preferred\n'}
+[2.095786] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.095866] (articubot_one) StdoutLine: {'line': b"3: ./test/pytest/test_laserObstacle.py:17:28: E231 missing whitespace after ','\n"}
+[2.095962] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.096045] (articubot_one) StdoutLine: {'line': b'3: ./test/pytest/test_laserObstacle.py:19:74: W291 trailing whitespace\n'}
+[2.096126] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.096205] (articubot_one) StdoutLine: {'line': b"3: ./test/pytest/test_laserObstacle.py:20:28: E231 missing whitespace after ','\n"}
+[2.096284] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.096363] (articubot_one) StdoutLine: {'line': b"3: ./test/pytest/test_laserObstacle.py:22:12: E203 whitespace before ':'\n"}
+[2.096443] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.096522] (articubot_one) StdoutLine: {'line': b'3: ./test/pytest/test_laserObstacle.py:24:1: E302 expected 2 blank lines, found 0\n'}
+[2.096603] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.096684] (articubot_one) StdoutLine: {'line': b"3: ./test/pytest/test_laserObstacle.py:26:8: E203 whitespace before ':'\n"}
+[2.096763] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.096841] (articubot_one) StdoutLine: {'line': b"3: ./test/pytest/test_laserObstacle.py:28:12: E203 whitespace before ':'\n"}
+[2.096930] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.097015] (articubot_one) StdoutLine: {'line': b'3: ./test/pytest/test_laserObstacle.py:30:1: E302 expected 2 blank lines, found 0\n'}
+[2.097096] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.097174] (articubot_one) StdoutLine: {'line': b"3: ./test/pytest/test_laserObstacle.py:32:8: E203 whitespace before ':'\n"}
+[2.097261] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.097343] (articubot_one) StdoutLine: {'line': b'3: ./test/pytest/test_laserObstacle.py:33:13: E225 missing whitespace around operator\n'}
+[2.097423] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.097502] (articubot_one) StdoutLine: {'line': b"3: ./test/pytest/test_laserObstacle.py:34:9: E265 block comment should start with '# '\n"}
+[2.097582] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.097660] (articubot_one) StdoutLine: {'line': b'3: ./test/pytest/test_laserObstacle.py:35:18: E225 missing whitespace around operator\n'}
+[2.097740] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.097818] (articubot_one) StdoutLine: {'line': b'3: ./test/pytest/test_laserObstacle.py:36:19: E225 missing whitespace around operator\n'}
+[2.097903] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.097992] (articubot_one) StdoutLine: {'line': b'3: ./test/pytest/test_laserObstacle.py:36:39: Q000 Double quotes found but single quotes preferred\n'}
+[2.098073] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.098153] (articubot_one) StdoutLine: {'line': b'3: ./test/pytest/test_laserObstacle.py:37:18: E225 missing whitespace around operator\n'}
+[2.098233] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.098313] (articubot_one) StdoutLine: {'line': b'3: ./test/pytest/test_laserObstacle.py:37:38: Q000 Double quotes found but single quotes preferred\n'}
+[2.098392] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.098471] (articubot_one) StdoutLine: {'line': b'3: ./test/pytest/test_laserObstacle.py:38:27: E225 missing whitespace around operator\n'}
+[2.098550] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.098630] (articubot_one) StdoutLine: {'line': b'3: ./test/pytest/test_laserObstacle.py:38:47: Q000 Double quotes found but single quotes preferred\n'}
+[2.098709] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.098790] (articubot_one) StdoutLine: {'line': b'3: ./test/pytest/test_laserObstacle.py:39:52: W291 trailing whitespace\n'}
+[2.098871] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.098965] (articubot_one) StdoutLine: {'line': b'3: ./test/pytest/test_laserObstacle.py:40:61: W291 trailing whitespace\n'}
+[2.099049] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.099129] (articubot_one) StdoutLine: {'line': b"3: ./test/pytest/test_laserObstacle.py:41:36: E231 missing whitespace after ','\n"}
+[2.099214] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.099295] (articubot_one) StdoutLine: {'line': b"3: ./test/pytest/test_laserObstacle.py:41:43: E203 whitespace before ','\n"}
+[2.099375] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.099455] (articubot_one) StdoutLine: {'line': b"3: ./test/pytest/test_laserObstacle.py:41:44: E231 missing whitespace after ','\n"}
+[2.099536] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.099615] (articubot_one) StdoutLine: {'line': b'3: ./test/pytest/test_laserObstacle.py:41:45: Q000 Double quotes found but single quotes preferred\n'}
+[2.099696] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.099777] (articubot_one) StdoutLine: {'line': b'3: ./test/pytest/test_laserObstacle.py:41:45: F541 f-string is missing placeholders\n'}
+[2.099856] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.099948] (articubot_one) StdoutLine: {'line': b"3: ./test/pytest/test_laserObstacle.py:42:37: E231 missing whitespace after ','\n"}
+[2.100042] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.100121] (articubot_one) StdoutLine: {'line': b'3: ./test/pytest/test_laserObstacle.py:42:44: Q000 Double quotes found but single quotes preferred\n'}
+[2.100201] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.100281] (articubot_one) StdoutLine: {'line': b'3: ./test/pytest/test_laserObstacle.py:42:44: F541 f-string is missing placeholders\n'}
+[2.100363] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.100442] (articubot_one) StdoutLine: {'line': b"3: ./test/pytest/test_laserObstacle.py:43:36: E231 missing whitespace after ','\n"}
+[2.100523] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.100606] (articubot_one) StdoutLine: {'line': b'3: ./test/pytest/test_laserObstacle.py:43:43: Q000 Double quotes found but single quotes preferred\n'}
+[2.100686] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.100764] (articubot_one) StdoutLine: {'line': b'3: ./test/pytest/test_laserObstacle.py:43:43: F541 f-string is missing placeholders\n'}
+[2.100844] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.100934] (articubot_one) StdoutLine: {'line': b"3: ./test/pytest/test_laserObstacle.py:44:45: E231 missing whitespace after ','\n"}
+[2.101019] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.101100] (articubot_one) StdoutLine: {'line': b"3: ./test/pytest/test_laserObstacle.py:44:52: E231 missing whitespace after ','\n"}
+[2.101179] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.101258] (articubot_one) StdoutLine: {'line': b'3: ./test/pytest/test_laserObstacle.py:44:53: F541 f-string is missing placeholders\n'}
+[2.101337] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.101416] (articubot_one) StdoutLine: {'line': b'3: ./test/pytest/test_laserObstacle.py:45:63: W291 trailing whitespace\n'}
+[2.101496] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.101574] (articubot_one) StdoutLine: {'line': b'3: ./test/pytest/test_laserObstacle.py:47:26: E225 missing whitespace around operator\n'}
+[2.101653] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.101733] (articubot_one) StdoutLine: {'line': b'3:         assert scan_topic== "scan"\n'}
+[2.101814] (articubot_one) StdoutLine: {'line': b'3:                             ^\n'}
+[2.101900] (articubot_one) StdoutLine: {'line': b'3:         assert cmd_topic == "cmd_vel"\n'}
+[2.101990] (articubot_one) StdoutLine: {'line': b'3:                             ^\n'}
+[2.102070] (articubot_one) StdoutLine: {'line': b'3:         assert front_sector_angle == 60.0 \n'}
+[2.102150] (articubot_one) StdoutLine: {'line': b'3:                                          ^\n'}
+[2.102229] (articubot_one) StdoutLine: {'line': b'3:     finally :\n'}
+[2.102340] (articubot_one) StdoutLine: {'line': b'3:            ^\n'}
+[2.102420] (articubot_one) StdoutLine: {'line': b"3: if __name__=='__main__' :\n"}
+[2.102500] (articubot_one) StdoutLine: {'line': b'3:            ^\n'}
+[2.102581] (articubot_one) StdoutLine: {'line': b"3: if __name__=='__main__' :\n"}
+[2.102661] (articubot_one) StdoutLine: {'line': b'3:                        ^\n'}
+[2.102741] (articubot_one) StdoutLine: {'line': b'3: 7     E111 indentation is not a multiple of 4\n'}
+[2.102822] (articubot_one) StdoutLine: {'line': b'3: 1     E114 indentation is not a multiple of 4 (comment)\n'}
+[2.102908] (articubot_one) StdoutLine: {'line': b'3: 2     E117 over-indented (comment)\n'}
+[2.102997] (articubot_one) StdoutLine: {'line': b'3: 6     E122 continuation line missing indentation or outdented\n'}
+[2.103078] (articubot_one) StdoutLine: {'line': b'3: 3     E128 continuation line under-indented for visual indent\n'}
+[2.103158] (articubot_one) StdoutLine: {'line': b'3: 5     E131 continuation line unaligned for hanging indent\n'}
+[2.103238] (articubot_one) StdoutLine: {'line': b"3: 11    E203 whitespace before ':'\n"}
+[2.103318] (articubot_one) StdoutLine: {'line': b'3: 18    E225 missing whitespace around operator\n'}
+[2.103398] (articubot_one) StdoutLine: {'line': b"3: 44    E231 missing whitespace after ','\n"}
+[2.103480] (articubot_one) StdoutLine: {'line': b'3: 4     E261 at least two spaces before inline comment\n'}
+[2.103559] (articubot_one) StdoutLine: {'line': b"3: 3     E262 inline comment should start with '# '\n"}
+[2.103637] (articubot_one) StdoutLine: {'line': b"3: 6     E265 block comment should start with '# '\n"}
+[2.103717] (articubot_one) StdoutLine: {'line': b'3: 1     E275 missing whitespace after keyword\n'}
+[2.103796] (articubot_one) StdoutLine: {'line': b'3: 7     E302 expected 2 blank lines, found 1\n'}
+[2.103875] (articubot_one) StdoutLine: {'line': b'3: 19    E303 too many blank lines (2)\n'}
+[2.103969] (articubot_one) StdoutLine: {'line': b'3: 1     E305 expected 2 blank lines after class or function definition, found 1\n'}
+[2.104059] (articubot_one) StdoutLine: {'line': b'3: 30    E501 line too long (110 > 99 characters)\n'}
+[2.104139] (articubot_one) StdoutLine: {'line': b"3: 5     F401 'os' imported but unused\n"}
+[2.104218] (articubot_one) StdoutLine: {'line': b'3: 5     F541 f-string is missing placeholders\n'}
+[2.104297] (articubot_one) StdoutLine: {'line': b"3: 13    I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Twist' should be before 'from sensor_msgs.msg import LaserScan'\n"}
+[2.104377] (articubot_one) StdoutLine: {'line': b'3: 3     I101 Imported names are in the wrong order. Should be DeclareLaunchArgument, IncludeLaunchDescription\n'}
+[2.104457] (articubot_one) StdoutLine: {'line': b"3: 5     I201 Missing newline between import groups. 'import math' is identified as Stdlib and 'from geometry_msgs.msg import Twist' is identified as Third Party.\n"}
+[2.104538] (articubot_one) StdoutLine: {'line': b'3: 45    Q000 Double quotes found but single quotes preferred\n'}
+[2.104618] (articubot_one) StdoutLine: {'line': b'3: 1     Q001 Single quote multiline found but double quotes preferred\n'}
+[2.104698] (articubot_one) StdoutLine: {'line': b'3: 22    W291 trailing whitespace\n'}
+[2.104777] (articubot_one) StdoutLine: {'line': b'3: 1     W292 no newline at end of file\n'}
+[2.104857] (articubot_one) StdoutLine: {'line': b'3: 14    W293 blank line contains whitespace\n'}
+[2.104948] (articubot_one) StdoutLine: {'line': b'3: ./test/pytest/test_laserObstacle.py:47:29: Q000 Double quotes found but single quotes preferred\n'}
+[2.105038] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.105119] (articubot_one) StdoutLine: {'line': b'3: ./test/pytest/test_laserObstacle.py:48:29: Q000 Double quotes found but single quotes preferred\n'}
+[2.105199] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.105279] (articubot_one) StdoutLine: {'line': b'3: ./test/pytest/test_laserObstacle.py:49:42: W291 trailing whitespace\n'}
+[2.105360] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.105441] (articubot_one) StdoutLine: {'line': b"3: ./test/pytest/test_laserObstacle.py:50:12: E203 whitespace before ':'\n"}
+[2.105522] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.105603] (articubot_one) StdoutLine: {'line': b'3: ./test/pytest/test_laserObstacle.py:54:12: E225 missing whitespace around operator\n'}
+[2.105686] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.105766] (articubot_one) StdoutLine: {'line': b"3: ./test/pytest/test_laserObstacle.py:54:24: E203 whitespace before ':'\n"}
+[2.105847] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.105938] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.106020] (-) TimerEvent: {}
+[2.106132] (articubot_one) StdoutLine: {'line': b'3: 15 files checked\n'}
+[2.106287] (articubot_one) StdoutLine: {'line': b'3: 282 errors\n'}
+[2.106463] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.106685] (articubot_one) StdoutLine: {'line': b"3: 'E'-type errors: 168\n"}
+[2.106840] (articubot_one) StdoutLine: {'line': b"3: 'F'-type errors: 10\n"}
+[2.107133] (articubot_one) StdoutLine: {'line': b"3: 'I'-type errors: 21\n"}
+[2.107359] (articubot_one) StdoutLine: {'line': b"3: 'Q'-type errors: 46\n"}
+[2.107532] (articubot_one) StdoutLine: {'line': b"3: 'W'-type errors: 37\n"}
+[2.107671] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.107820] (articubot_one) StdoutLine: {'line': b'3: Checked files:\n'}
+[2.107965] (articubot_one) StdoutLine: {'line': b'3: \n'}
+[2.108057] (articubot_one) StdoutLine: {'line': b'3: * ./setup.py\n'}
+[2.108142] (articubot_one) StdoutLine: {'line': b'3: * ./test/pytest/test_laserObstacle.py\n'}
+[2.108226] (articubot_one) StdoutLine: {'line': b'3: * ./articubot_one/obstacle_avoidance.py\n'}
+[2.108308] (articubot_one) StdoutLine: {'line': b'3: * ./articubot_one/__init__.py\n'}
+[2.108389] (articubot_one) StdoutLine: {'line': b'3: * ./launch/joystick.launch.py\n'}
+[2.108471] (articubot_one) StdoutLine: {'line': b'3: * ./launch/online_async_launch.py\n'}
+[2.108552] (articubot_one) StdoutLine: {'line': b'3: * ./launch/ball_tracker.launch.py\n'}
+[2.108633] (articubot_one) StdoutLine: {'line': b'3: * ./launch/localization_launch.py\n'}
+[2.108725] (articubot_one) StdoutLine: {'line': b'3: * ./launch/rviz_gazebo.launch.py\n'}
+[2.108806] (articubot_one) StdoutLine: {'line': b'3: * ./launch/navigation_launch.py\n'}
+[2.108889] (articubot_one) StdoutLine: {'line': b'3: * ./launch/rsp.launch.py\n'}
+[2.108995] (articubot_one) StdoutLine: {'line': b'3: * ./launch/launch_robot.launch.py\n'}
+[2.109079] (articubot_one) StdoutLine: {'line': b'3: * ./launch/camera.launch.py\n'}
+[2.109172] (articubot_one) StdoutLine: {'line': b'3: * ./launch/rplidar.launch.py\n'}
+[2.109254] (articubot_one) StdoutLine: {'line': b'3: * ./launch/launch_sim.launch.py\n'}
+[2.109335] (articubot_one) StdoutLine: {'line': b'3: -- run_test.py: return code 1\n'}
+[2.109490] (articubot_one) StdoutLine: {'line': b"3: -- run_test.py: verify result file '/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/flake8.xunit.xml'\n"}
+[2.109635] (articubot_one) StdoutLine: {'line': b'3/6 Test #3: flake8 ...........................***Failed    0.58 sec\n'}
+[2.109786] (articubot_one) StdoutLine: {'line': b'test 4\n'}
+[2.109874] (articubot_one) StdoutLine: {'line': b'    Start 4: lint_cmake\n'}
+[2.110020] (articubot_one) StdoutLine: {'line': b'\n'}
+[2.110122] (articubot_one) StdoutLine: {'line': b'4: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/lint_cmake.xunit.xml" "--package-name" "articubot_one" "--output-file" "/home/jonatan/ros2_ws/build/articubot_one/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/jazzy/bin/ament_lint_cmake" "--xunit-file" "/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/lint_cmake.xunit.xml"\n'}
+[2.110224] (articubot_one) StdoutLine: {'line': b'4: Working Directory: /home/jonatan/ros2_ws/src/articubot_one\n'}
+[2.110317] (articubot_one) StdoutLine: {'line': b'4: Test timeout computed to be: 60\n'}
+[2.121779] (articubot_one) StdoutLine: {'line': b"4: -- run_test.py: invoking following command in '/home/jonatan/ros2_ws/src/articubot_one':\n"}
+[2.122015] (articubot_one) StdoutLine: {'line': b'4:  - /opt/ros/jazzy/bin/ament_lint_cmake --xunit-file /home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/lint_cmake.xunit.xml\n'}
+[2.206120] (-) TimerEvent: {}
+[2.217835] (articubot_one) StdoutLine: {'line': b'4: CMakeLists.txt:40: Line ends in whitespace [whitespace/eol]\n'}
+[2.218062] (articubot_one) StdoutLine: {'line': b'4: CMakeLists.txt:55: Line ends in whitespace [whitespace/eol]\n'}
+[2.218164] (articubot_one) StdoutLine: {'line': b'4: \n'}
+[2.218254] (articubot_one) StdoutLine: {'line': b'4: \n'}
+[2.218338] (articubot_one) StdoutLine: {'line': b'4: 2 errors\n'}
+[2.232835] (articubot_one) StdoutLine: {'line': b'4: -- run_test.py: return code 1\n'}
+[2.233075] (articubot_one) StdoutLine: {'line': b"4: -- run_test.py: verify result file '/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/lint_cmake.xunit.xml'\n"}
+[2.243993] (articubot_one) StdoutLine: {'line': b'4/6 Test #4: lint_cmake .......................***Failed    0.20 sec\n'}
+[2.244375] (articubot_one) StdoutLine: {'line': b'test 5\n'}
+[2.244587] (articubot_one) StdoutLine: {'line': b'    Start 5: pep257\n'}
+[2.244757] (articubot_one) StdoutLine: {'line': b'\n'}
+[2.244916] (articubot_one) StdoutLine: {'line': b'5: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/pep257.xunit.xml" "--package-name" "articubot_one" "--output-file" "/home/jonatan/ros2_ws/build/articubot_one/ament_pep257/pep257.txt" "--command" "/opt/ros/jazzy/bin/ament_pep257" "--xunit-file" "/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/pep257.xunit.xml"\n'}
+[2.245090] (articubot_one) StdoutLine: {'line': b'5: Working Directory: /home/jonatan/ros2_ws/src/articubot_one\n'}
+[2.245202] (articubot_one) StdoutLine: {'line': b'5: Test timeout computed to be: 60\n'}
+[2.306270] (-) TimerEvent: {}
+[2.319599] (articubot_one) StdoutLine: {'line': b"5: -- run_test.py: invoking following command in '/home/jonatan/ros2_ws/src/articubot_one':\n"}
+[2.319775] (articubot_one) StdoutLine: {'line': b'5:  - /opt/ros/jazzy/bin/ament_pep257 --xunit-file /home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/pep257.xunit.xml\n'}
+[2.406394] (-) TimerEvent: {}
+[2.501360] (articubot_one) StdoutLine: {'line': b'5: checking ./articubot_one/__init__.py\n'}
+[2.501725] (articubot_one) StdoutLine: {'line': b'5: checking ./articubot_one/obstacle_avoidance.py\n'}
+[2.502015] (articubot_one) StdoutLine: {'line': b'5: checking ./launch/ball_tracker.launch.py\n'}
+[2.502194] (articubot_one) StdoutLine: {'line': b'5: checking ./launch/camera.launch.py\n'}
+[2.502342] (articubot_one) StdoutLine: {'line': b'5: checking ./launch/joystick.launch.py\n'}
+[2.502491] (articubot_one) StdoutLine: {'line': b'5: checking ./launch/launch_robot.launch.py\n'}
+[2.502640] (articubot_one) StdoutLine: {'line': b'5: checking ./launch/launch_sim.launch.py\n'}
+[2.502796] (articubot_one) StdoutLine: {'line': b'5: checking ./launch/localization_launch.py\n'}
+[2.502958] (articubot_one) StdoutLine: {'line': b'5: checking ./launch/navigation_launch.py\n'}
+[2.503109] (articubot_one) StdoutLine: {'line': b'5: checking ./launch/online_async_launch.py\n'}
+[2.503249] (articubot_one) StdoutLine: {'line': b'5: checking ./launch/rplidar.launch.py\n'}
+[2.503390] (articubot_one) StdoutLine: {'line': b'5: checking ./launch/rsp.launch.py\n'}
+[2.503531] (articubot_one) StdoutLine: {'line': b'5: checking ./launch/rviz_gazebo.launch.py\n'}
+[2.503669] (articubot_one) StdoutLine: {'line': b'5: checking ./setup.py\n'}
+[2.503809] (articubot_one) StdoutLine: {'line': b'5: checking ./test/pytest/test_laserObstacle.py\n'}
+[2.503965] (articubot_one) StdoutLine: {'line': b'5: No problems found\n'}
+[2.506493] (-) TimerEvent: {}
+[2.529281] (articubot_one) StdoutLine: {'line': b'5: -- run_test.py: return code 0\n'}
+[2.529566] (articubot_one) StdoutLine: {'line': b"5: -- run_test.py: verify result file '/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/pep257.xunit.xml'\n"}
+[2.541619] (articubot_one) StdoutLine: {'line': b'5/6 Test #5: pep257 ...........................   Passed    0.30 sec\n'}
+[2.542009] (articubot_one) StdoutLine: {'line': b'test 6\n'}
+[2.542225] (articubot_one) StdoutLine: {'line': b'    Start 6: xmllint\n'}
+[2.542343] (articubot_one) StdoutLine: {'line': b'\n'}
+[2.542432] (articubot_one) StdoutLine: {'line': b'6: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/xmllint.xunit.xml" "--package-name" "articubot_one" "--output-file" "/home/jonatan/ros2_ws/build/articubot_one/ament_xmllint/xmllint.txt" "--command" "/opt/ros/jazzy/bin/ament_xmllint" "--xunit-file" "/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/xmllint.xunit.xml"\n'}
+[2.542524] (articubot_one) StdoutLine: {'line': b'6: Working Directory: /home/jonatan/ros2_ws/src/articubot_one\n'}
+[2.542610] (articubot_one) StdoutLine: {'line': b'6: Test timeout computed to be: 60\n'}
+[2.606616] (-) TimerEvent: {}
+[2.620091] (articubot_one) StdoutLine: {'line': b"6: -- run_test.py: invoking following command in '/home/jonatan/ros2_ws/src/articubot_one':\n"}
+[2.620323] (articubot_one) StdoutLine: {'line': b'6:  - /opt/ros/jazzy/bin/ament_xmllint --xunit-file /home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/xmllint.xunit.xml\n'}
+[2.706737] (-) TimerEvent: {}
+[2.807307] (-) TimerEvent: {}
+[2.907868] (-) TimerEvent: {}
+[3.009533] (-) TimerEvent: {}
+[3.110211] (-) TimerEvent: {}
+[3.211239] (-) TimerEvent: {}
+[3.312346] (-) TimerEvent: {}
+[3.413477] (-) TimerEvent: {}
+[3.514228] (-) TimerEvent: {}
+[3.614942] (-) TimerEvent: {}
+[3.715825] (-) TimerEvent: {}
+[3.816499] (-) TimerEvent: {}
+[3.917218] (-) TimerEvent: {}
+[4.017984] (-) TimerEvent: {}
+[4.118648] (-) TimerEvent: {}
+[4.219470] (-) TimerEvent: {}
+[4.320185] (-) TimerEvent: {}
+[4.420955] (-) TimerEvent: {}
+[4.521724] (-) TimerEvent: {}
+[4.622533] (-) TimerEvent: {}
+[4.723178] (-) TimerEvent: {}
+[4.823835] (-) TimerEvent: {}
+[4.924555] (-) TimerEvent: {}
+[5.025396] (-) TimerEvent: {}
+[5.126082] (-) TimerEvent: {}
+[5.227047] (-) TimerEvent: {}
+[5.328046] (-) TimerEvent: {}
+[5.428773] (-) TimerEvent: {}
+[5.529797] (-) TimerEvent: {}
+[5.630560] (-) TimerEvent: {}
+[5.731633] (-) TimerEvent: {}
+[5.832314] (-) TimerEvent: {}
+[5.933256] (-) TimerEvent: {}
+[6.034018] (-) TimerEvent: {}
+[6.134989] (-) TimerEvent: {}
+[6.235765] (-) TimerEvent: {}
+[6.336491] (-) TimerEvent: {}
+[6.437193] (-) TimerEvent: {}
+[6.538107] (-) TimerEvent: {}
+[6.638800] (-) TimerEvent: {}
+[6.739648] (-) TimerEvent: {}
+[6.840370] (-) TimerEvent: {}
+[6.941255] (-) TimerEvent: {}
+[7.041995] (-) TimerEvent: {}
+[7.142923] (-) TimerEvent: {}
+[7.243686] (-) TimerEvent: {}
+[7.344467] (-) TimerEvent: {}
+[7.445108] (-) TimerEvent: {}
+[7.545827] (-) TimerEvent: {}
+[7.608468] (articubot_one) StdoutLine: {'line': b"6: File 'package.xml' is valid\n"}
+[7.609531] (articubot_one) StdoutLine: {'line': b'6: \n'}
+[7.610375] (articubot_one) StdoutLine: {'line': b'6: No problems found\n'}
+[7.646060] (-) TimerEvent: {}
+[7.669101] (articubot_one) StdoutLine: {'line': b'6: -- run_test.py: return code 0\n'}
+[7.670216] (articubot_one) StdoutLine: {'line': b"6: -- run_test.py: verify result file '/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/xmllint.xunit.xml'\n"}
+[7.711994] (articubot_one) StdoutLine: {'line': b'6/6 Test #6: xmllint ..........................   Passed    5.17 sec\n'}
+[7.713805] (articubot_one) StdoutLine: {'line': b'\n'}
+[7.714877] (articubot_one) StdoutLine: {'line': b'33% tests passed\x1b[0;0m, \x1b[0;31m4 tests failed\x1b[0;0m out of 6\n'}
+[7.716134] (articubot_one) StdoutLine: {'line': b'\n'}
+[7.717097] (articubot_one) StdoutLine: {'line': b'Label Time Summary:\n'}
+[7.718224] (articubot_one) StdoutLine: {'line': b'copyright     =   0.42 sec*proc (1 test)\n'}
+[7.718776] (articubot_one) StdoutLine: {'line': b'flake8        =   0.58 sec*proc (1 test)\n'}
+[7.719399] (articubot_one) StdoutLine: {'line': b'lint_cmake    =   0.20 sec*proc (1 test)\n'}
+[7.719945] (articubot_one) StdoutLine: {'line': b'linter        =   6.67 sec*proc (5 tests)\n'}
+[7.720596] (articubot_one) StdoutLine: {'line': b'pep257        =   0.30 sec*proc (1 test)\n'}
+[7.721215] (articubot_one) StdoutLine: {'line': b'pytest        =   0.99 sec*proc (1 test)\n'}
+[7.721746] (articubot_one) StdoutLine: {'line': b'xmllint       =   5.17 sec*proc (1 test)\n'}
+[7.722342] (articubot_one) StdoutLine: {'line': b'\n'}
+[7.722872] (articubot_one) StdoutLine: {'line': b'Total Test time (real) =   7.67 sec\n'}
+[7.723421] (articubot_one) StdoutLine: {'line': b'\n'}
+[7.723965] (articubot_one) StdoutLine: {'line': b'The following tests FAILED:\n'}
+[7.724489] (articubot_one) StdoutLine: {'line': b'\t\x1b[0;31m  1 - laser_obstacle_test (Failed)\x1b[0;0m\n'}
+[7.725014] (articubot_one) StdoutLine: {'line': b'\t\x1b[0;31m  2 - copyright (Failed)\x1b[0;0m\n'}
+[7.725563] (articubot_one) StdoutLine: {'line': b'\t\x1b[0;31m  3 - flake8 (Failed)\x1b[0;0m\n'}
+[7.726090] (articubot_one) StdoutLine: {'line': b'\t\x1b[0;31m  4 - lint_cmake (Failed)\x1b[0;0m\n'}
+[7.730469] (articubot_one) StderrLine: {'line': b'Errors while running CTest\n'}
+[7.731389] (articubot_one) StderrLine: {'line': b'Output from these tests are in: /home/jonatan/ros2_ws/build/articubot_one/Testing/Temporary/LastTest.log\n'}
+[7.732150] (articubot_one) StderrLine: {'line': b'Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.\n'}
+[7.738241] (articubot_one) CommandEnded: {'returncode': 8}
+[7.739533] (articubot_one) TestFailure: {'identifier': 'articubot_one'}
+[7.739646] (articubot_one) JobEnded: {'identifier': 'articubot_one', 'rc': 0}
+[7.742727] (-) EventReactorShutdown: {}

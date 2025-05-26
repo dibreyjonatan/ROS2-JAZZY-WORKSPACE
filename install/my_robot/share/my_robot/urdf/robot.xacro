@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="two_wheeled_robot" >
+
+ 
+  <xacro:include filename="$(find my_robot)/parts/base/base.urdf.xacro" />  
+  <xacro:include filename="$(find my_robot)/parts/base/base.gazebo.xacro" />  
+
+  <xacro:include filename="$(find my_robot)/parts/caster/caster.xacro" />  
+  
+  <xacro:include filename="$(find my_robot)/parts/footprint/footprint.xacro" />  
+    
+  <xacro:include filename="$(find my_robot)/parts/imu/imu.xacro" />  
+  <xacro:include filename="$(find my_robot)/parts/imu/imu.gazebo.xacro" /> 
+
+  <xacro:include filename="$(find my_robot)/parts/lidar/lidar.xacro" />  
+  <xacro:include filename="$(find my_robot)/parts/lidar/lidar.gazebo.xacro" />  
+  
+  <xacro:include filename="$(find my_robot)/parts/wheel/wheel.xacro" />  
+  <xacro:include filename="$(find my_robot)/parts/wheel/wheel.gazebo.xacro" />  
+    
+    
+  <!-- ********************** ROBOT BASE *********************************  -->
+  <xacro:macro name="base_v0" />
+  <xacro:macro name="base_robot"/>
+
+  <!-- ****************** ROBOT BASE FOOTPRINT ***************************  -->
+
+   <xacro:macro name="footprint" />
+ 
+  <!-- ***********************  WHEEL ******************************  -->
+  <xacro:macro name="diff_wheel"/>
+  <!-- ***********************  Caster WHEEL ******************************  -->
+  <xacro:macro name="caster"/>
+
+  <!-- *********************** IMU SETUP *********************************  -->
+  <xacro:macro name="imu_gazebo"/>
+    <xacro:macro name="imu"/>
+  <!-- *********************** LIDAR SETUP **********************************  -->
+  <xacro:macro name="lidar_gazebo" />
+  <xacro:macro name="lidar"/>
+ <!-- *********************** WHEEL ODOMETRY ***************************    --> 
+ <xacro:macro name="wheel_plugin"/>
+ 
+</robot>

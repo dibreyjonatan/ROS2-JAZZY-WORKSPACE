@@ -1,0 +1,20 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/jonatan/ros2_ws/install/turtlesim_interface/lib/python3.12/site-packages",
+        "/home/jonatan/ros2_ws/install/pubsub_rospyqt/lib/python3.12/site-packages",
+        "/home/jonatan/ros2_ws/install/obslidar_description/lib/python3.12/site-packages",
+        "/home/jonatan/ros2_ws/install/first_pyqtros/lib/python3.12/site-packages",
+        "/home/jonatan/ros2_ws/install/first_project/lib/python3.12/site-packages",
+        "/home/jonatan/ros2_ws/install/articubot_one/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/jonatan/ros2_ws/install/turtlesim_interface/lib/python3.12/site-packages",
+        "/home/jonatan/ros2_ws/install/pubsub_rospyqt/lib/python3.12/site-packages",
+        "/home/jonatan/ros2_ws/install/obslidar_description/lib/python3.12/site-packages",
+        "/home/jonatan/ros2_ws/install/first_pyqtros/lib/python3.12/site-packages",
+        "/home/jonatan/ros2_ws/install/first_project/lib/python3.12/site-packages",
+        "/home/jonatan/ros2_ws/install/articubot_one/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ]
+}

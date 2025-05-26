@@ -1,0 +1,63 @@
+[0.024s] Invoking command in '/home/jonatan/ros2_ws/build/articubot_one': CMAKE_PREFIX_PATH=/home/jonatan/ros2_ws/install/articubot_one:/home/jonatan/ros2_ws/install/working_robot:/home/jonatan/ros2_ws/install/robot_project:/home/jonatan/ros2_ws/install/my_robot:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/jonatan/ros2_ws/install/articubot_one/lib/python3.12/site-packages:/home/jonatan/ros2_ws/install/turtlesim_interface/lib/python3.12/site-packages:/home/jonatan/ros2_ws/install/pubsub_rospyqt/lib/python3.12/site-packages:/home/jonatan/ros2_ws/install/obslidar_description/lib/python3.12/site-packages:/home/jonatan/ros2_ws/install/first_pyqtros/lib/python3.12/site-packages:/home/jonatan/ros2_ws/install/first_project/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[0.034s] UpdateCTestConfiguration  from :/home/jonatan/ros2_ws/build/articubot_one/CTestConfiguration.ini
+[0.034s] Parse Config file:/home/jonatan/ros2_ws/build/articubot_one/CTestConfiguration.ini
+[0.034s]    Site: HP-EliteBook-x360-1030-G2
+[0.034s]    Build name: (empty)
+[0.034s]  Add coverage exclude regular expressions.
+[0.035s] Create new tag: 20250518-2023 - Experimental
+[0.035s] UpdateCTestConfiguration  from :/home/jonatan/ros2_ws/build/articubot_one/CTestConfiguration.ini
+[0.035s] Parse Config file:/home/jonatan/ros2_ws/build/articubot_one/CTestConfiguration.ini
+[0.035s] Test project /home/jonatan/ros2_ws/build/articubot_one
+[0.035s] Constructing a list of tests
+[0.035s] Done constructing a list of tests
+[0.035s] Updating test list for fixtures
+[0.036s] Added 0 tests to meet fixture requirements
+[0.036s] Checking test dependency graph...
+[0.036s] Checking test dependency graph end
+[0.036s] test 1
+[0.036s]     Start 1: laser_obstacle_test
+[0.036s] 
+[0.036s] 1: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/laser_obstacle_test.xunit.xml" "--package-name" "articubot_one" "--output-file" "/home/jonatan/ros2_ws/build/articubot_one/ament_cmake_pytest/laser_obstacle_test.txt" "--command" "/usr/bin/python3" "-u" "-m" "pytest" "/home/jonatan/ros2_ws/src/articubot_one/test/pytest/test_laserObstacle.py" "-o" "cache_dir=/home/jonatan/ros2_ws/build/articubot_one/ament_cmake_pytest/laser_obstacle_test/.cache" "--junit-xml=/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/laser_obstacle_test.xunit.xml" "--junit-prefix=articubot_one"
+[0.036s] 1: Working Directory: /home/jonatan/ros2_ws/build/articubot_one
+[0.037s] 1: Test timeout computed to be: 120
+[0.096s] 1: -- run_test.py: invoking following command in '/home/jonatan/ros2_ws/build/articubot_one':
+[0.097s] 1:  - /usr/bin/python3 -u -m pytest /home/jonatan/ros2_ws/src/articubot_one/test/pytest/test_laserObstacle.py -o cache_dir=/home/jonatan/ros2_ws/build/articubot_one/ament_cmake_pytest/laser_obstacle_test/.cache --junit-xml=/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/laser_obstacle_test.xunit.xml --junit-prefix=articubot_one
+[0.445s] 1: ============================= test session starts ==============================
+[0.445s] 1: platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+[0.450s] 1: cachedir: /home/jonatan/ros2_ws/build/articubot_one/ament_cmake_pytest/laser_obstacle_test/.cache
+[0.450s] 1: rootdir: /home/jonatan/ros2_ws/src/articubot_one
+[0.450s] 1: plugins: launch-testing-3.4.4, ament-xmllint-0.17.2, ament-pep257-0.17.2, ament-copyright-0.17.2, ament-flake8-0.17.2, launch-testing-ros-0.26.7, ament-lint-0.17.2, cov-4.1.0, typeguard-4.1.5, colcon-core-0.19.0
+[0.634s] 1: collected 3 items
+[0.635s] 1: 
+[4.820s] 1: ../../src/articubot_one/test/pytest/test_laserObstacle.py .E.            [100%]
+[4.822s] 1: 
+[4.823s] 1: ==================================== ERRORS ====================================
+[4.824s] 1: _______________________ ERROR at setup of test_obstacle ________________________
+[4.824s] 1: file /home/jonatan/ros2_ws/src/articubot_one/test/pytest/test_laserObstacle.py, line 137
+[4.825s] 1:   def test_obstacle(obstacle_node):
+[4.826s] 1: E       fixture 'obstacle_node' not found
+[4.826s] 1: >       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, cov, doctest_namespace, monkeypatch, no_cover, node_fixture, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, ros_setup, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+[4.827s] 1: >       use 'pytest --fixtures [testpath]' for help on them.
+[4.827s] 1: 
+[4.828s] 1: /home/jonatan/ros2_ws/src/articubot_one/test/pytest/test_laserObstacle.py:137
+[4.828s] 1: - generated xml file: /home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/laser_obstacle_test.xunit.xml -
+[4.828s] 1: =========================== short test summary info ============================
+[4.829s] 1: ERROR ../../src/articubot_one/test/pytest/test_laserObstacle.py::test_obstacle
+[4.829s] 1: ========================== 2 passed, 1 error in 4.38s ==========================
+[5.044s] 1: -- run_test.py: return code 1
+[5.047s] 1: -- run_test.py: verify result file '/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/laser_obstacle_test.xunit.xml'
+[5.074s] 1/1 Test #1: laser_obstacle_test ..............***Failed    5.04 sec
+[5.074s] 
+[5.075s] 0% tests passed[0;0m, [0;31m1 tests failed[0;0m out of 1
+[5.075s] 
+[5.075s] Label Time Summary:
+[5.075s] pytest    =   5.04 sec*proc (1 test)
+[5.075s] 
+[5.076s] Total Test time (real) =   5.04 sec
+[5.076s] 
+[5.076s] The following tests FAILED:
+[5.076s] 	[0;31m  1 - laser_obstacle_test (Failed)[0;0m
+[5.077s] Errors while running CTest
+[5.077s] Output from these tests are in: /home/jonatan/ros2_ws/build/articubot_one/Testing/Temporary/LastTest.log
+[5.077s] Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.
+[5.079s] Invoked command in '/home/jonatan/ros2_ws/build/articubot_one' returned '8': CMAKE_PREFIX_PATH=/home/jonatan/ros2_ws/install/articubot_one:/home/jonatan/ros2_ws/install/working_robot:/home/jonatan/ros2_ws/install/robot_project:/home/jonatan/ros2_ws/install/my_robot:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/jonatan/ros2_ws/install/articubot_one/lib/python3.12/site-packages:/home/jonatan/ros2_ws/install/turtlesim_interface/lib/python3.12/site-packages:/home/jonatan/ros2_ws/install/pubsub_rospyqt/lib/python3.12/site-packages:/home/jonatan/ros2_ws/install/obslidar_description/lib/python3.12/site-packages:/home/jonatan/ros2_ws/install/first_pyqtros/lib/python3.12/site-packages:/home/jonatan/ros2_ws/install/first_project/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
