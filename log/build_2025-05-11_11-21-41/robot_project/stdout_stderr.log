@@ -1,0 +1,23 @@
+-- Install configuration: ""
+-- Up-to-date: /home/jonatan/ros2_ws/install/robot_project/share/robot_project/launch
+-- Up-to-date: /home/jonatan/ros2_ws/install/robot_project/share/robot_project/launch/gazebo.launch.py
+-- Installing: /home/jonatan/ros2_ws/install/robot_project/share/robot_project/launch/complete.launch.py
+-- Up-to-date: /home/jonatan/ros2_ws/install/robot_project/share/robot_project/worlds
+-- Up-to-date: /home/jonatan/ros2_ws/install/robot_project/share/robot_project/worlds/fws_robot_world.sdf
+-- Up-to-date: /home/jonatan/ros2_ws/install/robot_project/share/robot_project/urdf
+-- Up-to-date: /home/jonatan/ros2_ws/install/robot_project/share/robot_project/urdf/robot.urdf
+-- Up-to-date: /home/jonatan/ros2_ws/install/robot_project/share/ament_index/resource_index/package_run_dependencies/robot_project
+-- Up-to-date: /home/jonatan/ros2_ws/install/robot_project/share/ament_index/resource_index/parent_prefix_path/robot_project
+-- Up-to-date: /home/jonatan/ros2_ws/install/robot_project/share/robot_project/environment/ament_prefix_path.sh
+-- Up-to-date: /home/jonatan/ros2_ws/install/robot_project/share/robot_project/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/jonatan/ros2_ws/install/robot_project/share/robot_project/environment/path.sh
+-- Up-to-date: /home/jonatan/ros2_ws/install/robot_project/share/robot_project/environment/path.dsv
+-- Up-to-date: /home/jonatan/ros2_ws/install/robot_project/share/robot_project/local_setup.bash
+-- Up-to-date: /home/jonatan/ros2_ws/install/robot_project/share/robot_project/local_setup.sh
+-- Up-to-date: /home/jonatan/ros2_ws/install/robot_project/share/robot_project/local_setup.zsh
+-- Up-to-date: /home/jonatan/ros2_ws/install/robot_project/share/robot_project/local_setup.dsv
+-- Installing: /home/jonatan/ros2_ws/install/robot_project/share/robot_project/package.dsv
+-- Up-to-date: /home/jonatan/ros2_ws/install/robot_project/share/ament_index/resource_index/packages/robot_project
+-- Up-to-date: /home/jonatan/ros2_ws/install/robot_project/share/robot_project/cmake/robot_projectConfig.cmake
+-- Up-to-date: /home/jonatan/ros2_ws/install/robot_project/share/robot_project/cmake/robot_projectConfig-version.cmake
+-- Up-to-date: /home/jonatan/ros2_ws/install/robot_project/share/robot_project/package.xml

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+  
+  <xacro:include filename="$(find my_robot)/parts/prop/property.xacro"/>
+
+  <xacro:macro name="caster">
+    <link name="front_caster">
+      <visual>
+        <geometry>
+          <sphere radius="${(wheel_radius+wheel_zoff-(base_height/2))}"/>
+        </geometry>
+        <material name="Cyan">
+          <color rgba="0 1.0 1.0 1.0"/>
+        </material>
+      </visual>
+  
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <sphere radius="${(wheel_radius+wheel_zoff-(base_height/2))}"/>
+        </geometry>
+      </collision>
+  
+      <xacro:sphere_inertia m="0.5" r="${(wheel_radius+wheel_zoff-(base_height/2))}"/>
+    </link>
+    
+    <gazebo reference="front_caster">
+      <mu1>0.01</mu1>
+      <mu2>0.01</mu2>
+      <material>Gazebo/White</material>
+    </gazebo>
+  
+    <joint name="caster_joint" type="fixed">
+      <parent link="base_link"/>
+      <child link="front_caster"/>
+      <origin xyz="${caster_xoff} 0.0 ${-(base_height/2)}" rpy="0 0 0"/>
+    </joint>
+    
+  </xacro:macro>
+  
+  
+</robot>

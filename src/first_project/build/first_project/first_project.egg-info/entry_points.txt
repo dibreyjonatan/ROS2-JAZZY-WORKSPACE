@@ -1,0 +1,3 @@
+[console_scripts]
+reciever = first_project.subscriber_node:main
+sender = first_project.publish_node:main

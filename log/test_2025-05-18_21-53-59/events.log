@@ -1,0 +1,131 @@
+[0.000000] (-) TimerEvent: {}
+[0.000267] (articubot_one) JobQueued: {'identifier': 'articubot_one', 'dependencies': OrderedDict({'articubot_one': '/home/jonatan/ros2_ws/install/articubot_one'})}
+[0.000824] (articubot_one) JobStarted: {'identifier': 'articubot_one'}
+[0.024893] (articubot_one) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process'], 'cwd': '/home/jonatan/ros2_ws/build/articubot_one', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'XDG_ACTIVATION_TOKEN': '2ddf9c17-5cf4-48ad-bc40-f39f8ecbfeb7', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jonatan', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'LESS': '-R', 'HOME': '/home/jonatan', 'OLDPWD': '/home/jonatan', 'DESKTOP_SESSION': 'ubuntu', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'ZSH': '/home/jonatan/.oh-my-zsh', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'less', 'PS1': '\\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$', 'MANAGERPID': '2008', 'P9K_TTY': 'old', 'SYSTEMD_EXEC_PID': '2272', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3097', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/jonatan/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'jonatan', '_P9K_SSH_TTY': '/dev/pts/2', 'JOURNAL_STREAM': '9:19463', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'jonatan', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/HP-EliteBook-x360-1030-G2:@/tmp/.ICE-unix/2219,unix/HP-EliteBook-x360-1030-G2:/tmp/.ICE-unix/2219', 'INVOCATION_ID': '1d5efdbd10c34d46a8570a6c200c5332', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.DBMW62', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/jonatan/ros2_ws/install/working_robot:/home/jonatan/ros2_ws/install/turtlesim_interface:/home/jonatan/ros2_ws/install/robot_project:/home/jonatan/ros2_ws/install/pubsub_rospyqt:/home/jonatan/ros2_ws/install/obslidar_description:/home/jonatan/ros2_ws/install/my_robot:/home/jonatan/ros2_ws/install/first_pyqtros:/home/jonatan/ros2_ws/install/first_project:/home/jonatan/ros2_ws/install/articubot_one:/opt/ros/jazzy', 'SHELL': '/usr/bin/zsh', 'TERMINATOR_UUID': 'urn:uuid:0947d2af-0509-4362-9f98-b841aba16eb4', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'GJS_DEBUG_OUTPUT': 'stderr', 'P9K_SSH': '0', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/jonatan/ros2_ws/build/articubot_one', 'LC_ALL': 'en_US.UTF-8', '_P9K_TTY': '/dev/pts/2', 'XDG_DATA_DIRS': '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jonatan/ros2_ws/install/articubot_one/lib/python3.12/site-packages:/home/jonatan/ros2_ws/install/turtlesim_interface/lib/python3.12/site-packages:/home/jonatan/ros2_ws/install/pubsub_rospyqt/lib/python3.12/site-packages:/home/jonatan/ros2_ws/install/obslidar_description/lib/python3.12/site-packages:/home/jonatan/ros2_ws/install/first_pyqtros/lib/python3.12/site-packages:/home/jonatan/ros2_ws/install/first_project/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/jonatan/ros2_ws/install/articubot_one:/home/jonatan/ros2_ws/install/working_robot:/home/jonatan/ros2_ws/install/robot_project:/home/jonatan/ros2_ws/install/my_robot:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}), 'shell': False}
+[0.034824] (articubot_one) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/jonatan/ros2_ws/build/articubot_one/CTestConfiguration.ini\n'}
+[0.035170] (articubot_one) StdoutLine: {'line': b'Parse Config file:/home/jonatan/ros2_ws/build/articubot_one/CTestConfiguration.ini\n'}
+[0.035350] (articubot_one) StdoutLine: {'line': b'   Site: HP-EliteBook-x360-1030-G2\n'}
+[0.035550] (articubot_one) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[0.035692] (articubot_one) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[0.035871] (articubot_one) StdoutLine: {'line': b'Create new tag: 20250518-2053 - Experimental\n'}
+[0.036038] (articubot_one) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/jonatan/ros2_ws/build/articubot_one/CTestConfiguration.ini\n'}
+[0.036281] (articubot_one) StdoutLine: {'line': b'Parse Config file:/home/jonatan/ros2_ws/build/articubot_one/CTestConfiguration.ini\n'}
+[0.036453] (articubot_one) StdoutLine: {'line': b'Test project /home/jonatan/ros2_ws/build/articubot_one\n'}
+[0.036588] (articubot_one) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[0.036667] (articubot_one) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[0.036744] (articubot_one) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[0.036824] (articubot_one) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[0.036941] (articubot_one) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[0.037055] (articubot_one) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[0.037187] (articubot_one) StdoutLine: {'line': b'test 1\n'}
+[0.037302] (articubot_one) StdoutLine: {'line': b'    Start 1: laser_obstacle_test\n'}
+[0.037414] (articubot_one) StdoutLine: {'line': b'\n'}
+[0.037529] (articubot_one) StdoutLine: {'line': b'1: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/laser_obstacle_test.xunit.xml" "--package-name" "articubot_one" "--output-file" "/home/jonatan/ros2_ws/build/articubot_one/ament_cmake_pytest/laser_obstacle_test.txt" "--command" "/usr/bin/python3" "-u" "-m" "pytest" "/home/jonatan/ros2_ws/src/articubot_one/test/pytest/test_laserObstacle.py" "-o" "cache_dir=/home/jonatan/ros2_ws/build/articubot_one/ament_cmake_pytest/laser_obstacle_test/.cache" "--junit-xml=/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/laser_obstacle_test.xunit.xml" "--junit-prefix=articubot_one"\n'}
+[0.037673] (articubot_one) StdoutLine: {'line': b'1: Working Directory: /home/jonatan/ros2_ws/build/articubot_one\n'}
+[0.037792] (articubot_one) StdoutLine: {'line': b'1: Test timeout computed to be: 120\n'}
+[0.096322] (articubot_one) StdoutLine: {'line': b"1: -- run_test.py: invoking following command in '/home/jonatan/ros2_ws/build/articubot_one':\n"}
+[0.096519] (articubot_one) StdoutLine: {'line': b'1:  - /usr/bin/python3 -u -m pytest /home/jonatan/ros2_ws/src/articubot_one/test/pytest/test_laserObstacle.py -o cache_dir=/home/jonatan/ros2_ws/build/articubot_one/ament_cmake_pytest/laser_obstacle_test/.cache --junit-xml=/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/laser_obstacle_test.xunit.xml --junit-prefix=articubot_one\n'}
+[0.100010] (-) TimerEvent: {}
+[0.200261] (-) TimerEvent: {}
+[0.300484] (-) TimerEvent: {}
+[0.400724] (-) TimerEvent: {}
+[0.442330] (articubot_one) StdoutLine: {'line': b'1: ============================= test session starts ==============================\n'}
+[0.442481] (articubot_one) StdoutLine: {'line': b'1: platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0\n'}
+[0.446991] (articubot_one) StdoutLine: {'line': b'1: cachedir: /home/jonatan/ros2_ws/build/articubot_one/ament_cmake_pytest/laser_obstacle_test/.cache\n'}
+[0.447230] (articubot_one) StdoutLine: {'line': b'1: rootdir: /home/jonatan/ros2_ws/src/articubot_one\n'}
+[0.447386] (articubot_one) StdoutLine: {'line': b'1: plugins: launch-testing-3.4.4, ament-xmllint-0.17.2, ament-pep257-0.17.2, ament-copyright-0.17.2, ament-flake8-0.17.2, launch-testing-ros-0.26.7, ament-lint-0.17.2, cov-4.1.0, typeguard-4.1.5, colcon-core-0.19.0\n'}
+[0.500848] (-) TimerEvent: {}
+[0.601082] (-) TimerEvent: {}
+[0.626592] (articubot_one) StdoutLine: {'line': b'1: collected 3 items\n'}
+[0.626949] (articubot_one) StdoutLine: {'line': b'1: \n'}
+[0.701184] (-) TimerEvent: {}
+[0.801888] (-) TimerEvent: {}
+[0.902415] (-) TimerEvent: {}
+[1.003383] (-) TimerEvent: {}
+[1.103922] (-) TimerEvent: {}
+[1.204429] (-) TimerEvent: {}
+[1.305028] (-) TimerEvent: {}
+[1.406027] (-) TimerEvent: {}
+[1.506630] (-) TimerEvent: {}
+[1.607493] (-) TimerEvent: {}
+[1.708448] (-) TimerEvent: {}
+[1.809464] (-) TimerEvent: {}
+[1.909992] (-) TimerEvent: {}
+[2.010709] (-) TimerEvent: {}
+[2.111492] (-) TimerEvent: {}
+[2.212558] (-) TimerEvent: {}
+[2.313287] (-) TimerEvent: {}
+[2.413974] (-) TimerEvent: {}
+[2.515106] (-) TimerEvent: {}
+[2.616372] (-) TimerEvent: {}
+[2.717403] (-) TimerEvent: {}
+[2.818450] (-) TimerEvent: {}
+[2.919409] (-) TimerEvent: {}
+[3.020422] (-) TimerEvent: {}
+[3.121279] (-) TimerEvent: {}
+[3.222348] (-) TimerEvent: {}
+[3.323118] (-) TimerEvent: {}
+[3.423973] (-) TimerEvent: {}
+[3.525122] (-) TimerEvent: {}
+[3.626275] (-) TimerEvent: {}
+[3.727353] (-) TimerEvent: {}
+[3.828024] (-) TimerEvent: {}
+[3.928685] (-) TimerEvent: {}
+[4.029230] (-) TimerEvent: {}
+[4.130296] (-) TimerEvent: {}
+[4.231423] (-) TimerEvent: {}
+[4.332440] (-) TimerEvent: {}
+[4.433089] (-) TimerEvent: {}
+[4.534276] (-) TimerEvent: {}
+[4.635350] (-) TimerEvent: {}
+[4.736213] (-) TimerEvent: {}
+[4.837256] (-) TimerEvent: {}
+[4.938301] (-) TimerEvent: {}
+[5.039294] (-) TimerEvent: {}
+[5.140308] (-) TimerEvent: {}
+[5.241379] (-) TimerEvent: {}
+[5.342325] (-) TimerEvent: {}
+[5.443282] (-) TimerEvent: {}
+[5.544377] (-) TimerEvent: {}
+[5.645372] (-) TimerEvent: {}
+[5.746406] (-) TimerEvent: {}
+[5.847080] (-) TimerEvent: {}
+[5.947590] (-) TimerEvent: {}
+[6.048503] (-) TimerEvent: {}
+[6.149389] (-) TimerEvent: {}
+[6.250328] (-) TimerEvent: {}
+[6.351331] (-) TimerEvent: {}
+[6.452403] (-) TimerEvent: {}
+[6.553325] (-) TimerEvent: {}
+[6.654414] (-) TimerEvent: {}
+[6.755540] (-) TimerEvent: {}
+[6.856277] (-) TimerEvent: {}
+[6.957336] (-) TimerEvent: {}
+[7.058356] (-) TimerEvent: {}
+[7.159413] (-) TimerEvent: {}
+[7.260381] (-) TimerEvent: {}
+[7.361100] (-) TimerEvent: {}
+[7.462280] (-) TimerEvent: {}
+[7.563194] (-) TimerEvent: {}
+[7.664119] (-) TimerEvent: {}
+[7.765294] (-) TimerEvent: {}
+[7.866016] (-) TimerEvent: {}
+[7.877388] (articubot_one) StdoutLine: {'line': b'1: ../../src/articubot_one/test/pytest/test_laserObstacle.py ...            [100%]\n'}
+[7.877758] (articubot_one) StdoutLine: {'line': b'1: \n'}
+[7.877901] (articubot_one) StdoutLine: {'line': b'1: - generated xml file: /home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/laser_obstacle_test.xunit.xml -\n'}
+[7.878030] (articubot_one) StdoutLine: {'line': b'1: ============================== 3 passed in 7.44s ===============================\n'}
+[7.966255] (-) TimerEvent: {}
+[8.066549] (-) TimerEvent: {}
+[8.083985] (articubot_one) StdoutLine: {'line': b'1: -- run_test.py: return code 0\n'}
+[8.085214] (articubot_one) StdoutLine: {'line': b"1: -- run_test.py: verify result file '/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/laser_obstacle_test.xunit.xml'\n"}
+[8.110786] (articubot_one) StdoutLine: {'line': b'1/1 Test #1: laser_obstacle_test ..............   Passed    8.07 sec\n'}
+[8.111293] (articubot_one) StdoutLine: {'line': b'\n'}
+[8.111564] (articubot_one) StdoutLine: {'line': b'\x1b[0;32m100% tests passed\x1b[0;0m, 0 tests failed\x1b[0;0m out of 1\n'}
+[8.111817] (articubot_one) StdoutLine: {'line': b'\n'}
+[8.112063] (articubot_one) StdoutLine: {'line': b'Label Time Summary:\n'}
+[8.112327] (articubot_one) StdoutLine: {'line': b'pytest    =   8.07 sec*proc (1 test)\n'}
+[8.112579] (articubot_one) StdoutLine: {'line': b'\n'}
+[8.112817] (articubot_one) StdoutLine: {'line': b'Total Test time (real) =   8.08 sec\n'}
+[8.115402] (articubot_one) CommandEnded: {'returncode': 0}
+[8.115830] (articubot_one) JobEnded: {'identifier': 'articubot_one', 'rc': 0}
+[8.116773] (-) EventReactorShutdown: {}

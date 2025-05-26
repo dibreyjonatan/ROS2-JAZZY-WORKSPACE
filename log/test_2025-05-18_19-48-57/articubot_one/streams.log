@@ -1,0 +1,1847 @@
+[0.028s] Invoking command in '/home/jonatan/ros2_ws/build/articubot_one': AMENT_PREFIX_PATH=/home/jonatan/ros2_ws/install/articubot_one:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jonatan/ros2_ws/install/articubot_one:${CMAKE_PREFIX_PATH} PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/jonatan/ros2_ws/install/articubot_one/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[0.038s] UpdateCTestConfiguration  from :/home/jonatan/ros2_ws/build/articubot_one/CTestConfiguration.ini
+[0.038s] Parse Config file:/home/jonatan/ros2_ws/build/articubot_one/CTestConfiguration.ini
+[0.038s]    Site: HP-EliteBook-x360-1030-G2
+[0.038s]    Build name: (empty)
+[0.038s]  Add coverage exclude regular expressions.
+[0.039s] Create new tag: 20250518-1848 - Experimental
+[0.039s] UpdateCTestConfiguration  from :/home/jonatan/ros2_ws/build/articubot_one/CTestConfiguration.ini
+[0.039s] Parse Config file:/home/jonatan/ros2_ws/build/articubot_one/CTestConfiguration.ini
+[0.039s] Test project /home/jonatan/ros2_ws/build/articubot_one
+[0.039s] Constructing a list of tests
+[0.040s] Done constructing a list of tests
+[0.040s] Updating test list for fixtures
+[0.040s] Added 0 tests to meet fixture requirements
+[0.040s] Checking test dependency graph...
+[0.040s] Checking test dependency graph end
+[0.040s] test 1
+[0.040s]     Start 1: laser_obstacle_test
+[0.040s] 
+[0.040s] 1: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/laser_obstacle_test.xunit.xml" "--package-name" "articubot_one" "--output-file" "/home/jonatan/ros2_ws/build/articubot_one/ament_cmake_pytest/laser_obstacle_test.txt" "--command" "/usr/bin/python3" "-u" "-m" "pytest" "/home/jonatan/ros2_ws/src/articubot_one/test/pytest/test_laserObstacle.py" "-o" "cache_dir=/home/jonatan/ros2_ws/build/articubot_one/ament_cmake_pytest/laser_obstacle_test/.cache" "--junit-xml=/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/laser_obstacle_test.xunit.xml" "--junit-prefix=articubot_one"
+[0.041s] 1: Working Directory: /home/jonatan/ros2_ws/build/articubot_one
+[0.041s] 1: Test timeout computed to be: 360
+[0.112s] 1: -- run_test.py: invoking following command in '/home/jonatan/ros2_ws/build/articubot_one':
+[0.112s] 1:  - /usr/bin/python3 -u -m pytest /home/jonatan/ros2_ws/src/articubot_one/test/pytest/test_laserObstacle.py -o cache_dir=/home/jonatan/ros2_ws/build/articubot_one/ament_cmake_pytest/laser_obstacle_test/.cache --junit-xml=/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/laser_obstacle_test.xunit.xml --junit-prefix=articubot_one
+[0.539s] 1: ============================= test session starts ==============================
+[0.539s] 1: platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+[0.544s] 1: cachedir: /home/jonatan/ros2_ws/build/articubot_one/ament_cmake_pytest/laser_obstacle_test/.cache
+[0.544s] 1: rootdir: /home/jonatan/ros2_ws/src/articubot_one
+[0.544s] 1: plugins: launch-testing-3.4.4, ament-xmllint-0.17.2, ament-pep257-0.17.2, ament-copyright-0.17.2, ament-flake8-0.17.2, launch-testing-ros-0.26.7, ament-lint-0.17.2, cov-4.1.0, typeguard-4.1.5, colcon-core-0.19.0
+[0.749s] 1: collected 2 items
+[0.750s] 1: 
+[4.930s] 1: ../../src/articubot_one/test/pytest/test_laserObstacle.py .F             [100%]
+[4.931s] 1: 
+[4.932s] 1: =================================== FAILURES ===================================
+[4.932s] 1: ___________________________ test_obstacle_parameters ___________________________
+[4.932s] 1: 
+[4.933s] 1: obstacle_node = (<articubot_one.obstacle_avoidance.Obstacle object at 0x7f5aaf8aea20>, <rclpy.executors.SingleThreadedExecutor object at 0x7f5ab0889a60>)
+[4.933s] 1: 
+[4.933s] 1:     def test_obstacle_parameters(obstacle_node):
+[4.934s] 1:         """Test ROS parameters after the node has had a chance to spin."""
+[4.934s] 1:         node, executor = obstacle_node
+[4.934s] 1:     
+[4.935s] 1:         # Now access parameters after the node has spun briefly
+[4.935s] 1:         # Note: Getting parameters this way works if they are declared
+[4.935s] 1:         # and have default values, or if they are set externally
+[4.935s] 1:         # AND the node has spun to receive them.
+[4.935s] 1:         try:
+[4.935s] 1:             # Use the correct ROS 2 way to get parameter values
+[4.936s] 1:             threshold = node.get_parameter('threshold_distance').value
+[4.936s] 1:             scan_topic = node.get_parameter('laser_scan_topic').value
+[4.936s] 1:             cmd_topic = node.get_parameter('cmd_vel_topic').value
+[4.936s] 1:             front_sector_angle = node.get_parameter('frontal_detection_angle_deg').value
+[4.936s] 1:     
+[4.937s] 1:             # assert the values are correct as expected
+[4.937s] 1:             assert isinstance(threshold, float), f"expect the threshold to be a float"
+[4.937s] 1:             assert isinstance(scan_topic, str), f"expect the scan topic to be a string"
+[4.937s] 1:             assert isinstance(cmd_topic, str), f"expect the cmd velocity command to be a string"
+[4.937s] 1:             assert isinstance(front_sector_angle, float), f'expect the angle of sector to be a float'
+[4.938s] 1:     
+[4.938s] 1:             # 2- check if the values of the parameters are correct
+[4.938s] 1:             # These values should match what's set in your launch file or node defaults
+[4.938s] 1:             assert threshold == 0.5
+[4.938s] 1: >           assert scan_topic == "scan"
+[4.939s] 1: E           AssertionError: assert '/scan' == 'scan'
+[4.939s] 1: E             - scan
+[4.939s] 1: E             + /scan
+[4.939s] 1: E             ? +
+[4.939s] 1: 
+[4.940s] 1: ../../src/articubot_one/test/pytest/test_laserObstacle.py:84: AssertionError
+[4.940s] 1: 
+[4.940s] 1: During handling of the above exception, another exception occurred:
+[4.940s] 1: 
+[4.940s] 1: obstacle_node = (<articubot_one.obstacle_avoidance.Obstacle object at 0x7f5aaf8aea20>, <rclpy.executors.SingleThreadedExecutor object at 0x7f5ab0889a60>)
+[4.941s] 1: 
+[4.941s] 1:     def test_obstacle_parameters(obstacle_node):
+[4.941s] 1:         """Test ROS parameters after the node has had a chance to spin."""
+[4.941s] 1:         node, executor = obstacle_node
+[4.941s] 1:     
+[4.942s] 1:         # Now access parameters after the node has spun briefly
+[4.942s] 1:         # Note: Getting parameters this way works if they are declared
+[4.942s] 1:         # and have default values, or if they are set externally
+[4.942s] 1:         # AND the node has spun to receive them.
+[4.942s] 1:         try:
+[4.943s] 1:             # Use the correct ROS 2 way to get parameter values
+[4.943s] 1:             threshold = node.get_parameter('threshold_distance').value
+[4.943s] 1:             scan_topic = node.get_parameter('laser_scan_topic').value
+[4.943s] 1:             cmd_topic = node.get_parameter('cmd_vel_topic').value
+[4.943s] 1:             front_sector_angle = node.get_parameter('frontal_detection_angle_deg').value
+[4.944s] 1:     
+[4.944s] 1:             # assert the values are correct as expected
+[4.944s] 1:             assert isinstance(threshold, float), f"expect the threshold to be a float"
+[4.944s] 1:             assert isinstance(scan_topic, str), f"expect the scan topic to be a string"
+[4.944s] 1:             assert isinstance(cmd_topic, str), f"expect the cmd velocity command to be a string"
+[4.945s] 1:             assert isinstance(front_sector_angle, float), f'expect the angle of sector to be a float'
+[4.945s] 1:     
+[4.945s] 1:             # 2- check if the values of the parameters are correct
+[4.945s] 1:             # These values should match what's set in your launch file or node defaults
+[4.946s] 1:             assert threshold == 0.5
+[4.946s] 1:             assert scan_topic == "scan"
+[4.946s] 1:             assert cmd_topic == "cmd_vel"
+[4.946s] 1:             assert front_sector_angle == 60.0
+[4.946s] 1:     
+[4.947s] 1:         except rclpy.exceptions.ParameterNotDeclaredException as e:
+[4.947s] 1:             pytest.fail(f"Parameter not declared: {e}")
+[4.947s] 1:         except Exception as e:
+[4.947s] 1: >           pytest.fail(f"Error getting parameter: {e}")
+[4.947s] 1: E           Failed: Error getting parameter: assert '/scan' == 'scan'
+[4.948s] 1: E             - scan
+[4.948s] 1: E             + /scan
+[4.948s] 1: E             ? +
+[4.948s] 1: 
+[4.948s] 1: ../../src/articubot_one/test/pytest/test_laserObstacle.py:91: Failed
+[4.949s] 1: ---------------------------- Captured stderr setup -----------------------------
+[4.949s] 1: [INFO] [1747594140.378281690] [Laser_Obstacle_Avoidance]: Subscribing to laser scan on: /scan
+[4.949s] 1: [INFO] [1747594140.379873485] [Laser_Obstacle_Avoidance]: Publishing velocity commands on: /cmd_vel
+[4.949s] 1: - generated xml file: /home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/laser_obstacle_test.xunit.xml -
+[4.949s] 1: =========================== short test summary info ============================
+[4.950s] 1: FAILED ../../src/articubot_one/test/pytest/test_laserObstacle.py::test_obstacle_parameters
+[4.950s] 1: ========================= 1 failed, 1 passed in 4.39s ==========================
+[5.190s] 1: -- run_test.py: return code 1
+[5.191s] 1: -- run_test.py: verify result file '/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/laser_obstacle_test.xunit.xml'
+[5.214s] 1/6 Test #1: laser_obstacle_test ..............***Failed    5.17 sec
+[5.214s] test 2
+[5.215s]     Start 2: copyright
+[5.215s] 
+[5.215s] 2: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/copyright.xunit.xml" "--package-name" "articubot_one" "--output-file" "/home/jonatan/ros2_ws/build/articubot_one/ament_copyright/copyright.txt" "--command" "/opt/ros/jazzy/bin/ament_copyright" "--xunit-file" "/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/copyright.xunit.xml"
+[5.215s] 2: Working Directory: /home/jonatan/ros2_ws/src/articubot_one
+[5.216s] 2: Test timeout computed to be: 200
+[5.345s] 2: -- run_test.py: invoking following command in '/home/jonatan/ros2_ws/src/articubot_one':
+[5.345s] 2:  - /opt/ros/jazzy/bin/ament_copyright --xunit-file /home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/copyright.xunit.xml
+[5.599s] 2: CONTRIBUTING.md: file not found
+[5.599s] 2: LICENSE: file not found
+[5.599s] 2: articubot_one/obstacle_avoidance.py: could not find copyright notice
+[5.599s] 2: launch/ball_tracker.launch.py: could not find copyright notice
+[5.599s] 2: launch/camera.launch.py: could not find copyright notice
+[5.600s] 2: launch/joystick.launch.py: could not find copyright notice
+[5.600s] 2: launch/launch_robot.launch.py: could not find copyright notice
+[5.600s] 2: launch/launch_sim.launch.py: could not find copyright notice
+[5.600s] 2: launch/online_async_launch.py: could not find copyright notice
+[5.600s] 2: launch/rplidar.launch.py: could not find copyright notice
+[5.600s] 2: launch/rsp.launch.py: could not find copyright notice
+[5.600s] 2: launch/rviz_gazebo.launch.py: could not find copyright notice
+[5.600s] 2: test/pytest/test_laserObstacle.py: could not find copyright notice
+[5.600s] 2: 13 errors, checked 16 files
+[5.615s] 2: -- run_test.py: return code 1
+[5.615s] 2: -- run_test.py: verify result file '/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/copyright.xunit.xml'
+[5.626s] 2/6 Test #2: copyright ........................***Failed    0.41 sec
+[5.627s] test 3
+[5.627s]     Start 3: flake8
+[5.627s] 
+[5.627s] 3: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/flake8.xunit.xml" "--package-name" "articubot_one" "--output-file" "/home/jonatan/ros2_ws/build/articubot_one/ament_flake8/flake8.txt" "--command" "/opt/ros/jazzy/bin/ament_flake8" "--xunit-file" "/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/flake8.xunit.xml"
+[5.627s] 3: Working Directory: /home/jonatan/ros2_ws/src/articubot_one
+[5.627s] 3: Test timeout computed to be: 60
+[5.701s] 3: -- run_test.py: invoking following command in '/home/jonatan/ros2_ws/src/articubot_one':
+[5.701s] 3:  - /opt/ros/jazzy/bin/ament_flake8 --xunit-file /home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/flake8.xunit.xml
+[6.091s] 3: from geometry_msgs.msg import Twist
+[6.091s] 3: ^
+[6.092s] 3: import math
+[6.092s] 3: ^
+[6.094s] 3: import math
+[6.095s] 3: ^
+[6.095s] 3: # i am writing down this piece of code with paramters 
+[6.096s] 3:                                                      ^
+[6.097s] 3: # Paramters are for the node , it enables modularity and you can modify the parameters when executing the node 
+[6.100s] 3:                                                                                                    ^
+[6.100s] 3: # Paramters are for the node , it enables modularity and you can modify the parameters when executing the node 
+[6.101s] 3:                                                                                                               ^
+[6.101s] 3:     def __init__(self) :
+[6.101s] 3:                       ^
+[6.101s] 3:         super().__init__("Laser_Obstacle_Avoidance")
+[6.101s] 3:                          ^
+[6.102s] 3:         
+[6.102s] 3: ^
+[6.102s] 3:         self.declare_parameter("threshold_distance",0.5)  # i can use 0.5m or 1m as threshold distance
+[6.102s] 3:                                ^
+[6.102s] 3:         self.declare_parameter("threshold_distance",0.5)  # i can use 0.5m or 1m as threshold distance
+[6.103s] 3:                                                    ^
+[6.103s] 3:         self.declare_parameter("threshold_distance",0.5)  # i can use 0.5m or 1m as threshold distance
+[6.103s] 3:                                                                                                    ^
+[6.103s] 3:         self.threshold=self.get_parameter("threshold_distance").value
+[6.103s] 3:                       ^
+[6.104s] 3:         self.threshold=self.get_parameter("threshold_distance").value
+[6.104s] 3:                                           ^
+[6.104s] 3:         
+[6.120s] 3: ^
+[6.120s] 3:         self.declare_parameter("laser_scan_topic","/scan")
+[6.120s] 3:                                ^
+[6.120s] 3:         self.declare_parameter("laser_scan_topic","/scan")
+[6.121s] 3:                                                  ^
+[6.121s] 3:         self.declare_parameter("laser_scan_topic","/scan")
+[6.121s] 3:                                                   ^
+[6.121s] 3:         self.laser_topic=self.get_parameter("laser_scan_topic").value
+[6.121s] 3:                         ^
+[6.121s] 3:         self.laser_topic=self.get_parameter("laser_scan_topic").value
+[6.122s] 3:                                             ^
+[6.122s] 3:         
+[6.122s] 3: ^
+[6.122s] 3:         self.declare_parameter("cmd_vel_topic","/cmd_vel")
+[6.123s] 3:                                ^
+[6.123s] 3:         self.declare_parameter("cmd_vel_topic","/cmd_vel")
+[6.123s] 3:                                               ^
+[6.123s] 3:         self.declare_parameter("cmd_vel_topic","/cmd_vel")
+[6.123s] 3:                                                ^
+[6.124s] 3:         self.cmd_topic=self.get_parameter("cmd_vel_topic").value
+[6.124s] 3:                       ^
+[6.124s] 3:         self.cmd_topic=self.get_parameter("cmd_vel_topic").value
+[6.124s] 3:                                           ^
+[6.124s] 3:         self.frontal_detection_angle_rad = math.radians(self.get_parameter('frontal_detection_angle_deg').value)
+[6.124s] 3:                                                                                                    ^
+[6.125s] 3:         #create a publisher to the /cmd_vel
+[6.125s] 3:         ^
+[6.125s] 3:         self.cmd_vel_pub = self.create_publisher(Twist,self.cmd_topic, 10)
+[6.125s] 3:                                                       ^
+[6.125s] 3:     def laser_callback(self,msg):
+[6.125s] 3:     ^
+[6.125s] 3:     def laser_callback(self,msg):
+[6.126s] 3:                            ^
+[6.126s] 3:   
+[6.126s] 3: ^
+[6.126s] 3:         if not(scan_size) :
+[6.126s] 3:               ^
+[6.126s] 3:         if not(scan_size) :
+[6.127s] 3:                          ^
+[6.127s] 3:             #no laser data 
+[6.127s] 3:             ^
+[6.127s] 3:             #no laser data 
+[6.127s] 3:                           ^
+[6.127s] 3:             return 
+[6.128s] 3:                   ^
+[6.128s] 3:         # the lidar provides angles,angle step (common difference of the angle sequence), distances in meter
+[6.128s] 3:                                                                                                    ^
+[6.128s] 3:         
+[6.128s] 3: ^
+[6.128s] 3:         #for every angle in this sector, we get a valid distance and compare it with the angle_(i+1) in the sector so as to get the minimum distance
+[6.129s] 3:         ^
+[6.129s] 3:         #for every angle in this sector, we get a valid distance and compare it with the angle_(i+1) in the sector so as to get the minimum distance
+[6.129s] 3:                                                                                                    ^
+[6.129s] 3:         #we get an angle, we get it's corresponding distance and compare it's distance with a min distance
+[6.129s] 3:         ^
+[6.129s] 3:         #we get an angle, we get it's corresponding distance and compare it's distance with a min distance
+[6.130s] 3:                                                                                                    ^
+[6.130s] 3:         # At each round, we get the minimum distance since our objectif is to get the closest distance to an obstacle 
+[6.130s] 3:                                                                                                    ^
+[6.130s] 3:         # At each round, we get the minimum distance since our objectif is to get the closest distance to an obstacle 
+[6.130s] 3:                                                                                                                      ^
+[6.130s] 3:         # we are sweeping across all the angles with the increment 
+[6.131s] 3:                                                                   ^
+[6.131s] 3:         # while sweeping we compare  only the ranges with the ones in the defined angle 
+[6.131s] 3:                                                                                        ^
+[6.131s] 3:                  # If the range reading is valid (not inf or nan)
+[6.131s] 3:                  ^
+[6.131s] 3:                  # If the range reading is valid (not inf or nan)
+[6.132s] 3:                  ^
+[6.132s] 3:                  if not math.isinf(msg.ranges[i]) and not math.isnan(msg.ranges[i]):
+[6.132s] 3:                  ^
+[6.132s] 3:                  if not math.isinf(msg.ranges[i]) and not math.isnan(msg.ranges[i]):
+[6.132s] 3:                  ^
+[6.132s] 3:             
+[6.133s] 3: ^
+[6.133s] 3:                      min_distance_in_frontal_sector = min(min_distance_in_frontal_sector, msg.ranges[i])
+[6.133s] 3:                      ^
+[6.133s] 3:                      min_distance_in_frontal_sector = min(min_distance_in_frontal_sector, msg.ranges[i])
+[6.133s] 3:                                                                                                    ^
+[6.133s] 3:         #  To stop the robot from moving ahead when ever it meets an obstacle, it will just go back 
+[6.134s] 3:                                                                                                    ^
+[6.134s] 3:         if obstacle_detected :
+[6.134s] 3:                             ^
+[6.134s] 3:            self.get_logger().info(f'Obstacle detected at {min_distance_in_frontal_sector:.2f}m. Deciding to stop.')
+[6.134s] 3:            ^
+[6.134s] 3:            self.get_logger().info(f'Obstacle detected at {min_distance_in_frontal_sector:.2f}m. Deciding to stop.')
+[6.135s] 3:                                                                                                    ^
+[6.135s] 3:            twist.linear.x = 0.0
+[6.135s] 3:            ^
+[6.135s] 3:            twist.angular.z =0.0
+[6.135s] 3:            ^
+[6.135s] 3:            twist.angular.z =0.0
+[6.136s] 3:                             ^
+[6.136s] 3:            self.cmd_vel_pub.publish(twist)
+[6.136s] 3:            ^
+[6.136s] 3:            self.get_logger().info(f'No obstacle detected') 
+[6.136s] 3:            ^
+[6.136s] 3:            self.get_logger().info(f'No obstacle detected') 
+[6.136s] 3:                                   ^
+[6.137s] 3:            self.get_logger().info(f'No obstacle detected') 
+[6.137s] 3:                                                           ^
+[6.137s] 3: def main(args=None):
+[6.137s] 3: ^
+[6.137s] 3:         rclpy.spin(node) # Keep the node running and process callbacks
+[6.137s] 3:                         ^
+[6.138s] 3:         node.get_logger().info('Smart Obstacle Avoider Node stopped cleanly via KeyboardInterrupt.')
+[6.138s] 3:                                                                                                    ^
+[6.138s] 3: if __name__ == '__main__':
+[6.138s] 3: ^
+[6.138s] 3:     main()    
+[6.139s] 3:           ^
+[6.139s] 3: from ament_index_python.packages import get_package_share_directory
+[6.139s] 3: ^
+[6.139s] 3: from launch.actions import DeclareLaunchArgument
+[6.139s] 3: ^
+[6.140s] 3:     my_package_name='articubot_one'
+[6.140s] 3:                    ^
+[6.140s] 3:     tracker_params_sim = os.path.join(get_package_share_directory(my_package_name),'config','ball_tracker_params_sim.yaml')
+[6.140s] 3:                                                                                   ^
+[6.140s] 3:     tracker_params_sim = os.path.join(get_package_share_directory(my_package_name),'config','ball_tracker_params_sim.yaml')
+[6.140s] 3:                                                                                            ^
+[6.140s] 3:     tracker_params_sim = os.path.join(get_package_share_directory(my_package_name),'config','ball_tracker_params_sim.yaml')
+[6.141s] 3:                                                                                                    ^
+[6.141s] 3:     tracker_params_robot = os.path.join(get_package_share_directory(my_package_name),'config','ball_tracker_params_robot.yaml')
+[6.141s] 3:                                                                                     ^
+[6.141s] 3:     tracker_params_robot = os.path.join(get_package_share_directory(my_package_name),'config','ball_tracker_params_robot.yaml')
+[6.141s] 3:                                                                                              ^
+[6.141s] 3:     tracker_params_robot = os.path.join(get_package_share_directory(my_package_name),'config','ball_tracker_params_robot.yaml')
+[6.142s] 3:                                                                                                    ^
+[6.142s] 3:     params_path = PythonExpression(['"',tracker_params_sim, '" if "true" == "', sim_mode, '" else "', tracker_params_robot, '"'])
+[6.142s] 3:                                        ^
+[6.142s] 3:     params_path = PythonExpression(['"',tracker_params_sim, '" if "true" == "', sim_mode, '" else "', tracker_params_robot, '"'])
+[6.142s] 3:                                                                                                    ^
+[6.142s] 3:                     get_package_share_directory('ball_tracker'), 'launch', 'ball_tracker.launch.py')]),
+[6.143s] 3:                                                                                                    ^
+[6.143s] 3:                     launch_arguments={'params_file': params_path,
+[6.143s] 3:                     ^
+[6.143s] 3:                                     'image_topic': '/camera/image_raw',
+[6.143s] 3:                                     ^
+[6.143s] 3:                                     'cmd_vel_topic': '/cmd_vel_tracker',
+[6.144s] 3:                                     ^
+[6.144s] 3:                                     'enable_3d_tracker': 'true'}.items())
+[6.144s] 3:                                     ^
+[6.144s] 3: import os
+[6.144s] 3: ^
+[6.144s] 3: def generate_launch_description():
+[6.144s] 3: ^
+[6.145s] 3:     return LaunchDescription([
+[6.145s] 3:     ^
+[6.145s] 3:                 'image_size': [640,480],
+[6.145s] 3:                                   ^
+[6.145s] 3:     )
+[6.145s] 3:     ^
+[6.146s] 3: 
+[6.146s] 3: ./articubot_one/obstacle_avoidance.py:5:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Twist' should be before 'from sensor_msgs.msg import LaserScan'
+[6.146s] 3: 
+[6.146s] 3: ./articubot_one/obstacle_avoidance.py:6:1: I100 Import statements are in the wrong order. 'import math' should be before 'from geometry_msgs.msg import Twist' and in a different group.
+[6.146s] 3: 
+[6.146s] 3: ./articubot_one/obstacle_avoidance.py:6:1: I201 Missing newline between import groups. 'import math' is identified as Stdlib and 'from geometry_msgs.msg import Twist' is identified as Third Party.
+[6.147s] 3: 
+[6.147s] 3: ./articubot_one/obstacle_avoidance.py:9:54: W291 trailing whitespace
+[6.147s] 3: 
+[6.147s] 3: ./articubot_one/obstacle_avoidance.py:10:100: E501 line too long (110 > 99 characters)
+[6.147s] 3: 
+[6.147s] 3: ./articubot_one/obstacle_avoidance.py:10:111: W291 trailing whitespace
+[6.148s] 3: 
+[6.148s] 3: ./articubot_one/obstacle_avoidance.py:14:23: E203 whitespace before ':'
+[6.148s] 3: 
+[6.148s] 3: ./articubot_one/obstacle_avoidance.py:15:26: Q000 Double quotes found but single quotes preferred
+[6.148s] 3: 
+[6.148s] 3: ./articubot_one/obstacle_avoidance.py:16:1: W293 blank line contains whitespace
+[6.149s] 3: 
+[6.149s] 3: ./articubot_one/obstacle_avoidance.py:17:32: Q000 Double quotes found but single quotes preferred
+[6.149s] 3: 
+[6.149s] 3: ./articubot_one/obstacle_avoidance.py:17:52: E231 missing whitespace after ','
+[6.149s] 3: 
+[6.149s] 3: ./articubot_one/obstacle_avoidance.py:17:100: E501 line too long (102 > 99 characters)
+[6.149s] 3: 
+[6.150s] 3: ./articubot_one/obstacle_avoidance.py:18:23: E225 missing whitespace around operator
+[6.150s] 3: 
+[6.150s] 3: ./articubot_one/obstacle_avoidance.py:18:43: Q000 Double quotes found but single quotes preferred
+[6.150s] 3: 
+[6.150s] 3: ./articubot_one/obstacle_avoidance.py:19:1: W293 blank line contains whitespace
+[6.150s] 3: 
+[6.151s] 3: ./articubot_one/obstacle_avoidance.py:20:32: Q000 Double quotes found but single quotes preferred
+[6.151s] 3: 
+[6.151s] 3: ./articubot_one/obstacle_avoidance.py:20:50: E231 missing whitespace after ','
+[6.151s] 3: 
+[6.151s] 3: ./articubot_one/obstacle_avoidance.py:20:51: Q000 Double quotes found but single quotes preferred
+[6.151s] 3: 
+[6.152s] 3: ./articubot_one/obstacle_avoidance.py:21:25: E225 missing whitespace around operator
+[6.152s] 3: 
+[6.152s] 3: ./articubot_one/obstacle_avoidance.py:21:45: Q000 Double quotes found but single quotes preferred
+[6.152s] 3: 
+[6.152s] 3: ./articubot_one/obstacle_avoidance.py:22:1: W293 blank line contains whitespace
+[6.152s] 3: 
+[6.152s] 3: ./articubot_one/obstacle_avoidance.py:23:32: Q000 Double quotes found but single quotes preferred
+[6.153s] 3: 
+[6.153s] 3: ./articubot_one/obstacle_avoidance.py:23:47: E231 missing whitespace after ','
+[6.153s] 3: 
+[6.153s] 3: ./articubot_one/obstacle_avoidance.py:23:48: Q000 Double quotes found but single quotes preferred
+[6.153s] 3: 
+[6.153s] 3: ./articubot_one/obstacle_avoidance.py:24:23: E225 missing whitespace around operator
+[6.154s] 3: 
+[6.154s] 3: ./articubot_one/obstacle_avoidance.py:24:43: Q000 Double quotes found but single quotes preferred
+[6.154s] 3: 
+[6.154s] 3: ./articubot_one/obstacle_avoidance.py:29:100: E501 line too long (112 > 99 characters)
+[6.154s] 3: 
+[6.154s] 3: ./articubot_one/obstacle_avoidance.py:38:9: E265 block comment should start with '# '
+[6.155s] 3: 
+[6.155s] 3: ./articubot_one/obstacle_avoidance.py:39:55: E231 missing whitespace after ','
+[6.155s] 3: 
+[6.157s] 3: ./articubot_one/obstacle_avoidance.py:43:5: E303 too many blank lines (2)
+[6.158s] 3: 
+[6.158s] 3: ./articubot_one/obstacle_avoidance.py:43:28: E231 missing whitespace after ','
+[6.158s] 3: 
+[6.158s] 3: ./articubot_one/obstacle_avoidance.py:47:1: W293 blank line contains whitespace
+[6.158s] 3: 
+[6.159s] 3: ./articubot_one/obstacle_avoidance.py:48:15: E275 missing whitespace after keyword
+[6.159s] 3: 
+[6.159s] 3: ./articubot_one/obstacle_avoidance.py:48:26: E203 whitespace before ':'
+[6.159s] 3: 
+[6.159s] 3: ./articubot_one/obstacle_avoidance.py:49:13: E265 block comment should start with '# '
+[6.159s] 3: 
+[6.160s] 3: ./articubot_one/obstacle_avoidance.py:49:27: W291 trailing whitespace
+[6.160s] 3: 
+[6.160s] 3: ./articubot_one/obstacle_avoidance.py:50:19: W291 trailing whitespace
+[6.160s] 3: 
+[6.160s] 3: ./articubot_one/obstacle_avoidance.py:51:100: E501 line too long (108 > 99 characters)
+[6.161s] 3: 
+[6.161s] 3: ./articubot_one/obstacle_avoidance.py:56:1: W293 blank line contains whitespace
+[6.161s] 3: 
+[6.161s] 3: ./articubot_one/obstacle_avoidance.py:60:9: E265 block comment should start with '# '
+[6.161s] 3: 
+[6.162s] 3: ./articubot_one/obstacle_avoidance.py:60:100: E501 line too long (148 > 99 characters)
+[6.162s] 3: 
+[6.162s] 3: ./articubot_one/obstacle_avoidance.py:61:9: E265 block comment should start with '# '
+[6.162s] 3: 
+[6.162s] 3: ./articubot_one/obstacle_avoidance.py:61:100: E501 line too long (106 > 99 characters)
+[6.163s] 3: 
+[6.163s] 3: ./articubot_one/obstacle_avoidance.py:62:100: E501 line too long (117 > 99 characters)
+[6.163s] 3: 
+[6.163s] 3: ./articubot_one/obstacle_avoidance.py:62:118: W291 trailing whitespace
+[6.163s] 3: 
+[6.163s] 3: ./articubot_one/obstacle_avoidance.py:64:67: W291 trailing whitespace
+[6.164s] 3: 
+[6.164s] 3: ./articubot_one/obstacle_avoidance.py:65:88: W291 trailing whitespace
+[6.164s] 3: 
+[6.164s] 3: ./articubot_one/obstacle_avoidance.py:75:18: E114 indentation is not a multiple of 4 (comment)
+[6.164s] 3: 
+[6.164s] 3: ./articubot_one/obstacle_avoidance.py:75:18: E117 over-indented (comment)
+[6.165s] 3: 
+[6.165s] 3: ./articubot_one/obstacle_avoidance.py:76:18: E111 indentation is not a multiple of 4
+[6.165s] 3: 
+[6.165s] 3: ./articubot_one/obstacle_avoidance.py:76:18: E117 over-indented
+[6.165s] 3: 
+[6.166s] 3: ./articubot_one/obstacle_avoidance.py:77:1: W293 blank line contains whitespace
+[6.166s] 3: 
+[6.166s] 3: ./articubot_one/obstacle_avoidance.py:78:22: E111 indentation is not a multiple of 4
+[6.166s] 3: 
+[6.166s] 3: ./articubot_one/obstacle_avoidance.py:78:100: E501 line too long (104 > 99 characters)
+[6.166s] 3: 
+[6.167s] 3: ./articubot_one/obstacle_avoidance.py:86:100: W291 trailing whitespace
+[6.167s] 3: 
+[6.167s] 3: ./articubot_one/obstacle_avoidance.py:87:29: E203 whitespace before ':'
+[6.167s] 3: 
+[6.167s] 3: ./articubot_one/obstacle_avoidance.py:88:12: E111 indentation is not a multiple of 4
+[6.167s] 3: 
+[6.167s] 3: ./articubot_one/obstacle_avoidance.py:88:100: E501 line too long (115 > 99 characters)
+[6.168s] 3: 
+[6.168s] 3: ./articubot_one/obstacle_avoidance.py:89:12: E111 indentation is not a multiple of 4
+[6.168s] 3: 
+[6.168s] 3: ./articubot_one/obstacle_avoidance.py:90:12: E111 indentation is not a multiple of 4
+[6.168s] 3: 
+[6.168s] 3: ./articubot_one/obstacle_avoidance.py:90:29: E225 missing whitespace around operator
+[6.169s] 3: 
+[6.169s] 3: ./articubot_one/obstacle_avoidance.py:91:12: E111 indentation is not a multiple of 4
+[6.169s] 3: 
+[6.169s] 3: ./articubot_one/obstacle_avoidance.py:93:12: E111 indentation is not a multiple of 4
+[6.169s] 3: 
+[6.169s] 3: ./articubot_one/obstacle_avoidance.py:93:35: F541 f-string is missing placeholders
+[6.170s] 3: 
+[6.170s] 3: ./articubot_one/obstacle_avoidance.py:93:59: W291 trailing whitespace
+[6.170s] 3: 
+[6.170s] 3: ./articubot_one/obstacle_avoidance.py:95:1: E302 expected 2 blank lines, found 1
+[6.170s] 3: 
+[6.170s] 3: ./articubot_one/obstacle_avoidance.py:99:25: E261 at least two spaces before inline comment
+[6.171s] 3: 
+[6.171s] 3: ./articubot_one/obstacle_avoidance.py:101:100: E501 line too long (100 > 99 characters)
+[6.171s] 3: 
+[6.171s] 3: ./articubot_one/obstacle_avoidance.py:116:1: E305 expected 2 blank lines after class or function definition, found 1
+[6.171s] 3: 
+[6.172s] 3: ./articubot_one/obstacle_avoidance.py:117:11: W291 trailing whitespace
+[6.172s] 3: 
+[6.172s] 3: ./launch/ball_tracker.launch.py:2:1: I201 Missing newline between import groups. 'from ament_index_python.packages import get_package_share_directory' is identified as Third Party and 'import os' is identified as Stdlib.
+[6.172s] 3: 
+[6.172s] 3: ./launch/ball_tracker.launch.py:8:1: I100 Import statements are in the wrong order. 'from launch.actions import DeclareLaunchArgument' should be before 'from launch.substitutions import PythonExpression'
+[6.172s] 3: 
+[6.173s] 3: ./launch/ball_tracker.launch.py:13:20: E225 missing whitespace around operator
+[6.173s] 3: 
+[6.173s] 3: ./launch/ball_tracker.launch.py:17:83: E231 missing whitespace after ','
+[6.173s] 3: 
+[6.173s] 3: ./launch/ball_tracker.launch.py:17:92: E231 missing whitespace after ','
+[6.173s] 3: 
+[6.174s] 3: ./launch/ball_tracker.launch.py:17:100: E501 line too long (123 > 99 characters)
+[6.174s] 3: 
+[6.174s] 3: ./launch/ball_tracker.launch.py:18:85: E231 missing whitespace after ','
+[6.174s] 3: 
+[6.174s] 3: ./launch/ball_tracker.launch.py:18:94: E231 missing whitespace after ','
+[6.175s] 3: 
+[6.175s] 3: ./launch/ball_tracker.launch.py:18:100: E501 line too long (127 > 99 characters)
+[6.175s] 3: 
+[6.175s] 3: ./launch/ball_tracker.launch.py:20:40: E231 missing whitespace after ','
+[6.175s] 3: 
+[6.176s] 3: ./launch/ball_tracker.launch.py:20:100: E501 line too long (129 > 99 characters)
+[6.176s] 3: 
+[6.176s] 3: ./launch/ball_tracker.launch.py:24:100: E501 line too long (103 > 99 characters)
+[6.176s] 3: 
+[6.176s] 3: ./launch/ball_tracker.launch.py:25:21: E131 continuation line unaligned for hanging indent
+[6.176s] 3: 
+[6.177s] 3: ./launch/ball_tracker.launch.py:26:37: E128 continuation line under-indented for visual indent
+[6.177s] 3: 
+[6.177s] 3: ./launch/ball_tracker.launch.py:27:37: E128 continuation line under-indented for visual indent
+[6.177s] 3: 
+[6.177s] 3: ./launch/ball_tracker.launch.py:28:37: E128 continuation line under-indented for visual indent
+[6.177s] 3: 
+[6.177s] 3: ./launch/camera.launch.py:1:1: F401 'os' imported but unused
+[6.178s] 3: 
+[6.178s] 3: ./launch/camera.launch.py:6:1: E302 expected 2 blank lines, found 1
+[6.178s] 3: 
+[6.178s] 3: ./launch/camera.launch.py:10:5: E303 too many blank lines (3)
+[6.178s] 3: 
+[6.178s] 3: ./launch/camera.launch.py:18:35: E231 missing whitespace after ','
+[6.179s] 3: 
+[6.179s] 3: ./launch/camera.launch.py:22:5: E122 continuation line missing indentation or outdented
+[6.179s] 3: 
+[6.179s] 3: from launch.substitutions import LaunchConfiguration
+[6.179s] 3: ^
+[6.179s] 3: from launch.actions import DeclareLaunchArgument
+[6.180s] 3: ^
+[6.180s] 3: import os
+[6.180s] 3: ^
+[6.180s] 3: from ament_index_python.packages import get_package_share_directory
+[6.180s] 3: ^
+[6.180s] 3: def generate_launch_description():
+[6.180s] 3: ^
+[6.181s] 3:     joy_params = os.path.join(get_package_share_directory('articubot_one'),'config','joystick.yaml')
+[6.181s] 3:                                                                           ^
+[6.181s] 3:     joy_params = os.path.join(get_package_share_directory('articubot_one'),'config','joystick.yaml')
+[6.181s] 3:                                                                                    ^
+[6.181s] 3:     joy_params = os.path.join(get_package_share_directory('articubot_one'),'config','joystick.yaml')
+[6.181s] 3:                                                                                                    ^
+[6.182s] 3:             remappings=[('/cmd_vel','/cmd_vel_joy')]
+[6.182s] 3:                                    ^
+[6.182s] 3:             remappings=[('/cmd_vel_in','/diff_cont/cmd_vel_unstamped'),
+[6.182s] 3:                                       ^
+[6.182s] 3:                         ('/cmd_vel_out','/diff_cont/cmd_vel')]
+[6.183s] 3:                                        ^
+[6.183s] 3:     return LaunchDescription([
+[6.183s] 3:     ^
+[6.183s] 3:         twist_stamper       
+[6.183s] 3:                      ^
+[6.184s] 3:     ])      ^
+[6.184s] 3: from launch.actions import RegisterEventHandler
+[6.184s] 3: ^
+[6.184s] 3: def generate_launch_description():
+[6.184s] 3: ^
+[6.184s] 3:     # Include the robot_state_publisher launch file, provided by our own package. Force sim time to be enabled
+[6.185s] 3:     ^
+[6.185s] 3:     # Include the robot_state_publisher launch file, provided by our own package. Force sim time to be enabled
+[6.185s] 3:                                                                                                    ^
+[6.185s] 3:     package_name='articubot_one' #<--- CHANGE ME
+[6.185s] 3:                 ^
+[6.185s] 3:     package_name='articubot_one' #<--- CHANGE ME
+[6.186s] 3:                                 ^
+[6.186s] 3:     package_name='articubot_one' #<--- CHANGE ME
+[6.186s] 3:                                  ^
+[6.186s] 3:                     get_package_share_directory(package_name),'launch','rsp.launch.py'
+[6.186s] 3:                                                              ^
+[6.186s] 3:                     get_package_share_directory(package_name),'launch','rsp.launch.py'
+[6.186s] 3:                                                                       ^
+[6.187s] 3:     twist_mux_params = os.path.join(get_package_share_directory(package_name),'config','twist_mux.yaml')
+[6.187s] 3:     ^
+[6.187s] 3:     twist_mux_params = os.path.join(get_package_share_directory(package_name),'config','twist_mux.yaml')
+[6.187s] 3:                                                                              ^
+[6.187s] 3:     twist_mux_params = os.path.join(get_package_share_directory(package_name),'config','twist_mux.yaml')
+[6.187s] 3:                                                                                       ^
+[6.188s] 3:     twist_mux_params = os.path.join(get_package_share_directory(package_name),'config','twist_mux.yaml')
+[6.188s] 3:                                                                                                    ^
+[6.188s] 3:             package="twist_mux",
+[6.188s] 3:                     ^
+[6.188s] 3:             executable="twist_mux",
+[6.188s] 3:                        ^
+[6.189s] 3:             remappings=[('/cmd_vel_out','/diff_cont/cmd_vel_unstamped')]
+[6.189s] 3:                                        ^
+[6.189s] 3:     
+[6.189s] 3: ^
+[6.189s] 3:     robot_description = Command(['ros2 param get --hide-type /robot_state_publisher robot_description'])
+[6.189s] 3:     ^
+[6.189s] 3:     robot_description = Command(['ros2 param get --hide-type /robot_state_publisher robot_description'])
+[6.190s] 3:                                                                                                    ^
+[6.190s] 3:     controller_params_file = os.path.join(get_package_share_directory(package_name),'config','my_controllers.yaml')
+[6.190s] 3:                                                                                    ^
+[6.190s] 3:     controller_params_file = os.path.join(get_package_share_directory(package_name),'config','my_controllers.yaml')
+[6.190s] 3:                                                                                             ^
+[6.191s] 3:     controller_params_file = os.path.join(get_package_share_directory(package_name),'config','my_controllers.yaml')
+[6.191s] 3:                                                                                                    ^
+[6.191s] 3:         package="controller_manager",
+[6.191s] 3:                 ^
+[6.191s] 3:         executable="ros2_control_node",
+[6.191s] 3:                    ^
+[6.192s] 3:         package="controller_manager",
+[6.192s] 3:                 ^
+[6.192s] 3:         executable="spawner",
+[6.192s] 3:                    ^
+[6.192s] 3:         arguments=["diff_cont"],
+[6.192s] 3:                    ^
+[6.193s] 3:         package="controller_manager",
+[6.193s] 3:                 ^
+[6.193s] 3:         executable="spawner",
+[6.193s] 3:                    ^
+[6.193s] 3:         arguments=["joint_broad"],
+[6.193s] 3:                    ^
+[6.194s] 3:     # Code for delaying a node (I haven't tested how effective it is)
+[6.194s] 3:     ^
+[6.194s] 3:     # 
+[6.194s] 3:      ^
+[6.194s] 3:     # Launch them all!
+[6.194s] 3:     ^
+[6.195s] 3: from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument
+[6.195s] 3: ^
+[6.195s] 3: def generate_launch_description():
+[6.195s] 3: ^
+[6.195s] 3:     # Include the robot_state_publisher launch file, provided by our own package. Force sim time to be enabled
+[6.195s] 3:     ^
+[6.196s] 3:     # Include the robot_state_publisher launch file, provided by our own package. Force sim time to be enabled
+[6.196s] 3:                                                                                                    ^
+[6.196s] 3:     package_name='articubot_one' #<--- CHANGE ME
+[6.196s] 3:                 ^
+[6.196s] 3:     package_name='articubot_one' #<--- CHANGE ME
+[6.196s] 3:                                 ^
+[6.197s] 3:     package_name='articubot_one' #<--- CHANGE ME
+[6.197s] 3:                                  ^
+[6.197s] 3:                     get_package_share_directory(package_name),'launch','rsp.launch.py'
+[6.197s] 3:                                                              ^
+[6.197s] 3:                     get_package_share_directory(package_name),'launch','rsp.launch.py'
+[6.197s] 3:                                                                       ^
+[6.198s] 3:                     get_package_share_directory(package_name),'launch','joystick.launch.py'
+[6.198s] 3:                                                              ^
+[6.198s] 3:                     get_package_share_directory(package_name),'launch','joystick.launch.py'
+[6.198s] 3:                                                                       ^
+[6.198s] 3:     twist_mux_params = os.path.join(get_package_share_directory(package_name),'config','twist_mux.yaml')
+[6.198s] 3:                                                                              ^
+[6.198s] 3:     twist_mux_params = os.path.join(get_package_share_directory(package_name),'config','twist_mux.yaml')
+[6.199s] 3:                                                                                       ^
+[6.199s] 3:     twist_mux_params = os.path.join(get_package_share_directory(package_name),'config','twist_mux.yaml')
+[6.199s] 3:                                                                                                    ^
+[6.199s] 3:             package="twist_mux",
+[6.199s] 3:                     ^
+[6.199s] 3:             executable="twist_mux",
+[6.200s] 3:                        ^
+[6.200s] 3:             remappings=[('/cmd_vel_out','/diff_cont/cmd_vel_unstamped')]
+[6.200s] 3:                                        ^
+[6.200s] 3:     default_world = os.path.join(
+[6.200s] 3:     ^
+[6.200s] 3:         )    
+[6.201s] 3:          ^
+[6.201s] 3:     
+[6.201s] 3: ^
+[6.201s] 3:                     launch_arguments={'gz_args': ['-r -v4 ', world], 'on_exit_shutdown': 'true'}.items()
+[6.201s] 3:                     ^
+[6.201s] 3:                     launch_arguments={'gz_args': ['-r -v4 ', world], 'on_exit_shutdown': 'true'}.items()
+[6.202s] 3:                                                                                                    ^
+[6.202s] 3:     # Run the spawner node from the ros_gz_sim package. The entity name doesn't really matter if you only have a single robot.
+[6.202s] 3:                                                                                                    ^
+[6.202s] 3:     diff_drive_spawner = Node(
+[6.202s] 3:     ^
+[6.202s] 3:         package="controller_manager",
+[6.202s] 3:                 ^
+[6.203s] 3:         executable="spawner",
+[6.203s] 3:                    ^
+[6.203s] 3:         arguments=["diff_cont"],
+[6.203s] 3:                    ^
+[6.203s] 3:         package="controller_manager",
+[6.203s] 3:                 ^
+[6.204s] 3:         executable="spawner",
+[6.204s] 3:                    ^
+[6.204s] 3:         arguments=["joint_broad"],
+[6.204s] 3:                    ^
+[6.204s] 3:     bridge_params = os.path.join(get_package_share_directory(package_name),'config','gz_bridge.yaml')
+[6.204s] 3:     ^
+[6.205s] 3:     bridge_params = os.path.join(get_package_share_directory(package_name),'config','gz_bridge.yaml')
+[6.205s] 3:                                                                           ^
+[6.205s] 3:     bridge_params = os.path.join(get_package_share_directory(package_name),'config','gz_bridge.yaml')
+[6.205s] 3:                                                                                    ^
+[6.205s] 3:     bridge_params = os.path.join(get_package_share_directory(package_name),'config','gz_bridge.yaml')
+[6.205s] 3:                                                                                                    ^
+[6.206s] 3:         package="ros_gz_bridge",
+[6.206s] 3:                 ^
+[6.206s] 3:         executable="parameter_bridge",
+[6.206s] 3:                    ^
+[6.206s] 3:         package="ros_gz_image",
+[6.206s] 3:                 ^
+[6.207s] 3:         executable="image_bridge",
+[6.207s] 3:                    ^
+[6.207s] 3:         arguments=["/camera/image_raw"]
+[6.207s] 3:                    ^
+[6.207s] 3:     # Code for delaying a node (I haven't tested how effective it is)
+[6.207s] 3:     ^
+[6.207s] 3:     # 
+[6.208s] 3:      ^
+[6.208s] 3:     # Launch them all!
+[6.208s] 3:     ^
+[6.208s] 3: from ament_index_python.packages import get_package_share_directory
+[6.208s] 3: ^
+[6.208s] 3:     default_params_file = os.path.join(get_package_share_directory("articubot_one"),
+[6.209s] 3:                                                                    ^
+[6.209s] 3: import os
+[6.209s] 3: ^
+[6.209s] 3: ./launch/joystick.launch.py:3:1: I100 Import statements are in the wrong order. 'from launch.substitutions import LaunchConfiguration' should be before 'from launch_ros.actions import Node'
+[6.209s] 3: 
+[6.209s] 3: ./launch/joystick.launch.py:4:1: I100 Import statements are in the wrong order. 'from launch.actions import DeclareLaunchArgument' should be before 'from launch.substitutions import LaunchConfiguration'
+[6.210s] 3: 
+[6.210s] 3: ./launch/joystick.launch.py:6:1: I100 Import statements are in the wrong order. 'import os' should be before 'from launch.actions import DeclareLaunchArgument' and in a different group.
+[6.210s] 3: 
+[6.210s] 3: ./launch/joystick.launch.py:7:1: I201 Missing newline between import groups. 'from ament_index_python.packages import get_package_share_directory' is identified as Third Party and 'import os' is identified as Stdlib.
+[6.210s] 3: 
+[6.210s] 3: ./launch/joystick.launch.py:9:1: E302 expected 2 blank lines, found 1
+[6.211s] 3: 
+[6.211s] 3: ./launch/joystick.launch.py:12:75: E231 missing whitespace after ','
+[6.211s] 3: 
+[6.211s] 3: ./launch/joystick.launch.py:12:84: E231 missing whitespace after ','
+[6.211s] 3: 
+[6.211s] 3: ./launch/joystick.launch.py:12:100: E501 line too long (100 > 99 characters)
+[6.211s] 3: 
+[6.212s] 3: ./launch/joystick.launch.py:25:36: E231 missing whitespace after ','
+[6.212s] 3: 
+[6.212s] 3: ./launch/joystick.launch.py:32:39: E231 missing whitespace after ','
+[6.212s] 3: 
+[6.212s] 3: ./launch/joystick.launch.py:33:40: E231 missing whitespace after ','
+[6.212s] 3: 
+[6.213s] 3: ./launch/joystick.launch.py:37:5: E303 too many blank lines (2)
+[6.213s] 3: 
+[6.213s] 3: ./launch/joystick.launch.py:44:22: W291 trailing whitespace
+[6.213s] 3: 
+[6.213s] 3: ./launch/joystick.launch.py:45:7: W292 no newline at end of file
+[6.213s] 3: 
+[6.214s] 3: ./launch/launch_robot.launch.py:10:1: I100 Import statements are in the wrong order. 'from launch.actions import RegisterEventHandler' should be before 'from launch.substitutions import Command'
+[6.214s] 3: 
+[6.214s] 3: ./launch/launch_robot.launch.py:17:1: E303 too many blank lines (3)
+[6.214s] 3: 
+[6.214s] 3: ./launch/launch_robot.launch.py:20:5: E303 too many blank lines (2)
+[6.214s] 3: 
+[6.215s] 3: ./launch/launch_robot.launch.py:20:100: E501 line too long (110 > 99 characters)
+[6.215s] 3: 
+[6.215s] 3: ./launch/launch_robot.launch.py:23:17: E225 missing whitespace around operator
+[6.215s] 3: 
+[6.215s] 3: ./launch/launch_robot.launch.py:23:33: E261 at least two spaces before inline comment
+[6.215s] 3: 
+[6.216s] 3: ./launch/launch_robot.launch.py:23:34: E262 inline comment should start with '# '
+[6.216s] 3: 
+[6.216s] 3: ./launch/launch_robot.launch.py:27:62: E231 missing whitespace after ','
+[6.216s] 3: 
+[6.216s] 3: ./launch/launch_robot.launch.py:27:71: E231 missing whitespace after ','
+[6.216s] 3: 
+[6.217s] 3: ./launch/launch_robot.launch.py:38:5: E303 too many blank lines (2)
+[6.217s] 3: 
+[6.217s] 3: ./launch/launch_robot.launch.py:38:78: E231 missing whitespace after ','
+[6.217s] 3: 
+[6.217s] 3: ./launch/launch_robot.launch.py:38:87: E231 missing whitespace after ','
+[6.217s] 3: 
+[6.217s] 3: ./launch/launch_robot.launch.py:38:100: E501 line too long (104 > 99 characters)
+[6.218s] 3: 
+[6.218s] 3: ./launch/launch_robot.launch.py:40:21: Q000 Double quotes found but single quotes preferred
+[6.218s] 3: 
+[6.218s] 3: ./launch/launch_robot.launch.py:41:24: Q000 Double quotes found but single quotes preferred
+[6.218s] 3: 
+[6.218s] 3: ./launch/launch_robot.launch.py:43:40: E231 missing whitespace after ','
+[6.219s] 3: 
+[6.219s] 3: ./launch/launch_robot.launch.py:46:1: W293 blank line contains whitespace
+[6.219s] 3: 
+[6.219s] 3: ./launch/launch_robot.launch.py:49:5: E303 too many blank lines (4)
+[6.219s] 3: 
+[6.219s] 3: ./launch/launch_robot.launch.py:49:100: E501 line too long (104 > 99 characters)
+[6.220s] 3: 
+[6.220s] 3: ./launch/launch_robot.launch.py:51:84: E231 missing whitespace after ','
+[6.220s] 3: 
+[6.220s] 3: ./launch/launch_robot.launch.py:51:93: E231 missing whitespace after ','
+[6.220s] 3: 
+[6.220s] 3: ./launch/launch_robot.launch.py:51:100: E501 line too long (115 > 99 characters)
+[6.221s] 3: 
+[6.221s] 3: ./launch/launch_robot.launch.py:54:17: Q000 Double quotes found but single quotes preferred
+[6.221s] 3: 
+[6.221s] 3: ./launch/launch_robot.launch.py:55:20: Q000 Double quotes found but single quotes preferred
+[6.221s] 3: 
+[6.221s] 3: ./launch/launch_robot.launch.py:63:17: Q000 Double quotes found but single quotes preferred
+[6.222s] 3: 
+[6.222s] 3: ./launch/launch_robot.launch.py:64:20: Q000 Double quotes found but single quotes preferred
+[6.222s] 3: 
+[6.222s] 3: ./launch/launch_robot.launch.py:65:20: Q000 Double quotes found but single quotes preferred
+[6.222s] 3: 
+[6.222s] 3: ./launch/launch_robot.launch.py:76:17: Q000 Double quotes found but single quotes preferred
+[6.223s] 3: 
+[6.223s] 3: ./launch/launch_robot.launch.py:77:20: Q000 Double quotes found but single quotes preferred
+[6.223s] 3: 
+[6.223s] 3: ./launch/launch_robot.launch.py:78:20: Q000 Double quotes found but single quotes preferred
+[6.223s] 3: 
+[6.223s] 3: ./launch/launch_robot.launch.py:89:5: E303 too many blank lines (2)
+[6.223s] 3: 
+[6.224s] 3: ./launch/launch_robot.launch.py:90:6: W291 trailing whitespace
+[6.224s] 3: 
+[6.224s] 3: ./launch/launch_robot.launch.py:107:5: E303 too many blank lines (3)
+[6.224s] 3: 
+[6.224s] 3: ./launch/launch_sim.launch.py:7:1: I101 Imported names are in the wrong order. Should be DeclareLaunchArgument, IncludeLaunchDescription
+[6.224s] 3: 
+[6.225s] 3: ./launch/launch_sim.launch.py:15:1: E303 too many blank lines (3)
+[6.225s] 3: 
+[6.225s] 3: ./launch/launch_sim.launch.py:18:5: E303 too many blank lines (2)
+[6.225s] 3: 
+[6.225s] 3: ./launch/launch_sim.launch.py:18:100: E501 line too long (110 > 99 characters)
+[6.225s] 3: 
+[6.226s] 3: ./launch/launch_sim.launch.py:21:17: E225 missing whitespace around operator
+[6.226s] 3: 
+[6.226s] 3: ./launch/launch_sim.launch.py:21:33: E261 at least two spaces before inline comment
+[6.226s] 3: 
+[6.226s] 3: ./launch/launch_sim.launch.py:21:34: E262 inline comment should start with '# '
+[6.227s] 3: 
+[6.227s] 3: ./launch/launch_sim.launch.py:25:62: E231 missing whitespace after ','
+[6.227s] 3: 
+[6.227s] 3: ./launch/launch_sim.launch.py:25:71: E231 missing whitespace after ','
+[6.227s] 3: 
+[6.228s] 3: ./launch/launch_sim.launch.py:31:62: E231 missing whitespace after ','
+[6.228s] 3: 
+[6.228s] 3: ./launch/launch_sim.launch.py:31:71: E231 missing whitespace after ','
+[6.228s] 3: 
+[6.228s] 3: ./launch/launch_sim.launch.py:35:78: E231 missing whitespace after ','
+[6.228s] 3: 
+[6.229s] 3: ./launch/launch_sim.launch.py:35:87: E231 missing whitespace after ','
+[6.229s] 3: 
+[6.229s] 3: ./launch/launch_sim.launch.py:35:100: E501 line too long (104 > 99 characters)
+[6.229s] 3: 
+[6.229s] 3: ./launch/launch_sim.launch.py:37:21: Q000 Double quotes found but single quotes preferred
+[6.229s] 3: 
+[6.229s] 3: ./launch/launch_sim.launch.py:38:24: Q000 Double quotes found but single quotes preferred
+[6.230s] 3: 
+[6.230s] 3: ./launch/launch_sim.launch.py:40:40: E231 missing whitespace after ','
+[6.230s] 3: 
+[6.230s] 3: ./launch/launch_sim.launch.py:44:5: E303 too many blank lines (2)
+[6.230s] 3: 
+[6.230s] 3: ./launch/launch_sim.launch.py:48:10: W291 trailing whitespace
+[6.231s] 3: 
+[6.231s] 3: ./launch/launch_sim.launch.py:49:1: W293 blank line contains whitespace
+[6.231s] 3: 
+[6.231s] 3: ./launch/launch_sim.launch.py:62:21: E131 continuation line unaligned for hanging indent
+[6.231s] 3: 
+[6.231s] 3: ./launch/launch_sim.launch.py:62:100: E501 line too long (104 > 99 characters)
+[6.232s] 3: 
+[6.232s] 3: ./launch/launch_sim.launch.py:65:100: E501 line too long (126 > 99 characters)
+[6.232s] 3: 
+[6.232s] 3: ./launch/launch_sim.launch.py:73:5: E303 too many blank lines (2)
+[6.232s] 3: 
+[6.232s] 3: ./launch/launch_sim.launch.py:74:17: Q000 Double quotes found but single quotes preferred
+[6.232s] 3: 
+[6.233s] 3: ./launch/launch_sim.launch.py:75:20: Q000 Double quotes found but single quotes preferred
+[6.233s] 3: 
+[6.233s] 3: ./launch/launch_sim.launch.py:76:20: Q000 Double quotes found but single quotes preferred
+[6.233s] 3: 
+[6.233s] 3: ./launch/launch_sim.launch.py:80:17: Q000 Double quotes found but single quotes preferred
+[6.233s] 3: 
+[6.234s] 3: ./launch/launch_sim.launch.py:81:20: Q000 Double quotes found but single quotes preferred
+[6.234s] 3: 
+[6.234s] 3: ./launch/launch_sim.launch.py:82:20: Q000 Double quotes found but single quotes preferred
+[6.234s] 3: 
+[6.234s] 3: ./launch/launch_sim.launch.py:86:5: E303 too many blank lines (2)
+[6.234s] 3: 
+[6.235s] 3: ./launch/launch_sim.launch.py:86:75: E231 missing whitespace after ','
+[6.235s] 3: 
+[6.235s] 3: ./launch/launch_sim.launch.py:86:84: E231 missing whitespace after ','
+[6.235s] 3: 
+[6.235s] 3: ./launch/launch_sim.launch.py:86:100: E501 line too long (101 > 99 characters)
+[6.235s] 3: 
+[6.236s] 3: ./launch/launch_sim.launch.py:88:17: Q000 Double quotes found but single quotes preferred
+[6.236s] 3: 
+[6.236s] 3: ./launch/launch_sim.launch.py:89:20: Q000 Double quotes found but single quotes preferred
+[6.236s] 3: 
+[6.236s] 3: ./launch/launch_sim.launch.py:98:17: Q000 Double quotes found but single quotes preferred
+[6.236s] 3: 
+[6.236s] 3: ./launch/launch_sim.launch.py:99:20: Q000 Double quotes found but single quotes preferred
+[6.237s] 3: 
+[6.237s] 3: ./launch/launch_sim.launch.py:100:20: Q000 Double quotes found but single quotes preferred
+[6.237s] 3: 
+[6.237s] 3: ./launch/launch_sim.launch.py:105:5: E303 too many blank lines (3)
+[6.237s] 3: 
+[6.237s] 3: ./launch/launch_sim.launch.py:106:6: W291 trailing whitespace
+[6.238s] 3: 
+[6.238s] 3: ./launch/launch_sim.launch.py:123:5: E303 too many blank lines (3)
+[6.238s] 3: 
+[6.238s] 3: ./launch/online_async_launch.py:8:1: I100 Import statements are in the wrong order. 'from ament_index_python.packages import get_package_share_directory' should be before 'from launch_ros.actions import Node'
+[6.238s] 3: 
+[6.238s] 3: ./launch/online_async_launch.py:15:68: Q000 Double quotes found but single quotes preferred
+[6.238s] 3: 
+[6.239s] 3: ./launch/rplidar.launch.py:1:1: F401 'os' imported but unused
+[6.239s] 3: 
+[6.239s] 3: ./launch/rplidar.launch.py:2:1: I201 Missing newline between import groups. 'from launch import LaunchDescription' is identified as Third Party and 'import os' is identified as Stdlib.
+[6.239s] 3: from launch import LaunchDescription
+[6.239s] 3: ^
+[6.239s] 3: def generate_launch_description():
+[6.240s] 3: ^
+[6.240s] 3:                 'serial_port': '/dev/serial/by-path/platform-fd500000.pcie-pci-0000:01:00.0-usb-0:1.3:1.0-port0',
+[6.240s] 3:                                                                                                    ^
+[6.240s] 3: from launch.substitutions import LaunchConfiguration, Command
+[6.240s] 3: ^
+[6.240s] 3: from launch.actions import DeclareLaunchArgument
+[6.240s] 3: ^
+[6.241s] 3: import xacro
+[6.241s] 3: ^
+[6.241s] 3:     xacro_file = os.path.join(pkg_path,'description','robot.urdf.xacro')
+[6.241s] 3:                                       ^
+[6.241s] 3:     xacro_file = os.path.join(pkg_path,'description','robot.urdf.xacro')
+[6.241s] 3:                                                     ^
+[6.242s] 3:     robot_description_config = Command(['xacro ', xacro_file, ' use_ros2_control:=', use_ros2_control, ' sim_mode:=', use_sim_time])
+[6.242s] 3:                                                                                                    ^
+[6.242s] 3:     
+[6.242s] 3: ^
+[6.242s] 3:     # Launch!
+[6.242s] 3:     ^
+[6.243s] 3: import xacro
+[6.243s] 3: ^
+[6.243s] 3: from ament_index_python.packages import get_package_share_directory
+[6.243s] 3: ^
+[6.243s] 3: from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument
+[6.243s] 3: ^
+[6.243s] 3: from launch.conditions import IfCondition, UnlessCondition
+[6.244s] 3: ^
+[6.244s] 3:     # Include the robot_state_publisher launch file, provided by our own package. Force sim time to be enabled
+[6.244s] 3:     ^
+[6.244s] 3:     # Include the robot_state_publisher launch file, provided by our own package. Force sim time to be enabled
+[6.244s] 3:                                                                                                    ^
+[6.244s] 3:     package_name='articubot_one' #<--- CHANGE ME
+[6.245s] 3:                 ^
+[6.245s] 3:     package_name='articubot_one' #<--- CHANGE ME
+[6.245s] 3:                                 ^
+[6.245s] 3:     package_name='articubot_one' #<--- CHANGE ME
+[6.245s] 3:                                  ^
+[6.245s] 3:                     get_package_share_directory(package_name),'launch','rsp.launch.py'
+[6.246s] 3:                                                              ^
+[6.246s] 3:                     get_package_share_directory(package_name),'launch','rsp.launch.py'
+[6.246s] 3:                                                                       ^
+[6.246s] 3:         )    
+[6.246s] 3:          ^
+[6.246s] 3:     
+[6.247s] 3: ^
+[6.247s] 3:                     launch_arguments={'gz_args': ['-r -v4 ', world], 'on_exit_shutdown': 'true'}.items()
+[6.247s] 3:                     ^
+[6.247s] 3:                     launch_arguments={'gz_args': ['-r -v4 ', world], 'on_exit_shutdown': 'true'}.items()
+[6.247s] 3:                                                                                                    ^
+[6.247s] 3:     # Run the spawner node from the ros_gz_sim package. The entity name doesn't really matter if you only have a single robot.
+[6.248s] 3:                                                                                                    ^
+[6.248s] 3:     '''
+[6.248s] 3:     bridge_params = os.path.join(get_package_share_directory(package_name),'config','gz_bridge.yaml')
+[6.248s] 3:     ros_gz_bridge = Node(
+[6.248s] 3:         package="ros_gz_bridge",
+[6.248s] 3:         executable="parameter_bridge",
+[6.249s] 3:         arguments=[
+[6.249s] 3:             '--ros-args',
+[6.249s] 3:             '-p',
+[6.249s] 3:             f'config_file:={bridge_params}',
+[6.249s] 3:         ]
+[6.249s] 3:     )
+[6.249s] 3:     '''
+[6.250s] 3:     ^
+[6.250s] 3:     '''
+[6.250s] 3:     bridge_params = os.path.join(get_package_share_directory(package_name),'config','gz_bridge.yaml')
+[6.250s] 3:     ros_gz_bridge = Node(
+[6.250s] 3:         package="ros_gz_bridge",
+[6.251s] 3:         executable="parameter_bridge",
+[6.251s] 3:         arguments=[
+[6.251s] 3:             '--ros-args',
+[6.251s] 3:             '-p',
+[6.251s] 3:             f'config_file:={bridge_params}',
+[6.251s] 3:         ]
+[6.252s] 3:     )
+[6.252s] 3:     '''
+[6.252s] 3:     ^
+[6.252s] 3:     '''
+[6.252s] 3:     bridge_params = os.path.join(get_package_share_directory(package_name),'config','gz_bridge.yaml')
+[6.252s] 3:     ros_gz_bridge = Node(
+[6.253s] 3:         package="ros_gz_bridge",
+[6.253s] 3:         executable="parameter_bridge",
+[6.253s] 3:         arguments=[
+[6.253s] 3:             '--ros-args',
+[6.253s] 3:             '-p',
+[6.253s] 3:             f'config_file:={bridge_params}',
+[6.254s] 3:         ]
+[6.254s] 3:     )
+[6.254s] 3:     '''
+[6.254s] 3:        
+[6.254s] 3:                                                                                            ^
+[6.254s] 3:     package='ros_gz_bridge',
+[6.255s] 3:     ^
+[6.255s] 3:     executable='parameter_bridge',
+[6.255s] 3:     ^
+[6.255s] 3:     arguments=[
+[6.255s] 3:     ^
+[6.255s] 3:           '/odom@nav_msgs/msg/Odometry@gz.msgs.Odometry',
+[6.255s] 3:           ^
+[6.256s] 3:          '/scan@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan',
+[6.256s] 3:          ^
+[6.256s] 3:     output='screen'
+[6.256s] 3:     ^
+[6.256s] 3: )
+[6.256s] 3: ^
+[6.257s] 3:         package="ros_gz_image",
+[6.257s] 3:                 ^
+[6.257s] 3:         executable="image_bridge",
+[6.257s] 3:                    ^
+[6.257s] 3:         arguments=["/camera/image_raw"]
+[6.257s] 3:                    ^
+[6.258s] 3:     #Adding rviz plugin
+[6.258s] 3:     ^
+[6.258s] 3:     share_dir=get_package_share_directory('articubot_one')
+[6.258s] 3:              ^
+[6.258s] 3:     
+[6.258s] 3: ^
+[6.258s] 3:         
+[6.259s] 3: ^
+[6.259s] 3:         
+[6.259s] 3: ^
+[6.259s] 3:         
+[6.259s] 3: ^
+[6.260s] 3: import time 
+[6.260s] 3: ^
+[6.260s] 3: import time 
+[6.260s] 3: ^
+[6.260s] 3: import time 
+[6.260s] 3:            ^
+[6.261s] 3: from rclpy.executors import SingleThreadedExecutor
+[6.261s] 3: ^
+[6.261s] 3: from sensor_msgs.msg import LaserScan
+[6.261s] 3: ^
+[6.261s] 3: from geometry_msgs.msg import Twist 
+[6.261s] 3: ^
+[6.262s] 3: from geometry_msgs.msg import Twist 
+[6.262s] 3: ^
+[6.262s] 3: from geometry_msgs.msg import Twist 
+[6.262s] 3:                                    ^
+[6.262s] 3: from articubot_one.obstacle_avoidance import Obstacle 
+[6.262s] 3: ^
+[6.263s] 3: from articubot_one.obstacle_avoidance import Obstacle 
+[6.263s] 3:                                                      ^
+[6.263s] 3: @pytest.fixture(scope='module')
+[6.263s] 3: ^
+[6.263s] 3: @pytest.fixture
+[6.263s] 3: ^
+[6.264s] 3:              executor.spin_once(0.1) # Spin briefly to process events
+[6.264s] 3:              ^
+[6.264s] 3:              executor.spin_once(0.1) # Spin briefly to process events
+[6.264s] 3:              ^
+[6.264s] 3:              executor.spin_once(0.1) # Spin briefly to process events
+[6.264s] 3:                                     ^
+[6.265s] 3:         yield node, executor # Yield the node and executor
+[6.265s] 3:                             ^
+[6.265s] 3:              executor.shutdown()
+[6.265s] 3:              ^
+[6.265s] 3:              executor.shutdown()
+[6.265s] 3:              ^
+[6.265s] 3:     assert node.get_name() == "Laser_Obstacle_Avoidance"
+[6.266s] 3:                               ^
+[6.266s] 3:     assert node.laser_sub.topic_name == '/scan' # Often includes the leading slash in ROS 2
+[6.266s] 3:                                                ^
+[6.266s] 3:     assert node.cmd_vel_pub.topic_name == '/cmd_vel' # Often includes the leading slash
+[6.266s] 3:                                                     ^
+[6.267s] 3:         assert isinstance(threshold, float), f"expect the threshold to be a float"
+[6.267s] 3:                                              ^
+[6.267s] 3:         assert isinstance(threshold, float), f"expect the threshold to be a float"
+[6.267s] 3:                                              ^
+[6.267s] 3:         assert isinstance(scan_topic, str), f"expect the scan topic to be a string"
+[6.268s] 3:                                             ^
+[6.268s] 3:         assert isinstance(scan_topic, str), f"expect the scan topic to be a string"
+[6.268s] 3:                                             ^
+[6.268s] 3:         assert isinstance(cmd_topic, str), f"expect the cmd velocity command to be a string"
+[6.268s] 3:                                            ^
+[6.268s] 3:         assert isinstance(cmd_topic, str), f"expect the cmd velocity command to be a string"
+[6.269s] 3:                                            ^
+[6.269s] 3:         assert isinstance(front_sector_angle, float), f'expect the angle of sector to be a float'
+[6.269s] 3:                                                       ^
+[6.269s] 3:         assert scan_topic == "scan"
+[6.269s] 3:                              ^
+[6.270s] 3:         assert cmd_topic == "cmd_vel"
+[6.270s] 3:                             ^
+[6.270s] 3:         pytest.fail(f"Parameter not declared: {e}")
+[6.270s] 3:                     ^
+[6.270s] 3:         pytest.fail(f"Error getting parameter: {e}")
+[6.270s] 3:                     ^
+[6.271s] 3: '''
+[6.271s] 3: def test_node_creation():
+[6.271s] 3:     rclpy.init
+[6.271s] 3:     try :
+[6.271s] 3:         node=Obstacle()
+[6.271s] 3:         # verify that the node has the expected name
+[6.271s] 3:         assert node.get_name()=="Laser_Obstacle_Avoidance"
+[6.272s] 3:         # verify that the node has the subscribed to the correct topic by name
+[6.272s] 3:         assert hasattr(node,'laser_sub')
+[6.272s] 3:         assert node.laser_sub.topic_name == 'scan'
+[6.272s] 3:         # verify that the node is publishing to the correct topic by name 
+[6.272s] 3:         assert hasattr(node,'cmd_vel_pub')
+[6.272s] 3:         assert node.cmd_vel_pub.topic_name == 'cmd_vel'
+[6.273s] 3:     finally :
+[6.273s] 3:         rclpy.shutdown
+[6.273s] 3: def test_parameter_node():
+[6.273s] 3:     rclpy.init
+[6.273s] 3:     try :
+[6.273s] 3:         pass
+[6.274s] 3:     finally :
+[6.274s] 3:         rclpy.shutdown
+[6.274s] 3: def test_obstacle():
+[6.274s] 3:     rclpy.init
+[6.274s] 3:     try :
+[6.274s] 3:         node=Obstacle()
+[6.275s] 3:         #get values of parameters
+[6.275s] 3:         threshold=node.get_parameter('threshold_distance').value
+[6.275s] 3:         scan_topic=node.get_parameter("laser_scan_topic").value
+[6.275s] 3:         cmd_topic=node.get_parameter("cmd_vel_topic").value
+[6.275s] 3:         front_sector_angle=node.get_parameter("frontal_detection_angle_deg").value
+[6.275s] 3:         # assert the values are correct as expected 
+[6.276s] 3:         # 1- check if the parameters are of expected classes 
+[6.276s] 3:         assert isinstance(threshold,float) ,f"expect the threshold to be a float"
+[6.276s] 3:         assert isinstance(scan_topic,str), f"expect the scan topic to be a string"
+[6.276s] 3:         assert isinstance(cmd_topic,str), f"expect the cmd velocity command to be a string"
+[6.276s] 3:         assert isinstance(front_sector_angle,float),f'expect the angle of sector to be a float'
+[6.276s] 3:         # 2- check if the values of the parameters are correct 
+[6.277s] 3:         assert threshold == 0.5
+[6.277s] 3:         assert scan_topic== "scan"
+[6.277s] 3:         assert cmd_topic == "cmd_vel"
+[6.277s] 3:         assert front_sector_angle == 60.0 
+[6.277s] 3:     finally :
+[6.277s] 3:         rclpy.shutdown
+[6.278s] 3: 
+[6.278s] 3: 
+[6.278s] 3: if __name__=='__main__' :
+[6.278s] 3:     pytest.main(['-v'])
+[6.278s] 3: 
+[6.278s] 3: '''    ^
+[6.279s] 3: '''
+[6.279s] 3: def test_node_creation():
+[6.279s] 3:     rclpy.init
+[6.279s] 3:     try :
+[6.279s] 3:         node=Obstacle()
+[6.279s] 3:         # verify that the node has the expected name
+[6.280s] 3:         assert node.get_name()=="Laser_Obstacle_Avoidance"
+[6.280s] 3:         # verify that the node has the subscribed to the correct topic by name
+[6.280s] 3:         assert hasattr(node,'laser_sub')
+[6.280s] 3:         assert node.laser_sub.topic_name == 'scan'
+[6.280s] 3:         # verify that the node is publishing to the correct topic by name 
+[6.280s] 3:         assert hasattr(node,'cmd_vel_pub')
+[6.281s] 3:         assert node.cmd_vel_pub.topic_name == 'cmd_vel'
+[6.281s] 3:     finally :
+[6.281s] 3:         rclpy.shutdown
+[6.281s] 3: def test_parameter_node():
+[6.281s] 3:     rclpy.init
+[6.281s] 3:     try :
+[6.281s] 3:         pass
+[6.282s] 3:     finally :
+[6.282s] 3:         rclpy.shutdown
+[6.282s] 3: def test_obstacle():
+[6.282s] 3:     rclpy.init
+[6.282s] 3:     try :
+[6.282s] 3:         node=Obstacle()
+[6.283s] 3:         #get values of parameters
+[6.283s] 3:         threshold=node.get_parameter('threshold_distance').value
+[6.283s] 3:         scan_topic=node.get_parameter("laser_scan_topic").value
+[6.283s] 3:         cmd_topic=node.get_parameter("cmd_vel_topic").value
+[6.283s] 3:         front_sector_angle=node.get_parameter("frontal_detection_angle_deg").value
+[6.283s] 3:         # assert the values are correct as expected 
+[6.284s] 3:         # 1- check if the parameters are of expected classes 
+[6.284s] 3:         assert isinstance(threshold,float) ,f"expect the threshold to be a float"
+[6.284s] 3:         assert isinstance(scan_topic,str), f"expect the scan topic to be a string"
+[6.284s] 3:         assert isinstance(cmd_topic,str), f"expect the cmd velocity command to be a string"
+[6.284s] 3:         assert isinstance(front_sector_angle,float),f'expect the angle of sector to be a float'
+[6.284s] 3:         # 2- check if the values of the parameters are correct 
+[6.285s] 3:         assert threshold == 0.5
+[6.285s] 3:         assert scan_topic== "scan"
+[6.285s] 3:         assert cmd_topic == "cmd_vel"
+[6.285s] 3:         assert front_sector_angle == 60.0 
+[6.285s] 3:     finally :
+[6.285s] 3:         rclpy.shutdown
+[6.286s] 3: 
+[6.286s] 3: 
+[6.286s] 3: if __name__=='__main__' :
+[6.286s] 3:     pytest.main(['-v'])
+[6.286s] 3: 
+[6.287s] 3: '''    ^
+[6.287s] 3: '''
+[6.287s] 3: def test_node_creation():
+[6.287s] 3:     rclpy.init
+[6.287s] 3:     try :
+[6.287s] 3:         node=Obstacle()
+[6.288s] 3:         # verify that the node has the expected name
+[6.288s] 3:         assert node.get_name()=="Laser_Obstacle_Avoidance"
+[6.288s] 3:         # verify that the node has the subscribed to the correct topic by name
+[6.288s] 3:         assert hasattr(node,'laser_sub')
+[6.288s] 3:         assert node.laser_sub.topic_name == 'scan'
+[6.288s] 3:         # verify that the node is publishing to the correct topic by name 
+[6.289s] 3:         assert hasattr(node,'cmd_vel_pub')
+[6.289s] 3:         assert node.cmd_vel_pub.topic_name == 'cmd_vel'
+[6.289s] 3:     finally :
+[6.289s] 3:         rclpy.shutdown
+[6.289s] 3: def test_parameter_node():
+[6.289s] 3:     rclpy.init
+[6.290s] 3:     try :
+[6.290s] 3:         pass
+[6.290s] 3:     finally :
+[6.290s] 3:         rclpy.shutdown
+[6.290s] 3: def test_obstacle():
+[6.290s] 3:     rclpy.init
+[6.291s] 3:     try :
+[6.291s] 3:         node=Obstacle()
+[6.291s] 3:         #get values of parameters
+[6.291s] 3:         threshold=node.get_parameter('threshold_distance').value
+[6.291s] 3:         scan_topic=node.get_parameter("laser_scan_topic").value
+[6.291s] 3:         cmd_topic=node.get_parameter("cmd_vel_topic").value
+[6.292s] 3:         front_sector_angle=node.get_parameter("frontal_detection_angle_deg").value
+[6.292s] 3:         # assert the values are correct as expected 
+[6.292s] 3:         # 1- check if the parameters are of expected classes 
+[6.292s] 3:         assert isinstance(threshold,float) ,f"expect the threshold to be a float"
+[6.292s] 3:         assert isinstance(scan_topic,str), f"expect the scan topic to be a string"
+[6.292s] 3:         assert isinstance(cmd_topic,str), f"expect the cmd velocity command to be a string"
+[6.292s] 3:         assert isinstance(front_sector_angle,float),f'expect the angle of sector to be a float'
+[6.293s] 3:         # 2- check if the values of the parameters are correct 
+[6.293s] 3:         assert threshold == 0.5
+[6.293s] 3:         assert scan_topic== "scan"
+[6.293s] 3:         assert cmd_topic == "cmd_vel"
+[6.293s] 3:         assert front_sector_angle == 60.0 
+[6.293s] 3:     finally :
+[6.294s] 3:         rclpy.shutdown
+[6.294s] 3: 
+[6.294s] 3: 
+[6.294s] 3: if __name__=='__main__' :
+[6.294s] 3:     pytest.main(['-v'])
+[6.294s] 3: 
+[6.295s] 3: '''       
+[6.295s] 3:                          
+[6.295s] 3:               
+[6.295s] 3:          
+[6.295s] 3:                   ^
+[6.295s] 3: '''
+[6.296s] 3: def test_node_creation():
+[6.296s] 3:     rclpy.init
+[6.296s] 3:     try :
+[6.296s] 3:         node=Obstacle()
+[6.296s] 3:         # verify that the node has the expected name
+[6.296s] 3:         assert node.get_name()=="Laser_Obstacle_Avoidance"
+[6.297s] 3:         # verify that the node has the subscribed to the correct topic by name
+[6.297s] 3:         assert hasattr(node,'laser_sub')
+[6.297s] 3:         assert node.laser_sub.topic_name == 'scan'
+[6.297s] 3:         # verify that the node is publishing to the correct topic by name 
+[6.297s] 3:         assert hasattr(node,'cmd_vel_pub')
+[6.297s] 3:         assert node.cmd_vel_pub.topic_name == 'cmd_vel'
+[6.297s] 3:     finally :
+[6.298s] 3:         rclpy.shutdown
+[6.298s] 3: def test_parameter_node():
+[6.298s] 3:     rclpy.init
+[6.298s] 3:     try :
+[6.298s] 3:         pass
+[6.298s] 3:     finally :
+[6.299s] 3:         rclpy.shutdown
+[6.299s] 3: def test_obstacle():
+[6.299s] 3:     rclpy.init
+[6.299s] 3:     try :
+[6.299s] 3:         node=Obstacle()
+[6.300s] 3:         #get values of parameters
+[6.300s] 3:         threshold=node.get_parameter('threshold_distance').value
+[6.300s] 3:         scan_topic=node.get_parameter("laser_scan_topic").value
+[6.300s] 3:         cmd_topic=node.get_parameter("cmd_vel_topic").value
+[6.300s] 3:         front_sector_angle=node.get_parameter("frontal_detection_angle_deg").value
+[6.300s] 3:         # assert the values are correct as expected 
+[6.301s] 3:         # 1- check if the parameters are of expected classes 
+[6.301s] 3:         assert isinstance(threshold,float) ,f"expect the threshold to be a float"
+[6.301s] 3:         assert isinstance(scan_topic,str), f"expect the scan topic to be a string"
+[6.301s] 3:         assert isinstance(cmd_topic,str), f"expect the cmd velocity command to be a string"
+[6.301s] 3:         assert isinstance(front_sector_angle,float),f'expect the angle of sector to be a float'
+[6.301s] 3:         # 2- check if the values of the parameters are correct 
+[6.302s] 3:         assert threshold == 0.5
+[6.302s] 3:         assert scan_topic== "scan"
+[6.302s] 3:         assert cmd_topic == "cmd_vel"
+[6.302s] 3:         assert front_sector_angle == 60.0 
+[6.302s] 3:     finally :
+[6.302s] 3:         rclpy.shutdown
+[6.303s] 3: 
+[6.303s] 3: 
+[6.303s] 3: if __name__=='__main__' :
+[6.303s] 3:     pytest.main(['-v'])
+[6.303s] 3: 
+[6.303s] 3: '''       
+[6.304s] 3:                          
+[6.304s] 3:               
+[6.304s] 3:       ^
+[6.304s] 3: '''
+[6.304s] 3: def test_node_creation():
+[6.304s] 3:     rclpy.init
+[6.304s] 3:     try :
+[6.305s] 3:         node=Obstacle()
+[6.305s] 3:         # verify that the node has the expected name
+[6.305s] 3:         assert node.get_name()=="Laser_Obstacle_Avoidance"
+[6.305s] 3:         # verify that the node has the subscribed to the correct topic by name
+[6.305s] 3:         assert hasattr(node,'laser_sub')
+[6.305s] 3:         assert node.laser_sub.topic_name == 'scan'
+[6.306s] 3:         # verify that the node is publishing to the correct topic by name 
+[6.306s] 3:         assert hasattr(node,'cmd_vel_pub')
+[6.306s] 3:         assert node.cmd_vel_pub.topic_name == 'cmd_vel'
+[6.306s] 3:     finally :
+[6.306s] 3:         rclpy.shutdown
+[6.306s] 3: def test_parameter_node():
+[6.307s] 3:     rclpy.init
+[6.307s] 3:     try :
+[6.307s] 3:         pass
+[6.307s] 3:     finally :
+[6.307s] 3:         rclpy.shutdown
+[6.307s] 3: def test_obstacle():
+[6.308s] 3:     rclpy.init
+[6.308s] 3:     try :
+[6.308s] 3:         node=Obstacle()
+[6.308s] 3:         #get values of parameters
+[6.308s] 3:         threshold=node.get_parameter('threshold_distance').value
+[6.308s] 3:         scan_topic=node.get_parameter("laser_scan_topic").value
+[6.308s] 3:         cmd_topic=node.get_parameter("cmd_vel_topic").value
+[6.309s] 3:         front_sector_angle=node.get_parameter("frontal_detection_angle_deg").value
+[6.309s] 3:         # assert the values are correct as expected 
+[6.309s] 3:         # 1- check if the parameters are of expected classes 
+[6.309s] 3:         assert isinstance(threshold,float) ,f"expect the threshold to be a float"
+[6.309s] 3:         assert isinstance(scan_topic,str), f"expect the scan topic to be a string"
+[6.309s] 3:         assert isinstance(cmd_topic,str), f"expect the cmd velocity command to be a string"
+[6.310s] 3:         assert isinstance(front_sector_angle,float),f'expect the angle of sector to be a float'
+[6.310s] 3:         # 2- check if the values of the parameters are correct 
+[6.310s] 3:         assert threshold == 0.5
+[6.310s] 3:         assert scan_topic== "scan"
+[6.310s] 3:         assert cmd_topic == "cmd_vel"
+[6.310s] 3:         assert front_sector_angle == 60.0 
+[6.310s] 3:     finally :
+[6.311s] 3:         rclpy.shutdown
+[6.311s] 3: 
+[6.311s] 3: 
+[6.311s] 3: if __name__=='__main__' :
+[6.311s] 3:     pytest.main(['-v'])
+[6.311s] 3: 
+[6.312s] 3: '''       
+[6.312s] 3:                          
+[6.312s] 3:               
+[6.312s] 3:          
+[6.312s] 3:      ^
+[6.312s] 3: '''
+[6.312s] 3: def test_node_creation():
+[6.313s] 3:     rclpy.init
+[6.313s] 3:     try :
+[6.313s] 3:         node=Obstacle()
+[6.313s] 3:         # verify that the node has the expected name
+[6.313s] 3:         assert node.get_name()=="Laser_Obstacle_Avoidance"
+[6.313s] 3:         # verify that the node has the subscribed to the correct topic by name
+[6.314s] 3:         assert hasattr(node,'laser_sub')
+[6.314s] 3:         assert node.laser_sub.topic_name == 'scan'
+[6.314s] 3:         # verify that the node is publishing to the correct topic by name 
+[6.314s] 3:         assert hasattr(node,'cmd_vel_pub')
+[6.314s] 3:         assert node.cmd_vel_pub.topic_name == 'cmd_vel'
+[6.314s] 3:     finally :
+[6.315s] 3:         rclpy.shutdown
+[6.315s] 3: def test_parameter_node():
+[6.315s] 3:     rclpy.init
+[6.315s] 3:     try :
+[6.315s] 3:         pass
+[6.315s] 3:     finally :
+[6.315s] 3:         rclpy.shutdown
+[6.316s] 3: def test_obstacle():
+[6.316s] 3:     rclpy.init
+[6.316s] 3:     try :
+[6.316s] 3:         node=Obstacle()
+[6.316s] 3:         #get values of parameters
+[6.316s] 3:         threshold=node.get_parameter('threshold_distance').value
+[6.317s] 3:         scan_topic=node.get_parameter("laser_scan_topic").value
+[6.317s] 3:         cmd_topic=node.get_parameter("cmd_vel_topic").value
+[6.317s] 3:         front_sector_angle=node.get_parameter("frontal_detection_angle_deg").value
+[6.317s] 3:         # assert the values are correct as expected 
+[6.317s] 3:         # 1- check if the parameters are of expected classes 
+[6.318s] 3:         assert isinstance(threshold,float) ,f"expect the threshold to be a float"
+[6.318s] 3:         assert isinstance(scan_topic,str), f"expect the scan topic to be a string"
+[6.318s] 3:         assert isinstance(cmd_topic,str), f"expect the cmd velocity command to be a string"
+[6.318s] 3:         assert isinstance(front_sector_angle,float),f'expect the angle of sector to be a float'
+[6.318s] 3:         # 2- check if the values of the parameters are correct 
+[6.319s] 3:         assert threshold == 0.5
+[6.319s] 3:         assert scan_topic== "scan"
+[6.319s] 3:         assert cmd_topic == "cmd_vel"
+[6.319s] 3:         assert front_sector_angle == 60.0 
+[6.319s] 3:     finally :
+[6.319s] 3:         rclpy.shutdown
+[6.320s] 3: 
+[6.320s] 3: 
+[6.320s] 3: if __name__=='__main__' :
+[6.320s] 3:     pytest.main(['-v'])
+[6.320s] 3: 
+[6.320s] 3: '''       
+[6.320s] 3:                          
+[6.321s] 3:               
+[6.321s] 3:          
+[6.321s] 3:        ^
+[6.321s] 3: '''
+[6.321s] 3: def test_node_creation():
+[6.321s] 3:     rclpy.init
+[6.322s] 3:     try :
+[6.322s] 3:         node=Obstacle()
+[6.322s] 3:         # verify that the node has the expected name
+[6.322s] 3:         assert node.get_name()=="Laser_Obstacle_Avoidance"
+[6.322s] 3:         # verify that the node has the subscribed to the correct topic by name
+[6.322s] 3:         assert hasattr(node,'laser_sub')
+[6.323s] 3:         assert node.laser_sub.topic_name == 'scan'
+[6.323s] 3:         # verify that the node is publishing to the correct topic by name 
+[6.323s] 3:         assert hasattr(node,'cmd_vel_pub')
+[6.323s] 3:         assert node.cmd_vel_pub.topic_name == 'cmd_vel'
+[6.323s] 3:     finally :
+[6.323s] 3:         rclpy.shutdown
+[6.323s] 3: def test_parameter_node():
+[6.324s] 3:     rclpy.init
+[6.324s] 3:     try :
+[6.324s] 3:         pass
+[6.324s] 3:     finally :
+[6.324s] 3:         rclpy.shutdown
+[6.324s] 3: def test_obstacle():
+[6.325s] 3:     rclpy.init
+[6.325s] 3:     try :
+[6.325s] 3:         node=Obstacle()
+[6.325s] 3:         #get values of parameters
+[6.325s] 3:         threshold=node.get_parameter('threshold_distance').value
+[6.325s] 3:         scan_topic=node.get_parameter("laser_scan_topic").value
+[6.326s] 3:         cmd_topic=node.get_parameter("cmd_vel_topic").value
+[6.326s] 3:         front_sector_angle=node.get_parameter("frontal_detection_angle_deg").value
+[6.326s] 3:         # assert the values are correct as expected 
+[6.326s] 3:         # 1- check if the parameters are of expected classes 
+[6.326s] 3:         assert isinstance(threshold,float) ,f"expect the threshold to be a float"
+[6.326s] 3:         assert isinstance(scan_topic,str), f"expect the scan topic to be a string"
+[6.327s] 3:         assert isinstance(cmd_topic,str), f"expect the cmd velocity command to be a string"
+[6.327s] 3:         assert isinstance(front_sector_angle,float),f'expect the angle of sector to be a float'
+[6.327s] 3:         # 2- check if the values of the parameters are correct 
+[6.327s] 3:         assert threshold == 0.5
+[6.327s] 3:         assert scan_topic== "scan"
+[6.327s] 3:         assert cmd_topic == "cmd_vel"
+[6.328s] 3:         assert front_sector_angle == 60.0 
+[6.328s] 3:     finally :
+[6.328s] 3:         rclpy.shutdown
+[6.328s] 3: 
+[6.328s] 3: 
+[6.328s] 3: if __name__=='__main__' :
+[6.329s] 3:     pytest.main(['-v'])
+[6.329s] 3: 
+[6.329s] 3: '''       
+[6.329s] 3:                          
+[6.329s] 3:            ^
+[6.329s] 3: '''
+[6.329s] 3: def test_node_creation():
+[6.330s] 3:     rclpy.init
+[6.330s] 3:     try :
+[6.330s] 3:         node=Obstacle()
+[6.330s] 3:         # verify that the node has the expected name
+[6.330s] 3:         assert node.get_name()=="Laser_Obstacle_Avoidance"
+[6.330s] 3:         # verify that the node has the subscribed to the correct topic by name
+[6.331s] 3:         assert hasattr(node,'laser_sub')
+[6.331s] 3:         assert node.laser_sub.topic_name == 'scan'
+[6.331s] 3:         # verify that the node is publishing to the correct topic by name 
+[6.331s] 3:         assert hasattr(node,'cmd_vel_pub')
+[6.331s] 3:         assert node.cmd_vel_pub.topic_name == 'cmd_vel'
+[6.331s] 3:     finally :
+[6.331s] 3:         rclpy.shutdown
+[6.332s] 3: def test_parameter_node():
+[6.332s] 3:     rclpy.init
+[6.332s] 3:     try :
+[6.332s] 3:         pass
+[6.332s] 3:     finally :
+[6.332s] 3:         rclpy.shutdown
+[6.333s] 3: def test_obstacle():
+[6.333s] 3:     rclpy.init
+[6.333s] 3:     try :
+[6.333s] 3:         node=Obstacle()
+[6.333s] 3:         #get values of parameters
+[6.333s] 3:         threshold=node.get_parameter('threshold_distance').value
+[6.334s] 3:         scan_topic=node.get_parameter("laser_scan_topic").value
+[6.334s] 3:         cmd_topic=node.get_parameter("cmd_vel_topic").value
+[6.334s] 3:         front_sector_angle=node.get_parameter("frontal_detection_angle_deg").value
+[6.334s] 3:         # assert the values are correct as expected 
+[6.334s] 3:         # 1- check if the parameters are of expected classes 
+[6.334s] 3:         assert isinstance(threshold,float) ,f"expect the threshold to be a float"
+[6.335s] 3:         assert isinstance(scan_topic,str), f"expect the scan topic to be a string"
+[6.335s] 3:         assert isinstance(cmd_topic,str), f"expect the cmd velocity command to be a string"
+[6.335s] 3:         assert isinstance(front_sector_angle,float),f'expect the angle of sector to be a float'
+[6.335s] 3:         # 2- check if the values of the parameters are correct 
+[6.335s] 3:         assert threshold == 0.5
+[6.335s] 3:         assert scan_topic== "scan"
+[6.335s] 3:         assert cmd_topic == "cmd_vel"
+[6.336s] 3:         assert front_sector_angle == 60.0 
+[6.336s] 3:     finally :
+[6.336s] 3:         rclpy.shutdown
+[6.336s] 3: 
+[6.336s] 3: 
+[6.336s] 3: if __name__=='__main__' :
+[6.337s] 3:     pytest.main(['-v'])
+[6.337s] 3: 
+[6.337s] 3: '''       ^
+[6.337s] 3: '''
+[6.337s] 3: def test_node_creation():
+[6.337s] 3:     rclpy.init
+[6.338s] 3:     try :
+[6.338s] 3:         node=Obstacle()
+[6.338s] 3:         # verify that the node has the expected name
+[6.338s] 3:         assert node.get_name()=="Laser_Obstacle_Avoidance"
+[6.338s] 3:         # verify that the node has the subscribed to the correct topic by name
+[6.339s] 3:         assert hasattr(node,'laser_sub')
+[6.339s] 3:         assert node.laser_sub.topic_name == 'scan'
+[6.339s] 3:         # verify that the node is publishing to the correct topic by name 
+[6.339s] 3:         assert hasattr(node,'cmd_vel_pub')
+[6.339s] 3:         assert node.cmd_vel_pub.topic_name == 'cmd_vel'
+[6.339s] 3:     finally :
+[6.339s] 3:         rclpy.shutdown
+[6.340s] 3: def test_parameter_node():
+[6.340s] 3:     rclpy.init
+[6.340s] 3:     try :
+[6.340s] 3:         pass
+[6.340s] 3:     finally :
+[6.340s] 3:         rclpy.shutdown
+[6.341s] 3: def test_obstacle():
+[6.341s] 3:     rclpy.init
+[6.341s] 3:     try :
+[6.341s] 3:         node=Obstacle()
+[6.341s] 3:         #get values of parameters
+[6.341s] 3:         threshold=node.get_parameter('threshold_distance').value
+[6.342s] 3:         scan_topic=node.get_parameter("laser_scan_topic").value
+[6.342s] 3:         cmd_topic=node.get_parameter("cmd_vel_topic").value
+[6.342s] 3:         front_sector_angle=node.get_parameter("frontal_detection_angle_deg").value
+[6.342s] 3:         # assert the values are correct as expected 
+[6.342s] 3:         # 1- check if the parameters are of expected classes 
+[6.342s] 3:         assert isinstance(threshold,float) ,f"expect the threshold to be a float"
+[6.343s] 3:         assert isinstance(scan_topic,str), f"expect the scan topic to be a string"
+[6.343s] 3:         assert isinstance(cmd_topic,str), f"expect the cmd velocity command to be a string"
+[6.343s] 3:         assert isinstance(front_sector_angle,float),f'expect the angle of sector to be a float'
+[6.343s] 3:         # 2- check if the values of the parameters are correct 
+[6.343s] 3:         assert threshold == 0.5
+[6.343s] 3:         assert scan_topic== "scan"
+[6.343s] 3:         assert cmd_topic == "cmd_vel"
+[6.344s] 3:         assert front_sector_angle == 60.0 
+[6.344s] 3:     finally :
+[6.344s] 3:         rclpy.shutdown
+[6.344s] 3: 
+[6.344s] 3: 
+[6.344s] 3: if __name__=='__main__' :
+[6.345s] 3:     pytest.main(['-v'])
+[6.345s] 3: 
+[6.345s] 3: '''       
+[6.345s] 3:    ^
+[6.345s] 3: 9     E111 indentation is not a multiple of 4
+[6.345s] 3: 1     E114 indentation is not a multiple of 4 (comment)
+[6.346s] 3: 4     E117 over-indented (comment)
+[6.346s] 3: 6     E122 continuation line missing indentation or outdented
+[6.346s] 3: 3     E128 continuation line under-indented for visual indent
+[6.346s] 3: 5     E131 continuation line unaligned for hanging indent
+[6.346s] 3: 3     E203 whitespace before ':'
+[6.346s] 3: 9     E225 missing whitespace around operator
+[6.347s] 3: 36    E231 missing whitespace after ','
+[6.347s] 3: 8     E261 at least two spaces before inline comment
+[6.347s] 3: 3     E262 inline comment should start with '# '
+[6.347s] 3: 5     E265 block comment should start with '# '
+[6.347s] 3: 1     E275 missing whitespace after keyword
+[6.347s] 3: 6     E302 expected 2 blank lines, found 1
+[6.348s] 3: 20    E303 too many blank lines (2)
+[6.348s] 3: 1     E305 expected 2 blank lines after class or function definition, found 1
+[6.348s] 3: 30    E501 line too long (110 > 99 characters)
+[6.348s] 3: 5     F401 'os' imported but unused
+[6.348s] 3: 5     F541 f-string is missing placeholders
+[6.348s] 3: 14    I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Twist' should be before 'from sensor_msgs.msg import LaserScan'
+[6.348s] 3: 3     I101 Imported names are in the wrong order. Should be DeclareLaunchArgument, IncludeLaunchDescription
+[6.349s] 3: 7     I201 Missing newline between import groups. 'import math' is identified as Stdlib and 'from geometry_msgs.msg import Twist' is identified as Third Party.
+[6.349s] 3: 44    Q000 Double quotes found but single quotes preferred
+[6.349s] 3: 2     Q001 Single quote multiline found but double quotes preferred
+[6.349s] 3: 24    W291 trailing whitespace
+[6.349s] 3: 2     W292 no newline at end of file
+[6.349s] 3: 14    W293 blank line contains whitespace
+[6.350s] 3: 
+[6.350s] 3: ./launch/rplidar.launch.py:5:1: E302 expected 2 blank lines, found 1
+[6.350s] 3: 
+[6.350s] 3: ./launch/rplidar.launch.py:14:100: E501 line too long (113 > 99 characters)
+[6.350s] 3: 
+[6.350s] 3: ./launch/rsp.launch.py:6:1: I101 Imported names are in the wrong order. Should be Command, LaunchConfiguration
+[6.351s] 3: 
+[6.351s] 3: ./launch/rsp.launch.py:7:1: I100 Import statements are in the wrong order. 'from launch.actions import DeclareLaunchArgument' should be before 'from launch.substitutions import LaunchConfiguration, Command'
+[6.351s] 3: 
+[6.351s] 3: ./launch/rsp.launch.py:10:1: F401 'xacro' imported but unused
+[6.351s] 3: 
+[6.351s] 3: ./launch/rsp.launch.py:21:39: E231 missing whitespace after ','
+[6.352s] 3: 
+[6.352s] 3: ./launch/rsp.launch.py:21:53: E231 missing whitespace after ','
+[6.352s] 3: 
+[6.352s] 3: ./launch/rsp.launch.py:23:100: E501 line too long (132 > 99 characters)
+[6.352s] 3: 
+[6.352s] 3: ./launch/rsp.launch.py:24:1: W293 blank line contains whitespace
+[6.353s] 3: 
+[6.353s] 3: ./launch/rsp.launch.py:35:5: E303 too many blank lines (2)
+[6.353s] 3: 
+[6.353s] 3: ./launch/rviz_gazebo.launch.py:2:1: I201 Missing newline between import groups. 'import xacro' is identified as Third Party and 'import os' is identified as Stdlib.
+[6.353s] 3: 
+[6.353s] 3: ./launch/rviz_gazebo.launch.py:3:1: I100 Import statements are in the wrong order. 'from ament_index_python.packages import get_package_share_directory' should be before 'import xacro'
+[6.354s] 3: 
+[6.354s] 3: ./launch/rviz_gazebo.launch.py:7:1: I101 Imported names are in the wrong order. Should be DeclareLaunchArgument, IncludeLaunchDescription
+[6.354s] 3: 
+[6.354s] 3: ./launch/rviz_gazebo.launch.py:12:1: I100 Import statements are in the wrong order. 'from launch.conditions import IfCondition, UnlessCondition' should be before 'from launch_ros.actions import Node'
+[6.354s] 3: 
+[6.355s] 3: ./launch/rviz_gazebo.launch.py:18:5: E303 too many blank lines (2)
+[6.355s] 3: 
+[6.355s] 3: ./launch/rviz_gazebo.launch.py:18:100: E501 line too long (110 > 99 characters)
+[6.355s] 3: 
+[6.355s] 3: ./launch/rviz_gazebo.launch.py:21:17: E225 missing whitespace around operator
+[6.355s] 3: 
+[6.356s] 3: ./launch/rviz_gazebo.launch.py:21:33: E261 at least two spaces before inline comment
+[6.356s] 3: 
+[6.356s] 3: ./launch/rviz_gazebo.launch.py:21:34: E262 inline comment should start with '# '
+[6.356s] 3: 
+[6.356s] 3: ./launch/rviz_gazebo.launch.py:25:62: E231 missing whitespace after ','
+[6.356s] 3: 
+[6.356s] 3: ./launch/rviz_gazebo.launch.py:25:71: E231 missing whitespace after ','
+[6.357s] 3: 
+[6.357s] 3: ./launch/rviz_gazebo.launch.py:33:10: W291 trailing whitespace
+[6.357s] 3: 
+[6.357s] 3: ./launch/rviz_gazebo.launch.py:34:1: W293 blank line contains whitespace
+[6.357s] 3: 
+[6.357s] 3: ./launch/rviz_gazebo.launch.py:47:21: E131 continuation line unaligned for hanging indent
+[6.358s] 3: 
+[6.358s] 3: ./launch/rviz_gazebo.launch.py:47:100: E501 line too long (104 > 99 characters)
+[6.358s] 3: 
+[6.358s] 3: ./launch/rviz_gazebo.launch.py:50:100: E501 line too long (126 > 99 characters)
+[6.358s] 3: 
+[6.358s] 3: ./launch/rviz_gazebo.launch.py:58:5: Q001 Single quote multiline found but double quotes preferred
+[6.359s] 3: 
+[6.359s] 3: ./launch/rviz_gazebo.launch.py:58:5: E303 too many blank lines (2)
+[6.359s] 3: 
+[6.359s] 3: ./launch/rviz_gazebo.launch.py:59:100: E501 line too long (101 > 99 characters)
+[6.359s] 3: 
+[6.359s] 3: ./launch/rviz_gazebo.launch.py:72:5: E122 continuation line missing indentation or outdented
+[6.360s] 3: 
+[6.360s] 3: ./launch/rviz_gazebo.launch.py:73:5: E122 continuation line missing indentation or outdented
+[6.360s] 3: 
+[6.360s] 3: ./launch/rviz_gazebo.launch.py:74:5: E122 continuation line missing indentation or outdented
+[6.360s] 3: 
+[6.361s] 3: ./launch/rviz_gazebo.launch.py:77:11: E131 continuation line unaligned for hanging indent
+[6.361s] 3: 
+[6.361s] 3: ./launch/rviz_gazebo.launch.py:78:10: E131 continuation line unaligned for hanging indent
+[6.361s] 3: 
+[6.361s] 3: ./launch/rviz_gazebo.launch.py:81:5: E122 continuation line missing indentation or outdented
+[6.361s] 3: 
+[6.362s] 3: ./launch/rviz_gazebo.launch.py:82:1: E122 continuation line missing indentation or outdented
+[6.362s] 3: 
+[6.362s] 3: ./launch/rviz_gazebo.launch.py:85:17: Q000 Double quotes found but single quotes preferred
+[6.362s] 3: 
+[6.362s] 3: ./launch/rviz_gazebo.launch.py:86:20: Q000 Double quotes found but single quotes preferred
+[6.362s] 3: 
+[6.363s] 3: ./launch/rviz_gazebo.launch.py:87:20: Q000 Double quotes found but single quotes preferred
+[6.363s] 3: 
+[6.363s] 3: ./launch/rviz_gazebo.launch.py:89:5: E265 block comment should start with '# '
+[6.363s] 3: 
+[6.363s] 3: ./launch/rviz_gazebo.launch.py:90:14: E225 missing whitespace around operator
+[6.363s] 3: 
+[6.364s] 3: ./launch/rviz_gazebo.launch.py:96:1: W293 blank line contains whitespace
+[6.364s] 3: 
+[6.364s] 3: ./launch/rviz_gazebo.launch.py:136:1: W293 blank line contains whitespace
+[6.364s] 3: 
+[6.364s] 3: ./launch/rviz_gazebo.launch.py:140:1: W293 blank line contains whitespace
+[6.364s] 3: 
+[6.364s] 3: ./launch/rviz_gazebo.launch.py:144:1: W293 blank line contains whitespace
+[6.365s] 3: 
+[6.365s] 3: ./test/pytest/test_laserObstacle.py:5:1: I100 Import statements are in the wrong order. 'import time' should be before 'import rclpy' and in a different group.
+[6.365s] 3: 
+[6.365s] 3: ./test/pytest/test_laserObstacle.py:5:1: I201 Missing newline between import groups. 'import time' is identified as Stdlib and 'import rclpy' is identified as Third Party.
+[6.365s] 3: 
+[6.365s] 3: ./test/pytest/test_laserObstacle.py:5:12: W291 trailing whitespace
+[6.366s] 3: 
+[6.366s] 3: ./test/pytest/test_laserObstacle.py:6:1: I201 Missing newline between import groups. 'from rclpy.executors import SingleThreadedExecutor' is identified as Third Party and 'import time' is identified as Stdlib.
+[6.366s] 3: 
+[6.366s] 3: ./test/pytest/test_laserObstacle.py:7:1: F401 'sensor_msgs.msg.LaserScan' imported but unused
+[6.366s] 3: 
+[6.366s] 3: ./test/pytest/test_laserObstacle.py:8:1: I100 Import statements are in the wrong order. 'from geometry_msgs.msg import Twist' should be before 'from sensor_msgs.msg import LaserScan'
+[6.367s] 3: 
+[6.367s] 3: ./test/pytest/test_laserObstacle.py:8:1: F401 'geometry_msgs.msg.Twist' imported but unused
+[6.367s] 3: 
+[6.367s] 3: ./test/pytest/test_laserObstacle.py:8:36: W291 trailing whitespace
+[6.367s] 3: 
+[6.367s] 3: ./test/pytest/test_laserObstacle.py:10:1: I100 Import statements are in the wrong order. 'from articubot_one.obstacle_avoidance import Obstacle' should be before 'from geometry_msgs.msg import Twist'
+[6.367s] 3: 
+[6.368s] 3: ./test/pytest/test_laserObstacle.py:10:54: W291 trailing whitespace
+[6.368s] 3: 
+[6.368s] 3: ./test/pytest/test_laserObstacle.py:12:1: E302 expected 2 blank lines, found 1
+[6.368s] 3: 
+[6.368s] 3: ./test/pytest/test_laserObstacle.py:19:1: E302 expected 2 blank lines, found 1
+[6.368s] 3: 
+[6.369s] 3: ./test/pytest/test_laserObstacle.py:37:14: E111 indentation is not a multiple of 4
+[6.369s] 3: 
+[6.369s] 3: ./test/pytest/test_laserObstacle.py:37:14: E117 over-indented
+[6.369s] 3: 
+[6.369s] 3: ./test/pytest/test_laserObstacle.py:37:37: E261 at least two spaces before inline comment
+[6.370s] 3: 
+[6.370s] 3: ./test/pytest/test_laserObstacle.py:39:29: E261 at least two spaces before inline comment
+[6.370s] 3: 
+[6.370s] 3: ./test/pytest/test_laserObstacle.py:46:14: E111 indentation is not a multiple of 4
+[6.370s] 3: 
+[6.371s] 3: ./test/pytest/test_laserObstacle.py:46:14: E117 over-indented
+[6.371s] 3: 
+[6.371s] 3: ./test/pytest/test_laserObstacle.py:52:31: Q000 Double quotes found but single quotes preferred
+[6.371s] 3: 
+[6.371s] 3: ./test/pytest/test_laserObstacle.py:55:48: E261 at least two spaces before inline comment
+[6.371s] 3: 
+[6.372s] 3: ./test/pytest/test_laserObstacle.py:57:53: E261 at least two spaces before inline comment
+[6.372s] 3: 
+[6.372s] 3: ./test/pytest/test_laserObstacle.py:76:46: Q000 Double quotes found but single quotes preferred
+[6.372s] 3: 
+[6.372s] 3: ./test/pytest/test_laserObstacle.py:76:46: F541 f-string is missing placeholders
+[6.372s] 3: 
+[6.372s] 3: ./test/pytest/test_laserObstacle.py:77:45: Q000 Double quotes found but single quotes preferred
+[6.373s] 3: 
+[6.373s] 3: ./test/pytest/test_laserObstacle.py:77:45: F541 f-string is missing placeholders
+[6.373s] 3: 
+[6.373s] 3: ./test/pytest/test_laserObstacle.py:78:44: Q000 Double quotes found but single quotes preferred
+[6.373s] 3: 
+[6.373s] 3: ./test/pytest/test_laserObstacle.py:78:44: F541 f-string is missing placeholders
+[6.374s] 3: 
+[6.374s] 3: ./test/pytest/test_laserObstacle.py:79:55: F541 f-string is missing placeholders
+[6.374s] 3: 
+[6.374s] 3: ./test/pytest/test_laserObstacle.py:84:30: Q000 Double quotes found but single quotes preferred
+[6.374s] 3: 
+[6.374s] 3: ./test/pytest/test_laserObstacle.py:85:29: Q000 Double quotes found but single quotes preferred
+[6.375s] 3: 
+[6.375s] 3: ./test/pytest/test_laserObstacle.py:89:21: Q000 Double quotes found but single quotes preferred
+[6.375s] 3: 
+[6.375s] 3: ./test/pytest/test_laserObstacle.py:91:21: Q000 Double quotes found but single quotes preferred
+[6.375s] 3: 
+[6.376s] 3: ./test/pytest/test_laserObstacle.py:96:1: Q001 Single quote multiline found but double quotes preferred
+[6.376s] 3: 
+[6.376s] 3: ./test/pytest/test_laserObstacle.py:96:1: E303 too many blank lines (4)
+[6.376s] 3: 
+[6.376s] 3: ./test/pytest/test_laserObstacle.py:106:74: W291 trailing whitespace
+[6.376s] 3: 
+[6.376s] 3: ./test/pytest/test_laserObstacle.py:126:52: W291 trailing whitespace
+[6.377s] 3: 
+[6.377s] 3: ./test/pytest/test_laserObstacle.py:127:61: W291 trailing whitespace
+[6.377s] 3: 
+[6.377s] 3: ./test/pytest/test_laserObstacle.py:132:63: W291 trailing whitespace
+[6.377s] 3: 
+[6.377s] 3: ./test/pytest/test_laserObstacle.py:136:42: W291 trailing whitespace
+[6.378s] 3: 
+[6.378s] 3: ./test/pytest/test_laserObstacle.py:144:4: W291 trailing whitespace
+[6.378s] 3: 
+[6.378s] 3: ./test/pytest/test_laserObstacle.py:144:8: W292 no newline at end of file
+[6.378s] 3: 
+[6.378s] 3: 
+[6.379s] 3: 15 files checked
+[6.379s] 3: 270 errors
+[6.379s] 3: 
+[6.379s] 3: 'E'-type errors: 150
+[6.379s] 3: 'F'-type errors: 10
+[6.379s] 3: 'I'-type errors: 24
+[6.380s] 3: 'Q'-type errors: 46
+[6.380s] 3: 'W'-type errors: 40
+[6.380s] 3: 
+[6.380s] 3: Checked files:
+[6.380s] 3: 
+[6.380s] 3: * ./setup.py
+[6.380s] 3: * ./test/pytest/test_laserObstacle.py
+[6.381s] 3: * ./articubot_one/obstacle_avoidance.py
+[6.381s] 3: * ./articubot_one/__init__.py
+[6.381s] 3: * ./launch/joystick.launch.py
+[6.381s] 3: * ./launch/online_async_launch.py
+[6.381s] 3: * ./launch/ball_tracker.launch.py
+[6.381s] 3: * ./launch/localization_launch.py
+[6.382s] 3: * ./launch/rviz_gazebo.launch.py
+[6.382s] 3: * ./launch/navigation_launch.py
+[6.382s] 3: * ./launch/rsp.launch.py
+[6.382s] 3: * ./launch/launch_robot.launch.py
+[6.382s] 3: * ./launch/camera.launch.py
+[6.382s] 3: * ./launch/rplidar.launch.py
+[6.382s] 3: * ./launch/launch_sim.launch.py
+[6.382s] 3: -- run_test.py: return code 1
+[6.382s] 3: -- run_test.py: verify result file '/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/flake8.xunit.xml'
+[6.383s] 3/6 Test #3: flake8 ...........................***Failed    0.56 sec
+[6.383s] test 4
+[6.383s]     Start 4: lint_cmake
+[6.383s] 
+[6.383s] 4: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/lint_cmake.xunit.xml" "--package-name" "articubot_one" "--output-file" "/home/jonatan/ros2_ws/build/articubot_one/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/jazzy/bin/ament_lint_cmake" "--xunit-file" "/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/lint_cmake.xunit.xml"
+[6.383s] 4: Working Directory: /home/jonatan/ros2_ws/src/articubot_one
+[6.383s] 4: Test timeout computed to be: 60
+[6.383s] 4: -- run_test.py: invoking following command in '/home/jonatan/ros2_ws/src/articubot_one':
+[6.383s] 4:  - /opt/ros/jazzy/bin/ament_lint_cmake --xunit-file /home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/lint_cmake.xunit.xml
+[6.383s] 4: CMakeLists.txt:40: Line ends in whitespace [whitespace/eol]
+[6.383s] 4: CMakeLists.txt:55: Line ends in whitespace [whitespace/eol]
+[6.383s] 4: 
+[6.384s] 4: 
+[6.384s] 4: 2 errors
+[6.384s] 4: -- run_test.py: return code 1
+[6.384s] 4: -- run_test.py: verify result file '/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/lint_cmake.xunit.xml'
+[6.388s] 4/6 Test #4: lint_cmake .......................***Failed    0.21 sec
+[6.388s] test 5
+[6.388s]     Start 5: pep257
+[6.388s] 
+[6.388s] 5: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/pep257.xunit.xml" "--package-name" "articubot_one" "--output-file" "/home/jonatan/ros2_ws/build/articubot_one/ament_pep257/pep257.txt" "--command" "/opt/ros/jazzy/bin/ament_pep257" "--xunit-file" "/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/pep257.xunit.xml"
+[6.388s] 5: Working Directory: /home/jonatan/ros2_ws/src/articubot_one
+[6.388s] 5: Test timeout computed to be: 60
+[6.460s] 5: -- run_test.py: invoking following command in '/home/jonatan/ros2_ws/src/articubot_one':
+[6.460s] 5:  - /opt/ros/jazzy/bin/ament_pep257 --xunit-file /home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/pep257.xunit.xml
+[6.633s] 5: checking ./articubot_one/__init__.py
+[6.633s] 5: checking ./articubot_one/obstacle_avoidance.py
+[6.633s] 5: checking ./launch/ball_tracker.launch.py
+[6.633s] 5: checking ./launch/camera.launch.py
+[6.633s] 5: checking ./launch/joystick.launch.py
+[6.633s] 5: checking ./launch/launch_robot.launch.py
+[6.633s] 5: checking ./launch/launch_sim.launch.py
+[6.633s] 5: checking ./launch/localization_launch.py
+[6.633s] 5: checking ./launch/navigation_launch.py
+[6.634s] 5: checking ./launch/online_async_launch.py
+[6.634s] 5: checking ./launch/rplidar.launch.py
+[6.634s] 5: checking ./launch/rsp.launch.py
+[6.634s] 5: checking ./launch/rviz_gazebo.launch.py
+[6.634s] 5: checking ./setup.py
+[6.634s] 5: checking ./test/pytest/test_laserObstacle.py
+[6.634s] 5: No problems found
+[6.655s] 5: -- run_test.py: return code 0
+[6.655s] 5: -- run_test.py: verify result file '/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/pep257.xunit.xml'
+[6.666s] 5/6 Test #5: pep257 ...........................   Passed    0.28 sec
+[6.666s] test 6
+[6.666s]     Start 6: xmllint
+[6.666s] 
+[6.666s] 6: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/xmllint.xunit.xml" "--package-name" "articubot_one" "--output-file" "/home/jonatan/ros2_ws/build/articubot_one/ament_xmllint/xmllint.txt" "--command" "/opt/ros/jazzy/bin/ament_xmllint" "--xunit-file" "/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/xmllint.xunit.xml"
+[6.667s] 6: Working Directory: /home/jonatan/ros2_ws/src/articubot_one
+[6.667s] 6: Test timeout computed to be: 60
+[6.745s] 6: -- run_test.py: invoking following command in '/home/jonatan/ros2_ws/src/articubot_one':
+[6.745s] 6:  - /opt/ros/jazzy/bin/ament_xmllint --xunit-file /home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/xmllint.xunit.xml
+[8.841s] 6: File 'package.xml' is valid
+[8.842s] 6: 
+[8.842s] 6: No problems found
+[8.874s] 6: -- run_test.py: return code 0
+[8.874s] 6: -- run_test.py: verify result file '/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/xmllint.xunit.xml'
+[8.897s] 6/6 Test #6: xmllint ..........................   Passed    2.23 sec
+[8.898s] 
+[8.898s] 33% tests passed, 4 tests failed out of 6
+[8.899s] 
+[8.899s] Label Time Summary:
+[8.899s] copyright     =   0.41 sec*proc (1 test)
+[8.900s] flake8        =   0.56 sec*proc (1 test)
+[8.900s] lint_cmake    =   0.21 sec*proc (1 test)
+[8.900s] linter        =   3.68 sec*proc (5 tests)
+[8.901s] pep257        =   0.28 sec*proc (1 test)
+[8.901s] pytest        =   5.17 sec*proc (1 test)
+[8.901s] xmllint       =   2.23 sec*proc (1 test)
+[8.902s] 
+[8.902s] Total Test time (real) =   8.86 sec
+[8.902s] 
+[8.903s] The following tests FAILED:
+[8.903s] 	  1 - laser_obstacle_test (Failed)
+[8.903s] 	  2 - copyright (Failed)
+[8.904s] 	  3 - flake8 (Failed)
+[8.904s] 	  4 - lint_cmake (Failed)
+[8.907s] Errors while running CTest
+[8.908s] Output from these tests are in: /home/jonatan/ros2_ws/build/articubot_one/Testing/Temporary/LastTest.log
+[8.908s] Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.
+[8.913s] Invoked command in '/home/jonatan/ros2_ws/build/articubot_one' returned '8': AMENT_PREFIX_PATH=/home/jonatan/ros2_ws/install/articubot_one:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jonatan/ros2_ws/install/articubot_one:${CMAKE_PREFIX_PATH} PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/jonatan/ros2_ws/install/articubot_one/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process

@@ -1,0 +1,2 @@
+[console_scripts]
+show_gui = turtlesim_interface.main_code:main

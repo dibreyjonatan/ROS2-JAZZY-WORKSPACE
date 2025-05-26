@@ -1,0 +1,22 @@
+[1.522s] Invoking command in '/home/jonatan/ros2_ws/src/turtlesim_interface': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/jonatan/ros2_ws/build/turtlesim_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jonatan/ros2_ws/install/turtlesim_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtlesim_interface build --build-base /home/jonatan/ros2_ws/build/turtlesim_interface/build install --record /home/jonatan/ros2_ws/build/turtlesim_interface/install.log --single-version-externally-managed install_data
+[2.026s] running egg_info
+[2.066s] writing ../../build/turtlesim_interface/turtlesim_interface.egg-info/PKG-INFO
+[2.066s] writing dependency_links to ../../build/turtlesim_interface/turtlesim_interface.egg-info/dependency_links.txt
+[2.067s] writing entry points to ../../build/turtlesim_interface/turtlesim_interface.egg-info/entry_points.txt
+[2.067s] writing requirements to ../../build/turtlesim_interface/turtlesim_interface.egg-info/requires.txt
+[2.067s] writing top-level names to ../../build/turtlesim_interface/turtlesim_interface.egg-info/top_level.txt
+[2.110s] reading manifest file '../../build/turtlesim_interface/turtlesim_interface.egg-info/SOURCES.txt'
+[2.110s] adding license file 'LICENSE'
+[2.111s] writing manifest file '../../build/turtlesim_interface/turtlesim_interface.egg-info/SOURCES.txt'
+[2.111s] running build
+[2.111s] running build_py
+[2.111s] running install
+[2.118s] running install_lib
+[2.140s] running install_data
+[2.140s] running install_egg_info
+[2.162s] removing '/home/jonatan/ros2_ws/install/turtlesim_interface/lib/python3.12/site-packages/turtlesim_interface-0.0.0-py3.12.egg-info' (and everything under it)
+[2.162s] Copying ../../build/turtlesim_interface/turtlesim_interface.egg-info to /home/jonatan/ros2_ws/install/turtlesim_interface/lib/python3.12/site-packages/turtlesim_interface-0.0.0-py3.12.egg-info
+[2.163s] running install_scripts
+[2.300s] Installing show_gui script to /home/jonatan/ros2_ws/install/turtlesim_interface/lib/turtlesim_interface
+[2.300s] writing list of installed files to '/home/jonatan/ros2_ws/build/turtlesim_interface/install.log'
+[2.331s] Invoked command in '/home/jonatan/ros2_ws/src/turtlesim_interface' returned '0': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/jonatan/ros2_ws/build/turtlesim_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jonatan/ros2_ws/install/turtlesim_interface/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtlesim_interface build --build-base /home/jonatan/ros2_ws/build/turtlesim_interface/build install --record /home/jonatan/ros2_ws/build/turtlesim_interface/install.log --single-version-externally-managed install_data

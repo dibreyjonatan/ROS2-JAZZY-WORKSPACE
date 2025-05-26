@@ -1,0 +1,63 @@
+UpdateCTestConfiguration  from :/home/jonatan/ros2_ws/build/articubot_one/CTestConfiguration.ini
+Parse Config file:/home/jonatan/ros2_ws/build/articubot_one/CTestConfiguration.ini
+   Site: HP-EliteBook-x360-1030-G2
+   Build name: (empty)
+ Add coverage exclude regular expressions.
+Create new tag: 20250518-2020 - Experimental
+UpdateCTestConfiguration  from :/home/jonatan/ros2_ws/build/articubot_one/CTestConfiguration.ini
+Parse Config file:/home/jonatan/ros2_ws/build/articubot_one/CTestConfiguration.ini
+Test project /home/jonatan/ros2_ws/build/articubot_one
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: laser_obstacle_test
+
+1: Test command: /usr/bin/python3 "-u" "/opt/ros/jazzy/share/ament_cmake_test/cmake/run_test.py" "/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/laser_obstacle_test.xunit.xml" "--package-name" "articubot_one" "--output-file" "/home/jonatan/ros2_ws/build/articubot_one/ament_cmake_pytest/laser_obstacle_test.txt" "--command" "/usr/bin/python3" "-u" "-m" "pytest" "/home/jonatan/ros2_ws/src/articubot_one/test/pytest/test_laserObstacle.py" "-o" "cache_dir=/home/jonatan/ros2_ws/build/articubot_one/ament_cmake_pytest/laser_obstacle_test/.cache" "--junit-xml=/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/laser_obstacle_test.xunit.xml" "--junit-prefix=articubot_one"
+1: Working Directory: /home/jonatan/ros2_ws/build/articubot_one
+1: Test timeout computed to be: 120
+1: -- run_test.py: invoking following command in '/home/jonatan/ros2_ws/build/articubot_one':
+1:  - /usr/bin/python3 -u -m pytest /home/jonatan/ros2_ws/src/articubot_one/test/pytest/test_laserObstacle.py -o cache_dir=/home/jonatan/ros2_ws/build/articubot_one/ament_cmake_pytest/laser_obstacle_test/.cache --junit-xml=/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/laser_obstacle_test.xunit.xml --junit-prefix=articubot_one
+1: ============================= test session starts ==============================
+1: platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+1: cachedir: /home/jonatan/ros2_ws/build/articubot_one/ament_cmake_pytest/laser_obstacle_test/.cache
+1: rootdir: /home/jonatan/ros2_ws/src/articubot_one
+1: plugins: launch-testing-3.4.4, ament-xmllint-0.17.2, ament-pep257-0.17.2, ament-copyright-0.17.2, ament-flake8-0.17.2, launch-testing-ros-0.26.7, ament-lint-0.17.2, cov-4.1.0, typeguard-4.1.5, colcon-core-0.19.0
+1: collected 3 items
+1: 
+1: ../../src/articubot_one/test/pytest/test_laserObstacle.py .E.            [100%]
+1: 
+1: ==================================== ERRORS ====================================
+1: _______________________ ERROR at setup of test_obstacle ________________________
+1: file /home/jonatan/ros2_ws/src/articubot_one/test/pytest/test_laserObstacle.py, line 137
+1:   def test_obstacle(obstacle_node):
+1: E       fixture 'obstacle_node' not found
+1: >       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, cov, doctest_namespace, monkeypatch, no_cover, node_fixture, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, ros_setup, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory
+1: >       use 'pytest --fixtures [testpath]' for help on them.
+1: 
+1: /home/jonatan/ros2_ws/src/articubot_one/test/pytest/test_laserObstacle.py:137
+1: =============================== warnings summary ===============================
+1: ../../src/articubot_one/test/pytest/test_laserObstacle.py:39
+1:   Warning: cannot collect test class 'TestClientNode' because it has a __init__ constructor (from: test/pytest/test_laserObstacle.py)
+1: 
+1: -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+1: - generated xml file: /home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/laser_obstacle_test.xunit.xml -
+1: =========================== short test summary info ============================
+1: ERROR ../../src/articubot_one/test/pytest/test_laserObstacle.py::test_obstacle
+1: ==================== 2 passed, 1 warning, 1 error in 4.38s =====================
+1: -- run_test.py: return code 1
+1: -- run_test.py: verify result file '/home/jonatan/ros2_ws/build/articubot_one/test_results/articubot_one/laser_obstacle_test.xunit.xml'
+1/1 Test #1: laser_obstacle_test ..............***Failed    5.05 sec
+
+0% tests passed[0;0m, [0;31m1 tests failed[0;0m out of 1
+
+Label Time Summary:
+pytest    =   5.05 sec*proc (1 test)
+
+Total Test time (real) =   5.05 sec
+
+The following tests FAILED:
+	[0;31m  1 - laser_obstacle_test (Failed)[0;0m

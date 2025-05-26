@@ -1,0 +1,50 @@
+[2.417s] Invoking command in '/home/jonatan/ros2_ws/src/differential_drive_robot_with_lidar': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/jonatan/ros2_ws/build/obslidar_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jonatan/ros2_ws/install/obslidar_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/obslidar_description build --build-base /home/jonatan/ros2_ws/build/obslidar_description/build install --record /home/jonatan/ros2_ws/build/obslidar_description/install.log --single-version-externally-managed install_data
+[3.088s] running egg_info
+[3.088s] creating ../../build/obslidar_description/obslidar_description.egg-info
+[3.146s] writing ../../build/obslidar_description/obslidar_description.egg-info/PKG-INFO
+[3.147s] writing dependency_links to ../../build/obslidar_description/obslidar_description.egg-info/dependency_links.txt
+[3.148s] writing requirements to ../../build/obslidar_description/obslidar_description.egg-info/requires.txt
+[3.149s] writing top-level names to ../../build/obslidar_description/obslidar_description.egg-info/top_level.txt
+[3.153s] writing manifest file '../../build/obslidar_description/obslidar_description.egg-info/SOURCES.txt'
+[3.264s] reading manifest file '../../build/obslidar_description/obslidar_description.egg-info/SOURCES.txt'
+[3.266s] writing manifest file '../../build/obslidar_description/obslidar_description.egg-info/SOURCES.txt'
+[3.267s] running build
+[3.267s] running build_py
+[3.268s] creating /home/jonatan/ros2_ws/build/obslidar_description/build
+[3.271s] creating /home/jonatan/ros2_ws/build/obslidar_description/build/lib
+[3.271s] creating /home/jonatan/ros2_ws/build/obslidar_description/build/lib/obslidar_description
+[3.271s] copying obslidar_description/__init__.py -> /home/jonatan/ros2_ws/build/obslidar_description/build/lib/obslidar_description
+[3.272s] running install
+[3.289s] running install_lib
+[3.342s] creating /home/jonatan/ros2_ws/install/obslidar_description/lib/python3.12/site-packages/obslidar_description
+[3.342s] copying /home/jonatan/ros2_ws/build/obslidar_description/build/lib/obslidar_description/__init__.py -> /home/jonatan/ros2_ws/install/obslidar_description/lib/python3.12/site-packages/obslidar_description
+[3.343s] byte-compiling /home/jonatan/ros2_ws/install/obslidar_description/lib/python3.12/site-packages/obslidar_description/__init__.py to __init__.cpython-312.pyc
+[3.343s] running install_data
+[3.344s] creating /home/jonatan/ros2_ws/install/obslidar_description/share/ament_index
+[3.344s] creating /home/jonatan/ros2_ws/install/obslidar_description/share/ament_index/resource_index
+[3.345s] creating /home/jonatan/ros2_ws/install/obslidar_description/share/ament_index/resource_index/packages
+[3.346s] copying resource/obslidar_description -> /home/jonatan/ros2_ws/install/obslidar_description/share/ament_index/resource_index/packages
+[3.346s] copying package.xml -> /home/jonatan/ros2_ws/install/obslidar_description/share/obslidar_description
+[3.346s] creating /home/jonatan/ros2_ws/install/obslidar_description/share/obslidar_description/launch
+[3.347s] copying launch/gazebo.launch.py -> /home/jonatan/ros2_ws/install/obslidar_description/share/obslidar_description/launch
+[3.348s] copying launch/display.launch.py -> /home/jonatan/ros2_ws/install/obslidar_description/share/obslidar_description/launch
+[3.348s] creating /home/jonatan/ros2_ws/install/obslidar_description/share/obslidar_description/urdf
+[3.349s] copying urdf/obslidar.xacro -> /home/jonatan/ros2_ws/install/obslidar_description/share/obslidar_description/urdf
+[3.349s] copying urdf/obslidar.ros2control -> /home/jonatan/ros2_ws/install/obslidar_description/share/obslidar_description/urdf
+[3.349s] copying urdf/obslidar.gazebo -> /home/jonatan/ros2_ws/install/obslidar_description/share/obslidar_description/urdf
+[3.349s] copying urdf/materials.xacro -> /home/jonatan/ros2_ws/install/obslidar_description/share/obslidar_description/urdf
+[3.349s] creating /home/jonatan/ros2_ws/install/obslidar_description/share/obslidar_description/meshes
+[3.349s] copying meshes/castro_wheel_1.stl -> /home/jonatan/ros2_ws/install/obslidar_description/share/obslidar_description/meshes
+[3.350s] copying meshes/right_wheel_1.stl -> /home/jonatan/ros2_ws/install/obslidar_description/share/obslidar_description/meshes
+[3.350s] copying meshes/lidar_1.stl -> /home/jonatan/ros2_ws/install/obslidar_description/share/obslidar_description/meshes
+[3.350s] copying meshes/left_wheel_1.stl -> /home/jonatan/ros2_ws/install/obslidar_description/share/obslidar_description/meshes
+[3.350s] copying meshes/base_link.stl -> /home/jonatan/ros2_ws/install/obslidar_description/share/obslidar_description/meshes
+[3.350s] creating /home/jonatan/ros2_ws/install/obslidar_description/share/obslidar_description/config
+[3.350s] copying config/display.rviz -> /home/jonatan/ros2_ws/install/obslidar_description/share/obslidar_description/config
+[3.351s] copying config/gazebo.rviz -> /home/jonatan/ros2_ws/install/obslidar_description/share/obslidar_description/config
+[3.351s] copying config/ros_gz_bridge_gazebo.yaml -> /home/jonatan/ros2_ws/install/obslidar_description/share/obslidar_description/config
+[3.356s] running install_egg_info
+[3.405s] Copying ../../build/obslidar_description/obslidar_description.egg-info to /home/jonatan/ros2_ws/install/obslidar_description/lib/python3.12/site-packages/obslidar_description-0.0.0-py3.12.egg-info
+[3.407s] running install_scripts
+[3.751s] writing list of installed files to '/home/jonatan/ros2_ws/build/obslidar_description/install.log'
+[3.831s] Invoked command in '/home/jonatan/ros2_ws/src/differential_drive_robot_with_lidar' returned '0': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/jonatan/ros2_ws/build/obslidar_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jonatan/ros2_ws/install/obslidar_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/obslidar_description build --build-base /home/jonatan/ros2_ws/build/obslidar_description/build install --record /home/jonatan/ros2_ws/build/obslidar_description/install.log --single-version-externally-managed install_data

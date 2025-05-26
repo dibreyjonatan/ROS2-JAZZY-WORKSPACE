@@ -1,0 +1,22 @@
+[2.912s] Invoking command in '/home/jonatan/ros2_ws/src/pubsub_rospyqt': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/jonatan/ros2_ws/build/pubsub_rospyqt/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jonatan/ros2_ws/install/pubsub_rospyqt/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pubsub_rospyqt build --build-base /home/jonatan/ros2_ws/build/pubsub_rospyqt/build install --record /home/jonatan/ros2_ws/build/pubsub_rospyqt/install.log --single-version-externally-managed install_data
+[3.622s] running egg_info
+[3.674s] writing ../../build/pubsub_rospyqt/pubsub_rospyqt.egg-info/PKG-INFO
+[3.675s] writing dependency_links to ../../build/pubsub_rospyqt/pubsub_rospyqt.egg-info/dependency_links.txt
+[3.675s] writing entry points to ../../build/pubsub_rospyqt/pubsub_rospyqt.egg-info/entry_points.txt
+[3.675s] writing requirements to ../../build/pubsub_rospyqt/pubsub_rospyqt.egg-info/requires.txt
+[3.676s] writing top-level names to ../../build/pubsub_rospyqt/pubsub_rospyqt.egg-info/top_level.txt
+[3.791s] reading manifest file '../../build/pubsub_rospyqt/pubsub_rospyqt.egg-info/SOURCES.txt'
+[3.795s] adding license file 'LICENSE'
+[3.797s] writing manifest file '../../build/pubsub_rospyqt/pubsub_rospyqt.egg-info/SOURCES.txt'
+[3.798s] running build
+[3.799s] running build_py
+[3.799s] running install
+[3.816s] running install_lib
+[3.870s] running install_data
+[3.870s] running install_egg_info
+[3.928s] removing '/home/jonatan/ros2_ws/install/pubsub_rospyqt/lib/python3.12/site-packages/pubsub_rospyqt-0.0.0-py3.12.egg-info' (and everything under it)
+[3.929s] Copying ../../build/pubsub_rospyqt/pubsub_rospyqt.egg-info to /home/jonatan/ros2_ws/install/pubsub_rospyqt/lib/python3.12/site-packages/pubsub_rospyqt-0.0.0-py3.12.egg-info
+[3.936s] running install_scripts
+[4.290s] Installing show_gui script to /home/jonatan/ros2_ws/install/pubsub_rospyqt/lib/pubsub_rospyqt
+[4.290s] writing list of installed files to '/home/jonatan/ros2_ws/build/pubsub_rospyqt/install.log'
+[4.353s] Invoked command in '/home/jonatan/ros2_ws/src/pubsub_rospyqt' returned '0': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/jonatan/ros2_ws/build/pubsub_rospyqt/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jonatan/ros2_ws/install/pubsub_rospyqt/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pubsub_rospyqt build --build-base /home/jonatan/ros2_ws/build/pubsub_rospyqt/build install --record /home/jonatan/ros2_ws/build/pubsub_rospyqt/install.log --single-version-externally-managed install_data

@@ -1,0 +1,2 @@
+[console_scripts]
+show_gui = first_pyqtros.main_code:main
